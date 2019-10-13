@@ -64,7 +64,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="50dp"
-        android:src="@drawable/ic_nguoichoi_3"
+        android:src="@drawable/icplayerthree"
         app:layout_constraintBottom_toTopOf="@id/lineMid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +150,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_facebook"
+            android:drawableLeft="@drawable/icfacebook"
             android:drawablePadding="10dp"
             android:text="Đăng nhập với Facebook">
         </TextView>
@@ -161,7 +161,7 @@
             android:layout_weight="1"
             android:text="Đăng nhập với Skype"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_skype"
+            android:drawableLeft="@drawable/icgoogleplus"
             android:drawablePadding="10dp">
         </TextView>
 
