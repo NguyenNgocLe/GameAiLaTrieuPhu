@@ -114,7 +114,7 @@
             android:text="Đăng ký"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:background="@drawable/radiusbuttonsigupaccount">
+            android:background="@drawable/radiusbuttonsigupblue2">
         </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

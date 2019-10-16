@@ -6,170 +6,139 @@
     android:layout_height="match_parent"
     tools:context=".View.MainActivity">
 
-
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTop"
+        android:id="@+id/lineTopActivityMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.0">
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineBottomActivityMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
 
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid"
+        android:id="@+id/lineLeftActivityMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4">
-
-    </androidx.constraintlayout.widget.Guideline>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8">
-
-    </androidx.constraintlayout.widget.Guideline>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineBottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1.0">
-
-    </androidx.constraintlayout.widget.Guideline>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineStart"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.1">
+
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:id="@+id/lineRightActivityMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMidActivityMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3">
+
     </androidx.constraintlayout.widget.Guideline>
 
     <ImageView
-        android:id="@+id/imgLogo"
+        android:id="@+id/imgLogoLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="50dp"
-        android:src="@drawable/icplayerthree"
-        app:layout_constraintBottom_toTopOf="@id/lineMid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lineTop">
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@id/lineMidActivityMain"
+        app:layout_constraintEnd_toStartOf="@id/lineRightActivityMain"
+        app:layout_constraintStart_toStartOf="@id/lineLeftActivityMain"
+        app:layout_constraintTop_toBottomOf="@id/lineTopActivityMain">
     </ImageView>
 
     <LinearLayout
-        android:id="@+id/FormMain"
+        android:id="@+id/FormLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineMid1"
-        app:layout_constraintEnd_toStartOf="@id/lineEnd"
-        app:layout_constraintStart_toEndOf="@id/lineStart"
-        app:layout_constraintTop_toBottomOf="@id/lineMid">
-
-        <EditText
-            android:id="@+id/txtUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tên đăng nhập"
-            android:layout_margin="5dp"
-            android:background="@drawable/radiusedittext"
-            android:layout_weight="2">
-        </EditText>
-
-        <EditText
-            android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Mật khẩu"
-            android:layout_margin="5dp"
-            android:inputType="textPassword"
-            android:background="@drawable/radiusedittext"
-            android:layout_weight="2">
-        </EditText>
-
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Đăng nhập"
-            android:background="@drawable/radiusbuttonsignin"
-            android:layout_marginHorizontal="5dp"
-            android:layout_marginBottom="5dp"
-            android:textAllCaps="false"
-            android:layout_weight="2">
-        </Button>
-        <Button
-            android:id="@+id/btnForgotPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quên mật khẩu"
-            android:background="@drawable/radiusforgotpassword"
-            android:layout_marginHorizontal="5dp"
-            android:textAllCaps="false"
-            android:layout_weight="2">
-        </Button>
-        <Button
-            android:id="@+id/btnSignup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Đăng Ký"
-            android:layout_marginHorizontal="5dp"
-            android:background="@drawable/radiusbuttonsignup"
-            android:layout_marginTop="5dp"
-            android:textAllCaps="false"
-            android:layout_weight="2">
-        </Button>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutLogin"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
         android:orientation="vertical"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@id/lineBottom"
-        app:layout_constraintEnd_toEndOf="@id/lineEnd"
-        app:layout_constraintStart_toStartOf="@id/lineStart"
-        app:layout_constraintTop_toBottomOf="@+id/lineMid1"
-        android:padding="40dp">
-
-        <TextView
+        app:layout_constraintTop_toBottomOf="@id/lineMidActivityMain"
+        app:layout_constraintStart_toStartOf="@id/lineLeftActivityMain"
+        app:layout_constraintBottom_toTopOf="@id/lineBottomActivityMain"
+        app:layout_constraintEnd_toStartOf="@id/lineRightActivityMain">
+        <Button
+            android:id="@+id/btnManageAccountLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:drawableLeft="@drawable/icfacebook"
-            android:drawablePadding="10dp"
-            android:text="Đăng nhập với Facebook">
-        </TextView>
-        <TextView
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttongreen"
+            android:padding="5dp"
+            android:text="Quản lý tài khoản"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnNewGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_weight="1"
-            android:text="Đăng nhập với Skype"
-            android:gravity="center_vertical"
-            android:drawableLeft="@drawable/icgoogleplus"
-            android:drawablePadding="10dp">
-        </TextView>
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttonblue"
+            android:padding="5dp"
+            android:text="Trò chơi mới"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+        <Button
+            android:id="@+id/btnPlayHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttonpurple"
+            android:padding="5dp"
+            android:text="Lịch sử chơi"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+        <Button
+            android:id="@+id/btnRankPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttoncardinal"
+            android:padding="5dp"
+            android:text="Bảng xếp hạng"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
 
+        <Button
+            android:id="@+id/btnBuyCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttonyellow"
+            android:padding="5dp"
+            android:text="Mua Credit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
