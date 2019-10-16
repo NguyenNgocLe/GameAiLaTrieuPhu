@@ -67,54 +67,64 @@
             android:id="@+id/txtUserNameSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radiusedittext"
             android:layout_marginTop="5dp"
-            android:hint="Tên đăng nhập"
             android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="Tên đăng nhập"
+            android:inputType="textCapSentences"
             android:padding="5dp">
         </EditText>
+
         <EditText
             android:id="@+id/txtEmailSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radiusedittext"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
             android:hint="Email"
+            android:lines="1"
+            android:inputType="textCapSentences"
             android:padding="5dp">
         </EditText>
+
         <EditText
             android:id="@+id/txtPasswordSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radiusedittext"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
             android:hint="Mật khẩu"
+            android:lines="1"
             android:inputType="textPassword"
             android:padding="5dp">
         </EditText>
+
         <EditText
             android:id="@+id/txtConfirmPasswordSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radiusedittext"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
             android:hint="Xác nhận mật khẩu"
             android:inputType="textPassword"
+            android:lines="1"
             android:padding="5dp">
         </EditText>
+
         <Button
             android:id="@+id/btnSignupAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:background="@drawable/animationbuttonblue"
             android:text="Đăng ký"
+            android:inputType="textCapSentences"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/radiusbuttonsigupblue2">
+            android:textColor="#FFFFFF">
         </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
