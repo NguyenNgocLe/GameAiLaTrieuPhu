@@ -12,7 +12,11 @@
         <activity
             android:name=".View.LoginAccount"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".View.SignupAccount"
@@ -22,11 +26,7 @@
         <activity
             android:name=".View.ForgotPassword"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".View.MainActivity"

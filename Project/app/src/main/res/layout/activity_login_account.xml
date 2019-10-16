@@ -85,6 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tên đăng nhập"
+            android:inputType="textCapSentences"
             android:layout_margin="5dp"
             android:background="@drawable/radiusedittext"
             android:layout_weight="2">
@@ -95,6 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Mật khẩu"
+            android:lines="1"
             android:layout_margin="5dp"
             android:inputType="textPassword"
             android:background="@drawable/radiusedittext"
@@ -106,7 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đăng nhập"
-            android:background="@drawable/radiusbuttonblue"
+            android:background="@drawable/animationbuttonblue"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="5dp"
             android:textAllCaps="false"
@@ -117,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Quên mật khẩu"
-            android:background="@drawable/radiusforgotpassword"
+            android:background="@drawable/animationbuttongreen"
             android:layout_marginHorizontal="5dp"
             android:textAllCaps="false"
             android:layout_weight="2">
@@ -128,7 +130,7 @@
             android:layout_height="wrap_content"
             android:text="Đăng Ký"
             android:layout_marginHorizontal="5dp"
-            android:background="@drawable/radiusbuttonred"
+            android:background="@drawable/animationbuttonred"
             android:layout_marginTop="5dp"
             android:textAllCaps="false"
             android:layout_weight="2">
