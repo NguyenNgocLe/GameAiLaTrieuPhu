@@ -3,7 +3,7 @@ package com.example.ailatrieuphu.LoginScreen.Presenter;
 import com.example.ailatrieuphu.LoginScreen.Model.LoginModel;
 import com.example.ailatrieuphu.LoginScreen.View.LoginView;
 
-public class LoginPresenterImp implements LoginPresenter{
+public class LoginPresenterImp implements LoginPresenter {
 
     private LoginModel model;
     private LoginView callback;
