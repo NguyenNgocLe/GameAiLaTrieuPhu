@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85">
+        app:layout_constraintGuide_percent="0.9">
 
     </androidx.constraintlayout.widget.Guideline>
 
@@ -176,11 +176,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:weightSum="10"
         app:layout_constraintBottom_toTopOf="@id/lineMid2Question"
         app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
         app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineMidQuestion"
-        android:weightSum="10">
+        app:layout_constraintTop_toBottomOf="@id/lineMidQuestion">
 
         <Button
             android:id="@+id/btnAnswerA"
@@ -191,8 +191,7 @@
             android:background="@drawable/animationbuttonblue2"
             android:text="A. Triều Ngô"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
+            android:textColor="#FFFFFF"></Button>
 
         <Button
             android:id="@+id/btnAnswerB"
@@ -203,8 +202,7 @@
             android:background="@drawable/animationbuttonblue2"
             android:text="B. Triều Hồ"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
+            android:textColor="#FFFFFF"></Button>
 
         <Button
             android:id="@+id/btnAnswerC"
@@ -215,8 +213,7 @@
             android:background="@drawable/animationbuttonblue2"
             android:text="C. Triều Lý"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
+            android:textColor="#FFFFFF"></Button>
 
         <Button
             android:id="@+id/btnAnswerD"
@@ -227,8 +224,7 @@
             android:background="@drawable/animationbuttonblue2"
             android:text="D. Triều Nguyễn"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
+            android:textColor="#FFFFFF"></Button>
 
     </LinearLayout>
 
@@ -236,12 +232,13 @@
         android:id="@+id/FormTimeAnswerQuestion"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/lineMid3Question"
         app:layout_constraintEnd_toEndOf="@+id/lineRightQuestion"
         app:layout_constraintStart_toStartOf="@+id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@+id/lineMid2Question"
-        android:gravity="center"
-        android:orientation="horizontal">
+        app:layout_constraintTop_toBottomOf="@+id/lineMid2Question">
+
         <ProgressBar
             android:id="@+id/progress_horizontal"
             android:layout_width="wrap_content"
@@ -252,20 +249,72 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10"
-            android:textSize="30dp"
-            >
+            android:textSize="30dp">
         </TextView>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/FormSupportQuestion"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:weightSum="10"
         app:layout_constraintBottom_toTopOf="@id/lineBottomQuestion"
         app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
         app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
         app:layout_constraintTop_toBottomOf="@id/lineMid3Question">
 
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+           android:src="@drawable/ic_undo"
+            android:background="@drawable/animationbuttonyellow">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnFiftyPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_fiftyprecent"
+            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_supportaudience"
+            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnCallPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_call"
+            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_diamond"
+            android:background="@drawable/animationbuttonyellow">
+        </ImageButton>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
