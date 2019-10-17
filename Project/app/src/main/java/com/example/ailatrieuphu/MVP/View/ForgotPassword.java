@@ -1,4 +1,4 @@
-package com.example.ailatrieuphu.View;
+package com.example.ailatrieuphu.MVP.View;
 
 import android.os.Bundle;
 

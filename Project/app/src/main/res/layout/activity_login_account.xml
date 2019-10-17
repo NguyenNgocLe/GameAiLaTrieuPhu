@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.LoginAccount">
+    tools:context=".LoginScreen.View.LoginActivity">
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTop"
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="50dp"
-        android:src="@drawable/ic_userplayer"
+        android:src="@drawable/icuserplayer"
         app:layout_constraintBottom_toTopOf="@id/lineMid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +104,7 @@
         </EditText>
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnSignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đăng nhập"
