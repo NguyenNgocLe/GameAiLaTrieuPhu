@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.QuestionField">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopQuestionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMidQuestionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineBottomQuestionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftQuestionField"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightQuestionField"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormStatusQuestionField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lineTopQuestionField"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatus"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatus"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatus">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormNumberQuestionField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineMidQuestionField"
+        app:layout_constraintEnd_toStartOf="@id/lineRightQuestionField"
+        app:layout_constraintStart_toStartOf="@id/lineLeftQuestionField"
+        app:layout_constraintTop_toBottomOf="@id/lineTopQuestionField"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Điểm: 0"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#D50A84"
+            android:layout_weight="2">
+        </TextView>
+        <TextView
+            android:id="@+id/txtQuestionField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Câu hỏi"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#008EFF"
+            android:layout_weight="1.5">
+        </TextView>
+        <Button
+            android:id="@+id/edtNumberQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/radiusbuttonblue">
+        </Button>
+        <TextView
+            android:id="@+id/txtChooseField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn lĩnh vực"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_weight="2.5">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormQuestionField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineBottomQuestionField"
+        app:layout_constraintEnd_toStartOf="@id/lineRightQuestionField"
+        app:layout_constraintStart_toStartOf="@id/lineLeftQuestionField"
+        app:layout_constraintTop_toBottomOf="@id/lineMidQuestionField"
+        android:weightSum="8">
+        <Button
+            android:id="@+id/btnScienceAndTechnology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khoa học kỹ thuật"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/animationbuttonblue2"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2">
+        </Button>
+
+        <Button
+            android:id="@+id/btnCultureSocietyAndArt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Văn hóa - Xã hội - nghệ thuật"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/animationbuttonblue2"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2">
+        </Button>
+
+        <Button
+            android:id="@+id/btnHistoryAndGeography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lịch sử - Địa lý"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/animationbuttonblue2"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2">
+        </Button>
+
+        <Button
+            android:id="@+id/btnSport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thể thao"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/animationbuttonblue2"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2">
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
