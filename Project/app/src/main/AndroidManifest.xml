@@ -9,11 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MVP.View.ChooseAnswer">
+
+        </activity>
+        <activity android:name=".MVP.View.RightAnswer">
+
+        </activity>
+        <activity android:name=".MVP.View.WrongAnswer">
+
+        </activity>
+        <activity android:name=".MVP.View.SupportAudience">
+
+        </activity>
+        <activity android:name=".MVP.View.CallPeople">
+
+        </activity>
+        <activity android:name=".MVP.View.EndPlay">
+
+        </activity>
+        <activity android:name=".MVP.View.Rank">
+
+        </activity>
+        <activity android:name=".MVP.View.History">
+
+        </activity>
+        <activity android:name=".MVP.View.BuyCredit">
+
+        </activity>
         <activity
             android:name=".MVP.View.ShowQuestion"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -21,23 +49,27 @@
         <activity
             android:name=".MVP.View.QuestionField"
             android:screenOrientation="portrait">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+
         </activity>
         <activity
             android:name=".LoginScreen.View.LoginActivity"
             android:screenOrientation="portrait">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".MVP.View.SignupAccount"
             android:screenOrientation="portrait">
+
         </activity>
         <activity
             android:name=".MVP.View.ForgotPassword"
             android:screenOrientation="portrait">
+
         </activity>
         <activity
             android:name=".MVP.View.MainActivity"

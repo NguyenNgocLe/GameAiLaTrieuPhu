@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MVP.View.ShowQuestion">
-
+    tools:context=".MVP.View.RightAnswer">
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTopStatusQuestion"
+        android:id="@+id/lineTopStatusRightAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +15,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTopQuestion"
+        android:id="@+id/lineTopRightAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -25,7 +24,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMidQuestion"
+        android:id="@+id/lineMidRightAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -34,7 +33,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid2Question"
+        android:id="@+id/lineMid2RightAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -43,7 +42,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid3Question"
+        android:id="@+id/lineMid3RightAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -52,7 +51,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineBottomQuestion"
+        android:id="@+id/lineBottomRightAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -61,7 +60,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineLeftStatusQuestion"
+        android:id="@+id/lineLeftStatusRightAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -70,7 +69,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineLeftQuestion"
+        android:id="@+id/lineLeftRightAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -79,7 +78,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineRightQuestion"
+        android:id="@+id/lineRightRightAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -88,7 +87,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineRightStatusQuestion"
+        android:id="@+id/lineRightStatusRightAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -101,10 +100,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/lineTopQuestion"
-        app:layout_constraintEnd_toStartOf="@id/lineRightStatusQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftStatusQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineTopStatusQuestion">
+        app:layout_constraintBottom_toTopOf="@id/lineTopRightAnswer"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusRightAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusRightAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusRightAnswer">
         <TextView
             android:id="@+id/txtUserNameShowQuestion"
             android:layout_width="wrap_content"
@@ -169,10 +168,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/lineMidQuestion"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineTopQuestion">
+        app:layout_constraintBottom_toTopOf="@id/lineMidRightAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightRightAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftRightAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopRightAnswer">
 
         <TextView
             android:id="@+id/txtScoreQuestion"
@@ -233,10 +232,10 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineMid2Question"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineMidQuestion">
+        app:layout_constraintBottom_toTopOf="@id/lineMid2RightAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightRightAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftRightAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMidRightAnswer">
 
         <Button
             android:id="@+id/btnAnswerA"
@@ -294,10 +293,10 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/lineMid3Question"
-        app:layout_constraintEnd_toEndOf="@+id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@+id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@+id/lineMid2Question">
+        app:layout_constraintBottom_toBottomOf="@+id/lineMid3RightAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/lineRightRightAnswer"
+        app:layout_constraintStart_toStartOf="@+id/lineLeftRightAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/lineMid2RightAnswer">
 
         <ProgressBar
             android:id="@+id/progress_horizontal"
@@ -319,10 +318,10 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineBottomQuestion"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineMid3Question">
+        app:layout_constraintBottom_toTopOf="@id/lineBottomRightAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightRightAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftRightAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMid3RightAnswer">
 
         <ImageButton
             android:id="@+id/btnUndo"
@@ -330,7 +329,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_weight="2"
-           android:src="@drawable/ic_undo"
+            android:src="@drawable/ic_undo"
             android:background="@drawable/animationbuttonyellow">
 
         </ImageButton>
@@ -376,5 +375,4 @@
             android:background="@drawable/animationbuttonyellow">
         </ImageButton>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

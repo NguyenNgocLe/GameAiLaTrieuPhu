@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MVP.View.ShowQuestion">
+    tools:context=".MVP.View.ChooseAnswer">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTopStatusQuestion"
+        android:id="@+id/lineTopStatusChooseAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTopQuestion"
+        android:id="@+id/lineTopChooseAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -25,7 +25,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMidQuestion"
+        android:id="@+id/lineMidChooseAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -34,7 +34,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid2Question"
+        android:id="@+id/lineMid2ChooseAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -43,7 +43,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid3Question"
+        android:id="@+id/lineMid3ChooseAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -52,7 +52,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineBottomQuestion"
+        android:id="@+id/lineBottomChooseAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -61,7 +61,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineLeftStatusQuestion"
+        android:id="@+id/lineLeftStatusChooseAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -70,7 +70,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineLeftQuestion"
+        android:id="@+id/lineLeftChooseAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -79,7 +79,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineRightQuestion"
+        android:id="@+id/lineRightChooseAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -88,7 +88,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineRightStatusQuestion"
+        android:id="@+id/lineRightStatusChooseAnswer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -101,10 +101,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/lineTopQuestion"
-        app:layout_constraintEnd_toStartOf="@id/lineRightStatusQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftStatusQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineTopStatusQuestion">
+        app:layout_constraintBottom_toTopOf="@id/lineTopChooseAnswer"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusChooseAnswer">
+
         <TextView
             android:id="@+id/txtUserNameShowQuestion"
             android:layout_width="wrap_content"
@@ -169,10 +170,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/lineMidQuestion"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineTopQuestion">
+        app:layout_constraintBottom_toTopOf="@id/lineMidChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopChooseAnswer">
 
         <TextView
             android:id="@+id/txtScoreQuestion"
@@ -221,7 +222,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="2.5"
             android:gravity="center"
-            android:text="Đại ngu là triều đại của triều đại nào...?"
+            android:text="Đại ngu là tên của triều đại nào...?"
             android:textSize="15dp">
 
         </TextView>
@@ -233,10 +234,10 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineMid2Question"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineMidQuestion">
+        app:layout_constraintBottom_toTopOf="@id/lineMid2ChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMidChooseAnswer">
 
         <Button
             android:id="@+id/btnAnswerA"
@@ -294,10 +295,10 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/lineMid3Question"
-        app:layout_constraintEnd_toEndOf="@+id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@+id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@+id/lineMid2Question">
+        app:layout_constraintBottom_toBottomOf="@+id/lineMid3ChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@+id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/lineMid2ChooseAnswer">
 
         <ProgressBar
             android:id="@+id/progress_horizontal"
@@ -319,10 +320,10 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineBottomQuestion"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
-        app:layout_constraintTop_toBottomOf="@id/lineMid3Question">
+        app:layout_constraintBottom_toTopOf="@id/lineBottomChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMid3ChooseAnswer">
 
         <ImageButton
             android:id="@+id/btnUndo"
@@ -330,8 +331,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_weight="2"
-           android:src="@drawable/ic_undo"
-            android:background="@drawable/animationbuttonyellow">
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_undo">
 
         </ImageButton>
 
@@ -341,9 +342,9 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:src="@drawable/ic_fiftyprecent"
+            android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
-            android:layout_weight="2">
+            android:src="@drawable/ic_fiftyprecent">
         </ImageButton>
 
         <ImageButton
@@ -351,30 +352,29 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="5dp"
-            android:src="@drawable/ic_supportaudience"
+            android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
-            android:layout_weight="2">
+            android:src="@drawable/ic_supportaudience">
         </ImageButton>
 
         <ImageButton
             android:id="@+id/btnCallPeople"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_call2"
+            android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
-            android:layout_weight="2">
+            android:src="@drawable/ic_call2">
         </ImageButton>
 
         <ImageButton
             android:id="@+id/btnCredit"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="2"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:src="@drawable/ic_diamond"
-            android:background="@drawable/animationbuttonyellow">
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_diamond">
         </ImageButton>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
