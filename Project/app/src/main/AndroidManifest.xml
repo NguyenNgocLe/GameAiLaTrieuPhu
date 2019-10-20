@@ -32,12 +32,6 @@
         <activity
             android:name=".MVP.View.SupportAudience"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MVP.View.CallPeople"
@@ -47,7 +41,6 @@
         <activity
             android:name=".MVP.View.EndPlay"
             android:screenOrientation="portrait">
-
 
         </activity>
         <activity
@@ -63,7 +56,12 @@
         <activity
             android:name=".MVP.View.BuyCredit"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MVP.View.ShowQuestion"
