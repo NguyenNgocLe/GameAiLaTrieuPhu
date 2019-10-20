@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rwl:JKLU:1.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/JKLU/1.0.0/d3ad3117257450a81e4fe205647d1e1ca3eb8097/JKLU-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/JKLU/1.0.0/45e4034915d14dedacf05beaded016fe69db4d55/JKLU-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/JKLU/1.0.0/89f58413299ada48cf7db8a27b722efea1b57936/JKLU-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

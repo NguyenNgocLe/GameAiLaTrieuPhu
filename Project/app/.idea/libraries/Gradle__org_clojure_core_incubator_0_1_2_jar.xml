@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:core.incubator:0.1.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/core.incubator/0.1.2/2c574cf8df01aa0a6b9f3e1cba7a03589640c79e/core.incubator-0.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/core.incubator/0.1.2/970c2fcae4c6bd9f38275cc675214fb1cabadf9d/core.incubator-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rwl:AMDJ:1.0.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/AMDJ/1.0.1/747a3f1ab605a46c67062ffab84c2ad557811665/AMDJ-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/AMDJ/1.0.1/78f0c68c7a151d5e02397aa619201d1354a700b7/AMDJ-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/AMDJ/1.0.1/eae8e8098d4b4980968b5c4fd4501d612556b1c4/AMDJ-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

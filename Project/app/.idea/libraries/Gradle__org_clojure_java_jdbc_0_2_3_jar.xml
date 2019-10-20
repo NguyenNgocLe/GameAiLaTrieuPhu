@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:java.jdbc:0.2.3@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/java.jdbc/0.2.3/1406f154ce82f6ed2b4d8528e62a928593a51ea1/java.jdbc-0.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/java.jdbc/0.2.3/942f4b849742f961cb525bad208ef9504e6b0a7c/java.jdbc-0.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

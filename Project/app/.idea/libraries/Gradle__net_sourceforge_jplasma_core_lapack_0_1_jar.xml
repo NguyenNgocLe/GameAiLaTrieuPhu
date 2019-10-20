@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.jplasma:core-lapack:0.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jplasma/core-lapack/0.1/3c2b8099bc2435938f7b990e4cf44638485eee20/core-lapack-0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jplasma/core-lapack/0.1/6282abd96f68408f9ad70f0d15440e9e490227bf/core-lapack-0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jplasma/core-lapack/0.1/6282abd96f68408f9ad70f0d15440e9e490227bf/core-lapack-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

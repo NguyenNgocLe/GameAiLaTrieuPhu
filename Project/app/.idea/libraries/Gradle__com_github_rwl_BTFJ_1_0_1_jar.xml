@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rwl:BTFJ:1.0.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/BTFJ/1.0.1/a4afe8fce89c57b4560d447fdb9878c781f65c35/BTFJ-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/BTFJ/1.0.1/b1efbf8d91d1180779afd3da1f524205b8106d62/BTFJ-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/BTFJ/1.0.1/6e2c9bf3069b7670b3c9d4d9417b2042a12e3f30/BTFJ-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

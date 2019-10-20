@@ -270,11 +270,8 @@
             android:layout_weight="4"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp">
-
         </Button>
     </LinearLayout>
-
-
 
     <LinearLayout
         android:id="@+id/FormSupport"
@@ -306,7 +303,8 @@
             android:layout_marginRight="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_fiftyprecent"></ImageButton>
+            android:src="@drawable/ic_fiftyprecent">
+        </ImageButton>
 
         <ImageButton
             android:id="@+id/btnSupportAudience"
@@ -315,24 +313,40 @@
             android:layout_marginRight="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_supportaudience"></ImageButton>
+            android:src="@drawable/ic_supportaudience">
+        </ImageButton>
 
         <ImageButton
             android:id="@+id/btnCallPeople"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_call2"></ImageButton>
+            android:src="@drawable/ic_call2">
+        </ImageButton>
 
-        <ImageButton
+<!--        <ImageButton-->
+<!--            android:id="@+id/btnCredit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_weight="2"-->
+<!--            tex-->
+<!--            android:background="@drawable/animationbuttonyellow"-->
+<!--            android:src="@drawable/ic_diamond">-->
+<!--        </ImageButton>-->
+        <Button
             android:id="@+id/btnCredit"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_diamond"
             android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_diamond"></ImageButton>
+            android:text="100"
+            android:textSize="23dp">
+        </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
