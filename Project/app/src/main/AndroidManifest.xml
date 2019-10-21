@@ -12,49 +12,64 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".MVP.View.ChooseAnswer"
+            android:name=".ChooseAnswer.View.ChooseActivity"
             android:screenOrientation="portrait">
 
 
         </activity>
         <activity
-            android:name=".MVP.View.RightAnswer"
+            android:name=".RightAnswer.View.RightActivity"
             android:screenOrientation="portrait">
 
 
         </activity>
         <activity
-            android:name=".MVP.View.WrongAnswer"
+            android:name=".WrongAnswer.View.WrongActivity"
             android:screenOrientation="portrait">
 
 
         </activity>
         <activity
-            android:name=".MVP.View.SupportAudience"
+            android:name=".SupportAudience.View.SupportActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MVP.View.CallPeople"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity
-            android:name=".MVP.View.EndPlay"
+            android:name=".CallPeople.View.CallAcitivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MVP.View.Rank"
+            android:name=".EndPlay.View.EndActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MVP.View.History"
+            android:name=".Rank.View.RankAcitivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MVP.View.BuyCredit"
+            android:name=".History.View.HistoryActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".BuyCredit.View.BuyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ShowQuestion.View.ShowActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".QuestionField.View.QuestionActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".LoginScreen.View.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,37 +79,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MVP.View.ShowQuestion"
+            android:name=".SignupAccount.View.SignupActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MVP.View.QuestionField"
-            android:screenOrientation="portrait">
-
-
-        </activity>
-        <activity
-            android:name=".LoginScreen.View.LoginActivity"
-            android:screenOrientation="portrait">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
-
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
-        </activity>
-        <activity
-            android:name=".MVP.View.SignupAccount"
+            android:name=".ForgotPassword.View.ForgotActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MVP.View.ForgotPassword"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity
-            android:name=".MVP.View.MainActivity"
+            android:name=".MainActivity.View.MainActivity"
             android:screenOrientation="portrait">
 
         </activity>

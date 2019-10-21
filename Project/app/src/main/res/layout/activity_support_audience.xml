@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MVP.View.SupportAudience">
+    tools:context=".SupportAudience.View.SupportActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusSupportAudience"
