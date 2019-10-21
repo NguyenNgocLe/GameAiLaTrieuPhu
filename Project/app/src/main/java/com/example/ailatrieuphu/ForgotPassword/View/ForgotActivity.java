@@ -8,6 +8,8 @@ import com.example.ailatrieuphu.R;
 
 public class ForgotActivity extends AppCompatActivity {
 
+    private String userName, Email;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

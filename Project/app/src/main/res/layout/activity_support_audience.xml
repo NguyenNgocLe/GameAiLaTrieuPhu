@@ -79,6 +79,42 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid1SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid4SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid5SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid6SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineRightSupportAudience"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -118,16 +154,6 @@
             android:text="Nnle"
             android:textSize="23sp">
         </TextView>
-
-        <!--        <ImageView-->
-        <!--            android:id="@+id/imgHeart"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:layout_weight="4"-->
-        <!--            android:background="@drawable/radiusbuttonsigupblue2"-->
-        <!--            android:src="@drawable/ic_heartavailable">-->
-        <!--        </ImageView>-->
 
         <ImageButton
             android:id="@+id/imgHeartShowSupportAudience"
@@ -261,19 +287,60 @@
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnThanks"
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/horizontalBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </com.github.mikephil.charting.charts.BarChart>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/radiusbuttonsigupblue2"
-                android:text="Xin cám ơn"
-                android:textAllCaps="false">
-            </Button>
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnThanks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/animationbuttonblue"
+                    android:text="Xin cám ơn"
+                    android:textAllCaps="false">
+                </Button>
+
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/FormShowChartSupportAudience"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/lineMid5SupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineMid1SupportAudience"
+        app:layout_constraintBottom_toBottomOf="@id/lineMid6SupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineMid4SupportAudience">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormShowThanksSupportAudience"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/lineMid6SupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineMid1SupportAudience"
+        app:layout_constraintBottom_toBottomOf="@id/lineMid2SupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineMid4SupportAudience">
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/FormSupport"
@@ -340,5 +407,4 @@
             android:textSize="23dp">
         </Button>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

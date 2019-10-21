@@ -32,6 +32,11 @@
         <activity
             android:name=".SupportAudience.View.SupportActivity"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".CallPeople.View.CallAcitivity"
@@ -71,12 +76,6 @@
         <activity
             android:name=".LoginScreen.View.LoginActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SignupAccount.View.SignupActivity"
