@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.parallelcolt:parallelcolt:0.10.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.parallelcolt/parallelcolt/0.10.1/ad3c3fb7c4b7ab8905487c225bd269a36fc16f8f/parallelcolt-0.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.parallelcolt/parallelcolt/0.10.1/309066d3daa5a81bcfea077c325aaef346f25bd1/parallelcolt-0.10.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.parallelcolt/parallelcolt/0.10.1/119cb3517c0970f5b2f041cce0bed934fae49877/parallelcolt-0.10.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

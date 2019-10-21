@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAnswer.View.ChooseActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopStatusChooseAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopChooseAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMidChooseAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid2ChooseAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid3ChooseAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineBottomChooseAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftStatusChooseAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftChooseAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightChooseAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightStatusChooseAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormStatusQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lineTopChooseAnswer"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusChooseAnswer">
+
+        <TextView
+            android:id="@+id/txtUserNameShowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttonsigupblue2"
+            android:gravity="center"
+            android:text="Nnle"
+            android:textSize="23sp">
+        </TextView>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgHeart"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="4"-->
+        <!--            android:background="@drawable/radiusbuttonsigupblue2"-->
+        <!--            android:src="@drawable/ic_heartavailable">-->
+        <!--        </ImageView>-->
+
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/animationbuttonblue"
+            android:src="@drawable/ic_heartavailable">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btnScoreShowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="3"
+            android:background="@drawable/animationbuttonyellow"
+            android:text="2.000"
+            android:textColor="#FFFF"
+            android:textColorHighlight="@drawable/animationbuttonblue"
+            android:textSize="23sp">
+        </Button>
+
+        <ImageButton
+            android:id="@+id/btnCreditShowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_diamond">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormNumberQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineMidChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopChooseAnswer">
+
+        <TextView
+            android:id="@+id/txtScoreQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Điểm: 0"
+            android:textColor="#D50A84"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtQuestionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Câu hỏi"
+            android:textColor="#008EFF"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/edtNumberQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:background="@drawable/radiusbuttonblue"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="Đại ngu là tên của triều đại nào...?"
+            android:textSize="15dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormShowQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/lineMid2ChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMidChooseAnswer">
+
+        <Button
+            android:id="@+id/btnAnswerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="A. Triều Ngô"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnAnswerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="B. Triều Hồ"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnAnswerC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="C. Triều Lý"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnAnswerD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="D. Triều Nguyễn"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormTimeAnswerQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lineMid3ChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@+id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/lineMid2ChooseAnswer">
+
+        <ProgressBar
+            android:id="@+id/progress_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ProgressBar> <!--custom progressbar beautiful girl-->
+        <TextView
+            android:id="@+id/txtTimeAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="30dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormSupportQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/lineBottomChooseAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightChooseAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMid3ChooseAnswer">
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_undo">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnFiftyPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_fiftyprecent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_supportaudience">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnCallPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_call2">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btnCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_diamond"
+            android:background="@drawable/animationbuttonyellow"
+            android:text="100"
+            android:textSize="23dp">
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

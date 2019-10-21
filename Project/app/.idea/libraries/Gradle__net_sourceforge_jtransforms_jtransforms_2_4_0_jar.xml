@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.jtransforms:jtransforms:2.4.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jtransforms/jtransforms/2.4.0/f96206c5c9a99f0373bb512b25b2cbd3afaaf2a8/jtransforms-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jtransforms/jtransforms/2.4.0/aac784a921e7f0160a789e9f4020583cf84dc7f8/jtransforms-2.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jtransforms/jtransforms/2.4.0/6f00e845e13a8b5d204fdfd2eca4e340048448fe/jtransforms-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

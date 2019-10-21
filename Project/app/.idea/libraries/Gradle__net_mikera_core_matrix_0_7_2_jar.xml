@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.mikera:core.matrix:0.7.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mikera/core.matrix/0.7.2/b4db204112e9cf70d74e0826267fb275d742de89/core.matrix-0.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mikera/core.matrix/0.7.2/b52cbcfe3d2704f3a13c455f0606bfe9a07d24df/core.matrix-0.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

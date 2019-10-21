@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ailatrieuphu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ChooseAnswer.View.ChooseActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".RightAnswer.View.RightActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".WrongAnswer.View.WrongActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".SupportAudience.View.SupportActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".CallPeople.View.CallAcitivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".EndPlay.View.EndActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Rank.View.RankAcitivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".History.View.HistoryActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".BuyCredit.View.BuyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ShowQuestion.View.ShowActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".QuestionField.View.QuestionActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".LoginScreen.View.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupAccount.View.SignupActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".ForgotPassword.View.ForgotActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".MainActivity.View.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

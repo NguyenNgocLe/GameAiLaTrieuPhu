@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:data.json:0.2.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/data.json/0.2.0/ccedc07f18baf02fd68c6e3b6ede4ef217d7a9ca/data.json-0.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/data.json/0.2.0/b5fcb77e2f5bf3c2e503c05998678d0d2f2ac30/data.json-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

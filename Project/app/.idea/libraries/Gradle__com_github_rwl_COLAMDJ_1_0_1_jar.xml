@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rwl:COLAMDJ:1.0.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/COLAMDJ/1.0.1/742950e360a870e2c72a241315d433e8db14fee0/COLAMDJ-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/COLAMDJ/1.0.1/2a6460ebc2e87c7f95ec8c9a33b8096a3bbb11d0/COLAMDJ-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rwl/COLAMDJ/1.0.1/ea4cccbd9de329ae8e077ca269b3bafa7fc71c66/COLAMDJ-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

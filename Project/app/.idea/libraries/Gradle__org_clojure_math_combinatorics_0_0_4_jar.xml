@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:math.combinatorics:0.0.4@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/math.combinatorics/0.0.4/4aa04cb6a3867841319dc0a5fb43280dc93e2c3a/math.combinatorics-0.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/math.combinatorics/0.0.4/ab454452bd642aacf706e182bd49379f4266651e/math.combinatorics-0.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

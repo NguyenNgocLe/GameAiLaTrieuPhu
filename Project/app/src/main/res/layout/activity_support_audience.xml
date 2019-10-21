@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupportAudience.View.SupportActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopStatusSupportAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopSupportAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMidSupportAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid2SupportAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid3SupportAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineBottomSupportAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftStatusSupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftSupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightSupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightStatusSupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormStatusSupportAudience"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lineTopSupportAudience"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusSupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusSupportAudience"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusSupportAudience">
+
+        <TextView
+            android:id="@+id/txtUserNameShowSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttonsigupblue2"
+            android:gravity="center"
+            android:text="Nnle"
+            android:textSize="23sp">
+        </TextView>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgHeart"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="4"-->
+        <!--            android:background="@drawable/radiusbuttonsigupblue2"-->
+        <!--            android:src="@drawable/ic_heartavailable">-->
+        <!--        </ImageView>-->
+
+        <ImageButton
+            android:id="@+id/imgHeartShowSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/animationbuttonblue"
+            android:src="@drawable/ic_heartavailable">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btnScoreShowSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="3"
+            android:background="@drawable/animationbuttonyellow"
+            android:text="2.000"
+            android:textColor="#FFFF"
+            android:textColorHighlight="@drawable/animationbuttonblue"
+            android:textSize="23sp">
+        </Button>
+
+        <ImageButton
+            android:id="@+id/btnCreditShowSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_diamond">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormNumberSupportAudience"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineMidSupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineRightSupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineLeftSupportAudience"
+        app:layout_constraintTop_toBottomOf="@id/lineTopSupportAudience">
+
+        <TextView
+            android:id="@+id/txtScoreSupportAudience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Điểm: 0"
+            android:textColor="#D50A84"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtNumberSupportAudience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Câu hỏi"
+            android:textColor="#008EFF"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/edtNumberSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:background="@drawable/radiusbuttonblue"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/txtQuestionSupportAudience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="Đại ngu là quốc hiệu của triều đại nào...?"
+            android:textSize="15dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#0099FF"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#45ACFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="14dp"
+        app:contentPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@id/lineMid2SupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineRightSupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineLeftSupportAudience"
+        app:layout_constraintTop_toBottomOf="@id/lineMidSupportAudience">
+
+        <LinearLayout
+            android:id="@+id/FormShowSupportAudience"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/txtAnswerPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Trợ giúp của khán giả"
+                android:layout_marginBottom="5dp"
+                android:textColor="#3A103A"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btnThanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radiusbuttonsigupblue2"
+                android:text="Xin cám ơn"
+                android:textAllCaps="false">
+            </Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/FormSupport"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/lineBottomSupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineRightSupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineLeftSupportAudience"
+        app:layout_constraintTop_toBottomOf="@id/lineMid3SupportAudience">
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_undo">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnFiftyPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_fiftyprecent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_supportaudience">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnCallPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_call2">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btnCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/animationbuttonyellow"
+            android:drawableRight="@drawable/ic_diamond"
+            android:text="100"
+            android:textSize="23dp">
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

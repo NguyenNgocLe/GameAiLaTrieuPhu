@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.jplasma:jplasma:1.2.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jplasma/jplasma/1.2.0/12dc5d0f763e168e4ac4f27a28a76638a5d58528/jplasma-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jplasma/jplasma/1.2.0/a919c7bc109605ee73aff0ab3bcf4955cf610645/jplasma-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jplasma/jplasma/1.2.0/770626fa7cba56466032ce751dbfde823eb1ea8d/jplasma-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.csparsej:csparsej:1.1.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.csparsej/csparsej/1.1.1/9ff170264fb2efcf06c18dd7be9414b124270abb/csparsej-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.csparsej/csparsej/1.1.1/83b7316dbe972ffa7adf9cf3cdc33e314bf4c063/csparsej-1.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.csparsej/csparsej/1.1.1/70e801b6b0db8f986302a86f86154d9af64f0013/csparsej-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

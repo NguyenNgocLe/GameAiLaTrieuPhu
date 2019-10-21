@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupAccount.View.SignupActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormSignup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="@id/bottomSignup"
+        app:layout_constraintEnd_toStartOf="@id/rightSignup"
+        app:layout_constraintStart_toStartOf="@id/leftSignup"
+        app:layout_constraintTop_toBottomOf="@id/topSignup">
+
+        <ImageView
+            android:id="@+id/imgSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="50dp"
+            android:src="@drawable/ic_userplayer">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/txtUserNameSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="Tên đăng nhập"
+            android:inputType="textCapSentences"
+            android:padding="5dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtEmailSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="Email"
+            android:lines="1"
+            android:inputType="textCapSentences"
+            android:padding="5dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtPasswordSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="Mật khẩu"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:padding="5dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtConfirmPasswordSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="5dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSignupAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/animationbuttonblue"
+            android:text="Đăng ký"
+            android:inputType="textCapSentences"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

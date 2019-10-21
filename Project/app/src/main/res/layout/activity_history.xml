@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History.View.HistoryActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopStatusHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMidHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineBottomHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftStatusHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightStatusHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormStatusHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lineTopHistory"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusHistory"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusHistory"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusHistory"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtUserNameShowHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:background="@drawable/radiusbuttonsigupblue2"
+            android:gravity="center"
+            android:text="Nnle"
+            android:textSize="23sp">
+        </TextView>
+
+
+        <Button
+            android:id="@+id/btnScoreShowHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:text="2.000"
+            android:textColor="#FFFF"
+            android:textColorHighlight="@drawable/animationbuttonblue"
+            android:textSize="23sp">
+        </Button>
+
+        <ImageButton
+            android:id="@+id/btnCreditShowHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_diamond">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormPlayHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineMidHistory"
+        app:layout_constraintEnd_toEndOf="@id/lineRightHistory"
+        app:layout_constraintStart_toStartOf="@id/lineLeftHistory"
+        app:layout_constraintTop_toBottomOf="@id/lineTopHistory"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/txtPlayHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lịch sử chơi"
+            android:textSize="30sp"
+            android:textColor="#E91414"
+            android:textStyle="bold"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormRankHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineBottomHistory"
+        app:layout_constraintEnd_toEndOf="@id/lineRightHistory"
+        app:layout_constraintStart_toStartOf="@id/lineLeftHistory"
+        app:layout_constraintTop_toBottomOf="@id/lineMidHistory"
+        android:weightSum="10">
+        <Button
+            android:id="@+id/btnRank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animationbuttonwhite">
+        </Button>
+        <Button
+            android:id="@+id/btnRank2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animationbuttonwhite">
+        </Button>
+        <Button
+            android:id="@+id/btnRank3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animationbuttonwhite">
+        </Button>
+        <Button
+            android:id="@+id/btnRank4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animationbuttonwhite">
+        </Button>
+        <Button
+            android:id="@+id/btnRank5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animationbuttonwhite">
+        </Button>
+<!--        chua lam xong-->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
