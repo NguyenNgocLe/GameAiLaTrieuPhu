@@ -256,7 +256,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:text="Trợ giúp của khán giả"
+                android:text="Lượt chơi đã kết thúc"
                 android:textColor="#3A103A"
                 android:layout_weight="1"
                 android:textStyle="bold">
@@ -270,7 +270,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Xin chúc mừng bạn đã đạt được:"
-                android:textColor="#3A103A"
+                android:textColor="#FF0000"
                 android:textStyle="bold"
                 android:layout_weight="1">
             </TextView>
@@ -282,7 +282,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="10000"
-                android:textColor="#3A103A"
+                android:textColor="#9C27B0"
                 android:textSize="50sp"
                 android:textStyle="bold"
                 android:layout_weight="4">
