@@ -15,13 +15,13 @@ public class LoginPresenterImp implements LoginPresenter {
     }
 
     @Override
-    public void onButtonSigninClick() {
+    public void onButtonSignInClick() {
         callback.showToast("name: " + model.getCurrentName()+"\npass: " + model.getCurrentPassword());
         callback.hideButtonForgot();
     }
 
     @Override
-    public void onButtonSignupClick() {
+    public void onButtonSignUpClick() {
         model.setCurrentName(callback.getTextName());
         model.setCurrentPassword(callback.getPassword());
         callback.showButtonForgot();

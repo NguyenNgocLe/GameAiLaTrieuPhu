@@ -1,9 +1,11 @@
 package com.example.ailatrieuphu.ForgotPassword.Model;
 
+import android.widget.Button;
+
 public class ForgotModel {
     private String userName;
     private String Email;
-
+    private Button btn; // dang lam do dang
     public ForgotModel(){
 
     }

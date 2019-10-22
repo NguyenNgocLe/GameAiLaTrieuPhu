@@ -13,4 +13,7 @@ public class WrongActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wrong_answer);
     }
+    public void intView(){
+
+    }
 }

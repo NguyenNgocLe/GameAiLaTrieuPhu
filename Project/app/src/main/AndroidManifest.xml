@@ -15,28 +15,21 @@
             android:name=".ChooseAnswer.View.ChooseActivity"
             android:screenOrientation="portrait">
 
-
         </activity>
         <activity
             android:name=".RightAnswer.View.RightActivity"
             android:screenOrientation="portrait">
-
 
         </activity>
         <activity
             android:name=".WrongAnswer.View.WrongActivity"
             android:screenOrientation="portrait">
 
-
         </activity>
         <activity
             android:name=".SupportAudience.View.SupportActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CallPeople.View.CallAcitivity"
@@ -61,6 +54,7 @@
         <activity
             android:name=".BuyCredit.View.BuyActivity"
             android:screenOrientation="portrait">
+
         </activity>
         <activity
             android:name=".ShowQuestion.View.ShowActivity"
@@ -71,14 +65,18 @@
             android:name=".QuestionField.View.QuestionActivity"
             android:screenOrientation="portrait">
 
-
         </activity>
         <activity
             android:name=".LoginScreen.View.LoginActivity"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".SignupAccount.View.SignupActivity"
+            android:name=".SignUpAccount.View.SignUpActivity"
             android:screenOrientation="portrait">
 
         </activity>

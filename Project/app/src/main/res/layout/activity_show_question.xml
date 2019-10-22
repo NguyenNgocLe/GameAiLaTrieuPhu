@@ -118,16 +118,6 @@
             android:textSize="23sp">
         </TextView>
 
-        <!--        <ImageView-->
-        <!--            android:id="@+id/imgHeart"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:layout_weight="4"-->
-        <!--            android:background="@drawable/radiusbuttonsigupblue2"-->
-        <!--            android:src="@drawable/ic_heartavailable">-->
-        <!--        </ImageView>-->
-
         <ImageButton
             android:id="@+id/imgHeartShowQuestion"
             android:layout_width="wrap_content"
@@ -221,7 +211,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="2.5"
             android:gravity="center"
-            android:text="Đại ngu là triều đại của triều đại nào...?"
+            android:text="Đại ngu là quốc hiệu của triều đại nào...?"
             android:textSize="15dp">
 
         </TextView>
