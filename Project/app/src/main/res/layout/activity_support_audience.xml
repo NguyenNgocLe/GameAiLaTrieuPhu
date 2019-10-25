@@ -305,16 +305,6 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center">
 
-                <Button
-                    android:id="@+id/btnThanks"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/animationbuttonblue"
-                    android:text="Xin cám ơn"
-                    android:textAllCaps="false">
-                </Button>
-
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -328,6 +318,7 @@
         app:layout_constraintStart_toStartOf="@id/lineMid1SupportAudience"
         app:layout_constraintBottom_toBottomOf="@id/lineMid6SupportAudience"
         app:layout_constraintEnd_toEndOf="@id/lineMid4SupportAudience">
+
     </LinearLayout>
 
     <LinearLayout
@@ -339,7 +330,16 @@
         app:layout_constraintStart_toStartOf="@id/lineMid1SupportAudience"
         app:layout_constraintBottom_toBottomOf="@id/lineMid2SupportAudience"
         app:layout_constraintEnd_toEndOf="@id/lineMid4SupportAudience">
-
+        <Button
+            android:id="@+id/btnThanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/animationbuttonblue"
+            android:text="Xin cám ơn"
+            android:textAllCaps="false">
+        </Button>
     </LinearLayout>
 
     <LinearLayout

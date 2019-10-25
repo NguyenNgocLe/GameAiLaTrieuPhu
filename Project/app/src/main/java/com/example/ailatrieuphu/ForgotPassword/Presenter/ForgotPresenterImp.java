@@ -6,4 +6,14 @@ public class ForgotPresenterImp implements ForgotPresenter {
     public void onButtonPasswordRetrieval() {
 
     }
+
+    @Override
+    public void checkTextViewUserNameLogin() {
+
+    }
+
+    @Override
+    public void checkTextViewEmailLogin() {
+
+    }
 }

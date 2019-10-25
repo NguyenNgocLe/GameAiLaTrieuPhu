@@ -11,11 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.ailatrieuphu.LoginScreen.Presenter.LoginPresenterImp;
 import com.example.ailatrieuphu.R;
 
-public class LoginActivity extends AppCompatActivity implements LoginView,View.OnClickListener{
+public class LoginActivity extends AppCompatActivity implements LoginView, View.OnClickListener {
 
     private Button buttonForgot, buttonSignIn, buttonSignUp;
     private LoginPresenterImp loginPresenterImp;
-    private TextView textViewUserName, textViewPassword;
+    private TextView textViewUserName, textViewPassword, textViewFacebook, textViewGoogle;
 
 
     @Override
@@ -27,9 +27,12 @@ public class LoginActivity extends AppCompatActivity implements LoginView,View.O
         buttonForgot.setOnClickListener(this);
         buttonSignIn.setOnClickListener(this);
         buttonSignUp.setOnClickListener(this);
+        textViewUserName.setOnClickListener(this);
+        textViewFacebook.setOnClickListener(this);
+        textViewGoogle.setOnClickListener(this);
     }
 
-    private void initView(){
+    private void initView() {
         buttonForgot = findViewById(R.id.btnForgotPassword);
         buttonSignIn = findViewById(R.id.btnSignin);
         buttonSignUp = findViewById(R.id.btnSignup);
@@ -85,19 +88,22 @@ public class LoginActivity extends AppCompatActivity implements LoginView,View.O
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id){
-            case R.id.btnSignin:{
+        switch (id) {
+            case R.id.btnSignin: {
                 loginPresenterImp.onButtonSignInClick();
                 break;
             }
-            case R.id.btnForgotPassword:{
+            case R.id.btnForgotPassword: {
                 loginPresenterImp.onButtonForgotClick();
                 break;
             }
-            case R.id.btnSignup:{
+            case R.id.btnSignup: {
                 loginPresenterImp.onButtonSignUpClick();
                 break;
             }
+//            case: {
+//                break;
+//            }
         }
     }
 }

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpAccount.View.SignUpActivity">
+    tools:context="com.example.ailatrieuphu.ManageAccount.View.ManageActivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/topSignup"
+        android:id="@+id/topManageAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bottomSignup"
+        android:id="@+id/bottomManageAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -25,7 +25,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/leftSignup"
+        android:id="@+id/leftManageAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -34,7 +34,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/rightSignup"
+        android:id="@+id/rightManageAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -43,33 +43,39 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <LinearLayout
-        android:id="@+id/FormSignup"
+        android:id="@+id/FormManageAccount"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:weightSum="10"
-        app:layout_constraintBottom_toBottomOf="@id/bottomSignup"
-        app:layout_constraintEnd_toStartOf="@id/rightSignup"
-        app:layout_constraintStart_toStartOf="@id/leftSignup"
-        app:layout_constraintTop_toBottomOf="@id/topSignup">
+        app:layout_constraintBottom_toBottomOf="@id/bottomManageAccount"
+        app:layout_constraintEnd_toStartOf="@id/rightManageAccount"
+        app:layout_constraintStart_toStartOf="@id/leftManageAccount"
+        app:layout_constraintTop_toBottomOf="@id/topManageAccount">
 
         <ImageView
-            android:id="@+id/imgSignup"
+            android:id="@+id/imgManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
+            android:layout_weight="4"
             android:padding="50dp"
             android:src="@drawable/ic_userplayer">
-
         </ImageView>
 
+        <TextView
+            android:id="@+id/txtEditAvatarManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Đổi hình đại diện"
+            android:textColor="#008EFF">
+        </TextView>
+
         <EditText
-            android:id="@+id/txtUserNameSignup"
+            android:id="@+id/txtUserNameManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
             android:hint="Tên đăng nhập"
@@ -78,42 +84,36 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txtEmailSignup"
+            android:id="@+id/txtEmailManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
             android:hint="Email"
-            android:lines="1"
             android:inputType="textCapSentences"
+            android:lines="1"
             android:padding="5dp">
         </EditText>
 
         <EditText
-            android:id="@+id/txtPasswordSignup"
+            android:id="@+id/txtPasswordManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
             android:hint="Mật khẩu"
-            android:lines="1"
             android:inputType="textPassword"
+            android:lines="1"
             android:padding="5dp">
         </EditText>
 
         <EditText
-            android:id="@+id/txtConfirmPasswordSignup"
+            android:id="@+id/txtConfirmPasswordManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
             android:hint="Xác nhận mật khẩu"
@@ -123,19 +123,17 @@
         </EditText>
 
         <Button
-            android:id="@+id/btnSignupAccount"
+            android:id="@+id/btnUpdateManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@drawable/animationbuttonblue"
-            android:text="Đăng ký"
             android:inputType="textCapSentences"
+            android:text="Cập nhật"
             android:textAllCaps="false"
             android:textColor="#FFFFFF">
         </Button>
     </LinearLayout>
+    <!--     update code layout-->
 </androidx.constraintlayout.widget.ConstraintLayout>

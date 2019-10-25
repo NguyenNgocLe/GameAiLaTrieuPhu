@@ -6,29 +6,57 @@ import com.example.ailatrieuphu.LoginScreen.View.LoginView;
 public class LoginPresenterImp implements LoginPresenter {
 
     private LoginModel model;
-    private LoginView callback;
+    private LoginView view;
 
 
-    public LoginPresenterImp(LoginView callback) {
+    public LoginPresenterImp(LoginView view) {
         model = new LoginModel();
-        this.callback = callback;
+        this.view = view;
     }
 
     @Override
     public void onButtonSignInClick() {
-        callback.showToast("name: " + model.getCurrentName()+"\npass: " + model.getCurrentPassword());
-        callback.hideButtonForgot();
+        view.showToast("name: " + model.getCurrentName() + "\npass: " + model.getCurrentPassword());
+        view.hideButtonForgot();
     }
 
     @Override
     public void onButtonSignUpClick() {
-        model.setCurrentName(callback.getTextName());
-        model.setCurrentPassword(callback.getPassword());
-        callback.showButtonForgot();
+        model.setCurrentName(view.getTextName());
+        model.setCurrentPassword(view.getPassword());
+        view.showButtonForgot();
     }
 
     @Override
     public void onButtonForgotClick() {
+
+    }
+
+    @Override
+    public boolean checkTextViewUserNameLogin() {
+        if (!view.getTextName().equals("")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public boolean checkTextViewPasswordLogin() {
+        if (!view.getPassword().equals("")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public void onTextViewFacebookSignInClick() {
+
+    }
+
+    @Override
+    public void onTextViewGoogleSignInClick() {
 
     }
 }

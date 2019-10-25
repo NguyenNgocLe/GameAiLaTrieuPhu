@@ -1,42 +1,49 @@
 package com.example.ailatrieuphu.BuyCredit.Model;
 
-import android.widget.Button;
-
 public class BuyModel {
-    private Button btnFiveThousand, btnThreeThousand, btnOneThousand, btnFiveHundred;
+    private String fiftyThousand, threeThousand, oneThousand, fiveHundred;
 
     public BuyModel(){
 
     }
-    public Button getBtnFiveThousand() {
-        return btnFiveThousand;
+
+    public BuyModel(String fiftyThousand, String threeThousand, String oneThousand, String fiveHundred){
+
+        this.fiftyThousand = fiftyThousand;
+        this.threeThousand = threeThousand;
+        this.oneThousand = oneThousand;
+        this.fiveHundred = fiveHundred;
     }
 
-    public void setBtnFiveThousand(Button btnFiveThousand) {
-        this.btnFiveThousand = btnFiveThousand;
+    public String getFiftyThousand() {
+        return fiftyThousand;
     }
 
-    public Button getBtnThreeThousand() {
-        return btnThreeThousand;
+    public void setFiftyThousand(String fiftyThousand) {
+        this.fiftyThousand = fiftyThousand;
     }
 
-    public void setBtnThreeThousand(Button btnThreeThousand) {
-        this.btnThreeThousand = btnThreeThousand;
+    public String getThreeThousand() {
+        return threeThousand;
     }
 
-    public Button getBtnOneThousand() {
-        return btnOneThousand;
+    public void setThreeThousand(String threeThousand) {
+        this.threeThousand = threeThousand;
     }
 
-    public void setBtnOneThousand(Button btnOneThousand) {
-        this.btnOneThousand = btnOneThousand;
+    public String getOneThousand() {
+        return oneThousand;
     }
 
-    public Button getBtnFiveHundred() {
-        return btnFiveHundred;
+    public void setOneThousand(String oneThousand) {
+        this.oneThousand = oneThousand;
     }
 
-    public void setBtnFiveHundred(Button btnFiveHundred) {
-        this.btnFiveHundred = btnFiveHundred;
+    public String getFiveHundred() {
+        return fiveHundred;
+    }
+
+    public void setFiveHundred(String fiveHundred) {
+        this.fiveHundred = fiveHundred;
     }
 }

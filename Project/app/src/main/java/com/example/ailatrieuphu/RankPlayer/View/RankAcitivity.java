@@ -1,4 +1,4 @@
-package com.example.ailatrieuphu.Rank.View;
+package com.example.ailatrieuphu.RankPlayer.View;
 
 import android.os.Bundle;
 

@@ -1,32 +1,21 @@
 package com.example.ailatrieuphu.SupportAudience.Model;
 
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.BarChart;
 
 public class SupportModel {
-    private Button btnThanks;
+    private TextView txtUserName, txtScorePlayer, txtQuestion;
+    private ImageButton imgHeartPlayer, imgCallPeople, imgSupportAudience, imgFiftyPercent, imgUndo;
+    private Button btnThanks, btnScorePlayer, btnNumberQuestion, btnBuyCredit;
     private BarChart barChartA, barChartB, barChartC, barChartD;
 
     public SupportModel() {
 
     }
 
-    public SupportModel(Button btnThanks, BarChart barChartA, BarChart barChartB, BarChart barChartC, BarChart barChartD) {
-        this.btnThanks = btnThanks;
-        this.barChartA = barChartA;
-        this.barChartB = barChartB;
-        this.barChartC = barChartC;
-        this.barChartD = barChartD;
-    }
-
-    public SupportModel(SupportModel supportModel) {
-        this.btnThanks = supportModel.btnThanks;
-        this.barChartA = supportModel.barChartA;
-        this.barChartB = supportModel.barChartB;
-        this.barChartC = supportModel.barChartC;
-        this.barChartD = supportModel.barChartD;
-    }
 
     public BarChart getBarChartA() {
         return barChartA;
@@ -66,5 +55,93 @@ public class SupportModel {
 
     public void setBarChartD(BarChart barChartD) {
         this.barChartD = barChartD;
+    }
+
+    public TextView getTxtUserName() {
+        return txtUserName;
+    }
+
+    public void setTxtUserName(TextView txtUserName) {
+        this.txtUserName = txtUserName;
+    }
+
+    public TextView getTxtScorePlayer() {
+        return txtScorePlayer;
+    }
+
+    public void setTxtScorePlayer(TextView txtScorePlayer) {
+        this.txtScorePlayer = txtScorePlayer;
+    }
+
+    public TextView getTxtQuestion() {
+        return txtQuestion;
+    }
+
+    public void setTxtQuestion(TextView txtQuestion) {
+        this.txtQuestion = txtQuestion;
+    }
+
+    public ImageButton getImgHeartPlayer() {
+        return imgHeartPlayer;
+    }
+
+    public void setImgHeartPlayer(ImageButton imgHeartPlayer) {
+        this.imgHeartPlayer = imgHeartPlayer;
+    }
+
+    public ImageButton getImgCallPeople() {
+        return imgCallPeople;
+    }
+
+    public void setImgCallPeople(ImageButton imgCallPeople) {
+        this.imgCallPeople = imgCallPeople;
+    }
+
+    public ImageButton getImgSupportAudience() {
+        return imgSupportAudience;
+    }
+
+    public void setImgSupportAudience(ImageButton imgSupportAudience) {
+        this.imgSupportAudience = imgSupportAudience;
+    }
+
+    public ImageButton getImgFiftyPercent() {
+        return imgFiftyPercent;
+    }
+
+    public void setImgFiftyPercent(ImageButton imgFiftyPercent) {
+        this.imgFiftyPercent = imgFiftyPercent;
+    }
+
+    public ImageButton getImgUndo() {
+        return imgUndo;
+    }
+
+    public void setImgUndo(ImageButton imgUndo) {
+        this.imgUndo = imgUndo;
+    }
+
+    public Button getBtnScorePlayer() {
+        return btnScorePlayer;
+    }
+
+    public void setBtnScorePlayer(Button btnScorePlayer) {
+        this.btnScorePlayer = btnScorePlayer;
+    }
+
+    public Button getBtnNumberQuestion() {
+        return btnNumberQuestion;
+    }
+
+    public void setBtnNumberQuestion(Button btnNumberQuestion) {
+        this.btnNumberQuestion = btnNumberQuestion;
+    }
+
+    public Button getBtnBuyCredit() {
+        return btnBuyCredit;
+    }
+
+    public void setBtnBuyCredit(Button btnBuyCredit) {
+        this.btnBuyCredit = btnBuyCredit;
     }
 }

@@ -5,5 +5,366 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WrongAnswer.View.WrongActivity">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopStatusWrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04">
 
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineTopWrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMidWrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid2WrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid3WrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineBottomWrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftStatusWrongAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeftWrongAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightWrongAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRightStatusWrongAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormStatusQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lineTopWrongAnswer"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusWrongAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusWrongAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusWrongAnswer">
+        <TextView
+            android:id="@+id/txtUserNameShowQuestionWrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/radiusbuttonsigupblue2"
+            android:gravity="center"
+            android:text="Nnle"
+            android:textSize="23sp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestionWrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/animationbuttonblue"
+            android:src="@drawable/ic_heartavailable">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btnScoreShowQuestionWrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="3"
+            android:background="@drawable/animationbuttonyellow"
+            android:text="2.000"
+            android:textColor="#FFFF"
+            android:textColorHighlight="@drawable/animationbuttonblue"
+            android:textSize="23sp">
+        </Button>
+
+        <ImageButton
+            android:id="@+id/btnCreditShowQuestionWrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/animationbuttonyellow"
+            android:src="@drawable/ic_diamond">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormNumberQuestionWrongAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lineMidWrongAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightWrongAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftWrongAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineTopWrongAnswer">
+
+        <TextView
+            android:id="@+id/txtScoreQuestionWrongAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Điểm: 2000"
+            android:textColor="#D50A84"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtQuestionNumberWrongAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Câu hỏi"
+            android:textColor="#008EFF"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/edtNumberQuestionWrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:background="@drawable/radiusbuttonblue"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/txtQuestionWrongAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="Đại ngu là triều đại của triều đại nào...?"
+            android:textSize="15dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormShowQuestionWrongAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/lineMid2WrongAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightWrongAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftWrongAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMidWrongAnswer">
+
+        <Button
+            android:id="@+id/btnAnswerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="A. Triều Ngô"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnAnswerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="B. Triều Hồ"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnAnswerC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="C. Triều Lý"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/btnAnswerD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animationbuttonblue2"
+            android:text="D. Triều Nguyễn"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormTimeAnswerQuestionWrongAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lineMid3RightAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/lineRightRightAnswer"
+        app:layout_constraintStart_toStartOf="@+id/lineLeftRightAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/lineMid2RightAnswer">
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progress_horizontal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </ProgressBar> &lt;!&ndash;custom progressbar beautiful girl&ndash;&gt;-->
+        <TextView
+            android:id="@+id/txtTimeAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="30dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormSupportQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/lineBottomWrongAnswer"
+        app:layout_constraintEnd_toEndOf="@id/lineRightWrongAnswer"
+        app:layout_constraintStart_toStartOf="@id/lineLeftWrongAnswer"
+        app:layout_constraintTop_toBottomOf="@id/lineMid3WrongAnswer">
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_undo"
+            android:background="@drawable/animationbuttonyellow">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnFiftyPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_fiftyprecent"
+            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnSupportAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_supportaudience"
+            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="2">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnCallPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_call2"
+            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="3">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btnCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_diamond"
+            android:background="@drawable/animationbuttonyellow"
+            android:text="100"
+            android:textSize="23dp">
+        </Button>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
