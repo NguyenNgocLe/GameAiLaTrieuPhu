@@ -1,8 +1,8 @@
 <resources>
-    <string name="AppName">AiLaTrieuPhu</string>
-    <string name="PasswordRetrieval">Lấy lại mật khẩu</string>
-    <string name="CreditNumber">2.000</string>
-    <string name="BuyCredit">Mua Credit</string>
+    <string name="app_name">AiLaTrieuPhu</string>
+    <string name="password_retrieval">Lấy lại mật khẩu</string>
+    <string name="credit_number">2.000</string>
+    <string name="buy_credit">Mua Credit</string>
     <string name="number_5000">5.000</string>
     <string name="email">Email</string>
     <string name="number_450">450$</string>
@@ -13,4 +13,12 @@
     <string name="number_95">95$</string>
     <string name="number_500">500</string>
     <string name="number_50">50$</string>
+    <string name="number_score_user_player">Điểm: 0</string>
+    <string name="number_question">Câu hỏi</string>
+    <string name="number_question_exists">9</string>
+    <string name="title_question">Đại ngu là quốc hiệu của triều đại nào...?</string>
+    <string name="answer_people_family">Câu trả lời từ người thân</string>
+    <string name="answer_final_people_family">B</string>
+    <string name="thanks_you">Xin cám ơn</string>
+    <string name="number_credit">100</string>
 </resources>

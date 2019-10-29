@@ -111,11 +111,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/radiusbuttonsigupblue2"
             android:gravity="center"
-            android:text="Nnle"
+            android:text="@string/username_player"
             android:textSize="23sp">
         </TextView>
 
@@ -124,7 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="4"
             android:background="@drawable/animationbuttonblue"
             android:src="@drawable/ic_heartavailable">
@@ -134,10 +134,10 @@
             android:id="@+id/btnScoreShowSupportAudience"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
             android:layout_weight="3"
             android:background="@drawable/animationbuttonyellow"
-            android:text="2.000"
+            android:text="@string/credit_number"
             android:textColor="#FFFF"
             android:textColorHighlight="@drawable/animationbuttonblue"
             android:textSize="23sp">
@@ -148,7 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="1"
             android:background="@drawable/animationbuttonyellow"
             android:src="@drawable/ic_diamond">
@@ -172,9 +172,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="Điểm: 0"
+            android:text="@string/number_score_user_player"
             android:textColor="#D50A84"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold">
 
         </TextView>
@@ -185,9 +185,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="Câu hỏi"
+            android:text="@string/number_question"
             android:textColor="#008EFF"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold">
 
         </TextView>
@@ -200,9 +200,9 @@
             android:layout_weight="4"
             android:background="@drawable/radiusbuttonblue"
             android:gravity="center"
-            android:text="9"
+            android:text="@string/number_question_exists"
             android:textColor="#FFFFFF"
-            android:textSize="40dp">
+            android:textSize="40sp">
 
         </Button>
 
@@ -213,8 +213,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="2.5"
             android:gravity="center"
-            android:text="Đại ngu là quốc hiệu của triều đại nào...?"
-            android:textSize="15dp">
+            android:text="@string/title_question"
+            android:textSize="15sp">
 
         </TextView>
     </LinearLayout>
@@ -235,7 +235,7 @@
             android:id="@+id/txtAnswerPeople"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Câu trả lời từ người thân"
+            android:text="@string/answer_people_family"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_gravity="center"
@@ -247,8 +247,8 @@
             android:id="@+id/txtAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="150dp"
-            android:text="B"
+            android:textSize="150sp"
+            android:text="@string/answer_final_people_family"
             android:textColor="#8DFA0F"
             android:textStyle="bold"
             android:gravity="center"
@@ -258,10 +258,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Xin cám ơn"
+            android:text="@string/thanks_you"
             android:textAllCaps="false"
             android:background="@drawable/animationbuttonblue2"
-
             android:layout_weight="4"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp">
@@ -283,7 +282,7 @@
             android:id="@+id/btnUndo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
             android:src="@drawable/ic_undo">
@@ -305,7 +304,7 @@
             android:id="@+id/btnSupportAudience"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
             android:src="@drawable/ic_supportaudience">
@@ -327,9 +326,9 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:drawableRight="@drawable/ic_diamond"
+            android:drawableEnd="@drawable/ic_diamond"
             android:background="@drawable/animationbuttonyellow"
-            android:text="100"
+            android:text="@string/number_credit"
             android:textSize="23sp">
         </Button>
     </LinearLayout>

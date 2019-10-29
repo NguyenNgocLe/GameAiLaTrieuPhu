@@ -23,7 +23,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fae5725e-c40d-4350-b10c-3dc19503ea71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml" afterDir="false" />
@@ -56,16 +55,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="180">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="324" column="37" selection-start-line="324" selection-start-column="37" selection-end-line="324" selection-end-column="37" />
+              <folding>
+                <element signature="e#4629#4654#0" expanded="true" />
+                <element signature="e#5503#5525#0" expanded="true" />
+                <element signature="e#6897#6931#0" expanded="true" />
+                <element signature="e#7340#7365#0" expanded="true" />
+                <element signature="e#7885#7917#0" expanded="true" />
+                <element signature="e#8333#8357#0" expanded="true" />
+                <element signature="e#9177#9207#0" expanded="true" />
+                <element signature="e#9684#9720#0" expanded="true" />
+                <element signature="e#10077#10097#0" expanded="true" />
+                <element signature="e#12827#12850#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="211">
               <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
               <folding>
                 <element signature="e#399#721#0" />
@@ -74,39 +95,6 @@
                 <element signature="e#1382#1707#0" />
                 <element signature="e#3673#3688#0" expanded="true" />
                 <element signature="e#4233#4260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1263">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="196" column="15" lean-forward="true" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
-              <folding>
-                <element signature="e#4593#4613#0" expanded="true" />
-                <element signature="e#4995#5017#0" expanded="true" />
-                <element signature="e#6367#6386#0" expanded="true" />
-                <element signature="e#8059#8081#0" expanded="true" />
-                <element signature="e#8453#8486#0" expanded="true" />
-                <element signature="e#9675#9699#0" expanded="true" />
-                <element signature="e#10072#10098#0" expanded="true" />
-                <element signature="e#11277#11298#0" expanded="true" />
-                <element signature="e#11651#11670#0" expanded="true" />
-                <element signature="e#12850#12870#0" expanded="true" />
-                <element signature="e#13241#13260#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,11 +180,11 @@
         <option value="$PROJECT_DIR$/src/main/res/drawable/colorwhite.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_history.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/animationbuttonyellow 2.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml" />
       </list>
     </option>
   </component>
@@ -409,7 +397,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25608012" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25608012" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -424,7 +412,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32914925" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32914925" />
@@ -432,7 +420,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.22460657" />
+      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.22460657" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
@@ -872,14 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1263">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
@@ -891,16 +871,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        <state relative-caret-position="271">
+          <caret line="326" column="28" selection-start-line="326" selection-start-column="28" selection-end-line="326" selection-end-column="28" />
+          <folding>
+            <element signature="e#4593#4613#0" expanded="true" />
+            <element signature="e#4995#5017#0" expanded="true" />
+            <element signature="e#6367#6386#0" expanded="true" />
+            <element signature="e#8059#8081#0" expanded="true" />
+            <element signature="e#8453#8486#0" expanded="true" />
+            <element signature="e#9675#9699#0" expanded="true" />
+            <element signature="e#10072#10098#0" expanded="true" />
+            <element signature="e#11277#11298#0" expanded="true" />
+            <element signature="e#11651#11670#0" expanded="true" />
+            <element signature="e#12850#12870#0" expanded="true" />
+            <element signature="e#13241#13260#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="211">
           <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
           <folding>
             <element signature="e#399#721#0" />
@@ -914,22 +908,28 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="196" column="15" lean-forward="true" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
+        <state relative-caret-position="180">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="324" column="37" selection-start-line="324" selection-start-column="37" selection-end-line="324" selection-end-column="37" />
           <folding>
-            <element signature="e#4593#4613#0" expanded="true" />
-            <element signature="e#4995#5017#0" expanded="true" />
-            <element signature="e#6367#6386#0" expanded="true" />
-            <element signature="e#8059#8081#0" expanded="true" />
-            <element signature="e#8453#8486#0" expanded="true" />
-            <element signature="e#9675#9699#0" expanded="true" />
-            <element signature="e#10072#10098#0" expanded="true" />
-            <element signature="e#11277#11298#0" expanded="true" />
-            <element signature="e#11651#11670#0" expanded="true" />
-            <element signature="e#12850#12870#0" expanded="true" />
-            <element signature="e#13241#13260#0" expanded="true" />
+            <element signature="e#4629#4654#0" expanded="true" />
+            <element signature="e#5503#5525#0" expanded="true" />
+            <element signature="e#6897#6931#0" expanded="true" />
+            <element signature="e#7340#7365#0" expanded="true" />
+            <element signature="e#7885#7917#0" expanded="true" />
+            <element signature="e#8333#8357#0" expanded="true" />
+            <element signature="e#9177#9207#0" expanded="true" />
+            <element signature="e#9684#9720#0" expanded="true" />
+            <element signature="e#10077#10097#0" expanded="true" />
+            <element signature="e#12827#12850#0" expanded="true" />
           </folding>
         </state>
       </provider>
