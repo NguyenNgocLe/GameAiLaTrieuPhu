@@ -1,4 +1,16 @@
 <resources>
-    <string name="app_name">AiLaTrieuPhu</string>
-    <string name="lay_lai_mat_khau">Lấy lại mật khẩu</string>
+    <string name="AppName">AiLaTrieuPhu</string>
+    <string name="PasswordRetrieval">Lấy lại mật khẩu</string>
+    <string name="CreditNumber">2.000</string>
+    <string name="BuyCredit">Mua Credit</string>
+    <string name="number_5000">5.000</string>
+    <string name="email">Email</string>
+    <string name="number_450">450$</string>
+    <string name="username_player">Nnle</string>
+    <string name="number_3000">3.000</string>
+    <string name="number_290">290$</string>
+    <string name="number_1000">1.000</string>
+    <string name="number_95">95$</string>
+    <string name="number_500">500</string>
+    <string name="number_50">50$</string>
 </resources>

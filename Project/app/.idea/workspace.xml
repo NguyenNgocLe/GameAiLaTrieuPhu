@@ -22,50 +22,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fae5725e-c40d-4350-b10c-3dc19503ea71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ManageAccount/Model/ManageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ManageAccount/Presenter/ManagePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ManageAccount/Presenter/ManagePresenterImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ManageAccount/View/ManageActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ManageAccount/View/ManageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/UserAccount/UserAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_manage_account.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/BuyCredit/Model/BuyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/BuyCredit/Model/BuyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/Model/ForgotModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/Model/ForgotModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/Presenter/ForgotPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/Presenter/ForgotPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/Presenter/ForgotPresenterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/Presenter/ForgotPresenterImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/View/ForgotActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ForgotPassword/View/ForgotActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/History/Model/HistoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/HistoryPlayer/Model/HistoryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/History/Presenter/HistoryPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/HistoryPlayer/Presenter/HistoryPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/History/Presenter/HistoryPresenterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/HistoryPlayer/Presenter/HistoryPresenterImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/History/View/HistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/HistoryPlayer/View/HistoryActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/History/View/HistoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/HistoryPlayer/View/HistoryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/Model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/Model/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/Presenter/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/Presenter/LoginPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/Presenter/LoginPresenterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/Presenter/LoginPresenterImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/View/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/View/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/QuestionField/Model/QuestionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/QuestionField/Model/QuestionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Rank/Model/RankModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/RankPlayer/Model/RankModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Rank/Presenter/RankPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/RankPlayer/Presenter/RankPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Rank/Presenter/RankPresenterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/RankPlayer/Presenter/RankPresenterImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Rank/View/RankAcitivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/RankPlayer/View/RankAcitivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Rank/View/RankView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/RankPlayer/View/RankView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SupportAudience/Model/SupportModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SupportAudience/Model/SupportModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/WrongAnswer/Model/WrongModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/WrongAnswer/Model/WrongModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/colorwhite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/colorwhite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login_account.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_rank.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_rank.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_right_answer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_right_answer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_show_question.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_show_question.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_signup_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_signup_account.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_support_audience.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_support_audience.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_wrong_answer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_wrong_answer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +43,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="b2b64b4" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.58.101:5555" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -88,7 +52,77 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+              <folding>
+                <element signature="e#399#721#0" />
+                <element signature="e#727#1048#0" />
+                <element signature="e#1054#1376#0" />
+                <element signature="e#1382#1707#0" />
+                <element signature="e#3673#3688#0" expanded="true" />
+                <element signature="e#4233#4260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1263">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="196" column="15" lean-forward="true" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
+              <folding>
+                <element signature="e#4593#4613#0" expanded="true" />
+                <element signature="e#4995#5017#0" expanded="true" />
+                <element signature="e#6367#6386#0" expanded="true" />
+                <element signature="e#8059#8081#0" expanded="true" />
+                <element signature="e#8453#8486#0" expanded="true" />
+                <element signature="e#9675#9699#0" expanded="true" />
+                <element signature="e#10072#10098#0" expanded="true" />
+                <element signature="e#11277#11298#0" expanded="true" />
+                <element signature="e#11651#11670#0" expanded="true" />
+                <element signature="e#12850#12870#0" expanded="true" />
+                <element signature="e#13241#13260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/animationbuttonyellow.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,10 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ChooseAnswer/Presenter/ChoosePresenter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/MainActivity/Model/MainModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/MainActivity/Presenter/MainPresenter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/MainActivity/Presenter/MainPresenterImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/CallPeople/Model/CallModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/BuyCredit/Presenter/BuyPresenter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/BuyCredit/Presenter/BuyPresenterImp.java" />
@@ -130,7 +160,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SignUpAccount/Presenter/SignUpPresenterImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SignUpAccount/View/SignUpActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SignUpAccount/Presenter/SignUpPresenter.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/WrongAnswer/View/WrongActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/WrongAnswer/Presenter/WrongPresenter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/ShowQuestion/Model/ShowModel.java" />
@@ -162,7 +191,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/LoginScreen/View/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/colorwhite.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_history.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/drawable/animationbuttonyellow 2.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml" />
       </list>
     </option>
   </component>
@@ -177,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +236,31 @@
               <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ailatrieuphu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
@@ -217,14 +277,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -339,9 +406,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1795422" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25608012" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -364,7 +432,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.35193133" />
+      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.22460657" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
@@ -397,27 +465,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SupportAudience/Presenter/SupportPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/WrongAnswer/View/WrongActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SignUpAccount/View/SignUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/SupportAudience/Presenter/SupportPresenterImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -585,20 +632,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/animationbuttongreen.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_choose_answer.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_end_play.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
@@ -608,35 +646,21 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml">
       <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#399#721#0" />
-            <element signature="e#727#1048#0" />
-            <element signature="e#1054#1376#0" />
-            <element signature="e#1382#1707#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_manage_account.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2025">
           <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_question_field.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_wrong_answer.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4185">
           <caret line="279" column="17" selection-start-line="279" selection-start-column="17" selection-end-line="279" selection-end-column="17" />
@@ -645,17 +669,17 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_right_answer.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="291" column="32" selection-start-line="291" selection-start-column="32" selection-end-line="291" selection-end-column="32" />
@@ -677,9 +701,9 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_signup_account.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="131" column="45" lean-forward="true" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
@@ -691,17 +715,17 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_show_question.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2679">
           <caret line="282" selection-start-line="282" selection-end-line="282" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_rank.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-284">
           <caret line="283" column="27" selection-start-line="283" selection-start-column="27" selection-end-line="283" selection-end-column="27" />
@@ -720,6 +744,7 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ate.png">
       <provider selected="true" editor-type-id="images" />
@@ -768,7 +793,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login_account.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="157" column="38" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
@@ -783,9 +807,9 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_support_audience.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="256" column="18" selection-start-line="256" selection-start-column="14" selection-end-line="256" selection-end-column="18" />
@@ -807,6 +831,7 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/animationbuttonblue.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -826,20 +851,89 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_history.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="467" column="59" selection-start-line="467" selection-start-column="59" selection-end-line="467" selection-end-column="59" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/animationbuttonyellow.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/animationbuttonyellow 2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1263">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="17" column="19" selection-start-line="16" selection-start-column="9" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#317#334#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+          <folding>
+            <element signature="e#399#721#0" />
+            <element signature="e#727#1048#0" />
+            <element signature="e#1054#1376#0" />
+            <element signature="e#1382#1707#0" />
+            <element signature="e#3673#3688#0" expanded="true" />
+            <element signature="e#4233#4260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="196" column="15" lean-forward="true" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
+          <folding>
+            <element signature="e#4593#4613#0" expanded="true" />
+            <element signature="e#4995#5017#0" expanded="true" />
+            <element signature="e#6367#6386#0" expanded="true" />
+            <element signature="e#8059#8081#0" expanded="true" />
+            <element signature="e#8453#8486#0" expanded="true" />
+            <element signature="e#9675#9699#0" expanded="true" />
+            <element signature="e#10072#10098#0" expanded="true" />
+            <element signature="e#11277#11298#0" expanded="true" />
+            <element signature="e#11651#11670#0" expanded="true" />
+            <element signature="e#12850#12870#0" expanded="true" />
+            <element signature="e#13241#13260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>
