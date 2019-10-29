@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.example.ailatrieuphu.ManageAccount.View.ManageActivity">
+        <activity
+            android:name="com.example.ailatrieuphu.ManageAccount.View.ManageActivity"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
@@ -42,10 +44,7 @@
         <activity
             android:name=".EndPlay.View.EndActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".RankPlayer.View.RankAcitivity"
@@ -92,8 +91,10 @@
         <activity
             android:name=".MainActivity.View.MainActivity"
             android:screenOrientation="portrait">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
-
 </manifest>

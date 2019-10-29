@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
     private void initView() {
         buttonForgot = findViewById(R.id.btnForgotPassword);
         buttonSignIn = findViewById(R.id.btnSignin);
-        buttonSignUp = findViewById(R.id.btnSignup);
+        buttonSignUp = findViewById(R.id.btnSignUp);
         textViewUserName = findViewById(R.id.txtUserName);
         textViewPassword = findViewById(R.id.txtPassword);
     }
@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
                 loginPresenterImp.onButtonForgotClick();
                 break;
             }
-            case R.id.btnSignup: {
+            case R.id.btnSignUp: {
                 loginPresenterImp.onButtonSignUpClick();
                 break;
             }

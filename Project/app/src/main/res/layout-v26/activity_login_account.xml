@@ -169,6 +169,5 @@
             android:drawableStart="@drawable/ic_googleplus"
             android:drawablePadding="10dp">
         </TextView>
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

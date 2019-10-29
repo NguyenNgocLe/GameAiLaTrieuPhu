@@ -102,22 +102,12 @@
             android:textSize="23sp">
         </TextView>
 
-        <!--        <ImageView-->
-        <!--            android:id="@+id/imgHeart"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:layout_weight="4"-->
-        <!--            android:background="@drawable/radiusbuttonsigupblue2"-->
-        <!--            android:src="@drawable/ic_heartavailable">-->
-        <!--        </ImageView>-->
-
         <ImageButton
             android:id="@+id/imgHeart"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="4"
             android:background="@drawable/animationbuttonblue"
             android:src="@drawable/ic_heartavailable">
@@ -127,10 +117,10 @@
             android:id="@+id/btnScore"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
             android:layout_weight="3"
             android:background="@drawable/animationbuttonyellow"
-            android:text="2.000"
+            android:text="@string/credit_number"
             android:textColor="#FFFF"
             android:textColorHighlight="@drawable/animationbuttonblue"
             android:textSize="23sp">
@@ -141,7 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="1"
             android:background="@drawable/animationbuttonyellow"
             android:src="@drawable/ic_diamond">
@@ -165,7 +155,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="Điểm: 0"
+            android:text="@string/number_score_user_player"
             android:textColor="#D50A84"
             android:textSize="30dp"
             android:textStyle="bold">
@@ -177,9 +167,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="Câu hỏi"
+            android:text="@string/title_question"
             android:textColor="#008EFF"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold">
         </TextView>
 
@@ -191,9 +181,9 @@
             android:layout_weight="4"
             android:background="@drawable/radiusbuttonblue"
             android:gravity="center"
-            android:text="1"
+            android:text="@string/number_question"
             android:textColor="#FFFFFF"
-            android:textSize="40dp">
+            android:textSize="40sp">
         </Button>
 
         <TextView
@@ -202,8 +192,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="2.5"
             android:gravity="center"
-            android:text="Chọn lĩnh vực"
-            android:textSize="15dp">
+            android:text="@string/choose_field"
+            android:textSize="15sp">
         </TextView>
     </LinearLayout>
 
@@ -223,9 +213,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonblue2"
-            android:text="Khoa học kỹ thuật"
+            android:text="@string/science_technology"
             android:textAllCaps="false"
             android:textColor="#FFFFFF">
         </Button>
@@ -235,9 +227,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonblue2"
-            android:text="Văn hóa - Xã hội - nghệ thuật"
+            android:text="@string/cultural_society_art"
             android:textAllCaps="false"
             android:textColor="#FFFFFF">
         </Button>
@@ -247,9 +241,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonblue2"
-            android:text="Lịch sử - Địa lý"
+            android:text="@string/history_geography"
             android:textAllCaps="false"
             android:textColor="#FFFFFF">
         </Button>
@@ -259,9 +255,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonblue2"
-            android:text="Thể thao"
+            android:text="@string/sport"
             android:textAllCaps="false"
             android:textColor="#FFFFFF">
         </Button>
