@@ -6,6 +6,7 @@ public class LoginModel {
     private String currentPassword;
 
     public LoginModel() {
+
     }
 
     public String getCurrentName() {
@@ -20,7 +21,9 @@ public class LoginModel {
         return currentPassword;
     }
 
-    public void setCurrentPassword(String currentPassword) {
-        this.currentPassword = currentPassword;
+    public void setCurrentPassword(String currentPassword) { this.currentPassword = currentPassword; }
+
+    public void addUserAccount(){
+
     }
 }

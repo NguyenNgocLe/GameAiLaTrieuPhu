@@ -11,11 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.ailatrieuphu.LoginScreen.Presenter.LoginPresenterImp;
 import com.example.ailatrieuphu.R;
 
-public class LoginActivity extends AppCompatActivity implements LoginView,View.OnClickListener{
+public class LoginActivity extends AppCompatActivity implements LoginView, View.OnClickListener {
 
-    private Button buttonForgot, buttonSignin, buttonSignup;
+    private Button buttonForgot, buttonSignIn, buttonSignUp;
     private LoginPresenterImp loginPresenterImp;
-    private TextView textviewUserName, textviewPassword;
+    private TextView textViewUserName, textViewPassword, textViewFacebook, textViewGoogle;
 
 
     @Override
@@ -25,26 +25,29 @@ public class LoginActivity extends AppCompatActivity implements LoginView,View.O
         initView();
         loginPresenterImp = new LoginPresenterImp(this);
         buttonForgot.setOnClickListener(this);
-        buttonSignin.setOnClickListener(this);
-        buttonSignup.setOnClickListener(this);
+        buttonSignIn.setOnClickListener(this);
+        buttonSignUp.setOnClickListener(this);
+        textViewUserName.setOnClickListener(this);
+        textViewFacebook.setOnClickListener(this);
+        textViewGoogle.setOnClickListener(this);
     }
 
-    private void initView(){
+    private void initView() {
         buttonForgot = findViewById(R.id.btnForgotPassword);
-        buttonSignin = findViewById(R.id.btnSignin);
-        buttonSignup = findViewById(R.id.btnSignup);
-        textviewUserName = findViewById(R.id.txtUserName);
-        textviewPassword = findViewById(R.id.txtPassword);
+        buttonSignIn = findViewById(R.id.btnSignin);
+        buttonSignUp = findViewById(R.id.btnSignUp);
+        textViewUserName = findViewById(R.id.txtUserName);
+        textViewPassword = findViewById(R.id.txtPassword);
     }
 
     @Override
-    public void showButtonSignin() {
-        buttonSignin.setVisibility(View.VISIBLE);
+    public void showButtonSignIn() {
+        buttonSignIn.setVisibility(View.VISIBLE);
     }
 
     @Override
-    public void showButtonSignup() {
-        buttonSignup.setVisibility(View.VISIBLE);
+    public void showButtonSignUp() {
+        buttonSignUp.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -53,13 +56,13 @@ public class LoginActivity extends AppCompatActivity implements LoginView,View.O
     }
 
     @Override
-    public void hideButtonSignin() {
-        buttonSignin.setVisibility(View.INVISIBLE);
+    public void hideButtonSignIn() {
+        buttonSignIn.setVisibility(View.INVISIBLE);
     }
 
     @Override
-    public void hideButtonSignup() {
-        buttonSignup.setVisibility(View.INVISIBLE);
+    public void hideButtonSignUp() {
+        buttonSignUp.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -74,30 +77,33 @@ public class LoginActivity extends AppCompatActivity implements LoginView,View.O
 
     @Override
     public String getTextName() {
-        return textviewUserName.getText().toString();
+        return textViewUserName.getText().toString();
     }
 
     @Override
     public String getPassword() {
-        return textviewPassword.getText().toString();
+        return textViewPassword.getText().toString();
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id){
-            case R.id.btnSignin:{
-                loginPresenterImp.onButtonSigninClick();
+        switch (id) {
+            case R.id.btnSignin: {
+                loginPresenterImp.onButtonSignInClick();
                 break;
             }
-            case R.id.btnForgotPassword:{
+            case R.id.btnForgotPassword: {
                 loginPresenterImp.onButtonForgotClick();
                 break;
             }
-            case R.id.btnSignup:{
-                loginPresenterImp.onButtonSignupClick();
+            case R.id.btnSignUp: {
+                loginPresenterImp.onButtonSignUpClick();
                 break;
             }
+//            case: {
+//                break;
+//            }
         }
     }
 }

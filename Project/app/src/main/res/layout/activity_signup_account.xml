@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupAccount.View.SignupActivity">
+    tools:context=".SignUpAccount.View.SignUpActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/topSignup"
@@ -68,9 +68,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
-            android:hint="Tên đăng nhập"
+            android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
             android:padding="5dp">
         </EditText>
@@ -80,12 +82,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
-            android:hint="Email"
+            android:hint="@string/email"
             android:lines="1"
             android:inputType="textCapSentences"
-            android:padding="5dp">
+            android:padding="5dp"
+            tools:ignore="TextFields">
         </EditText>
 
         <EditText
@@ -93,9 +98,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
-            android:hint="Mật khẩu"
+            android:hint="@string/hint_password"
             android:lines="1"
             android:inputType="textPassword"
             android:padding="5dp">
@@ -106,9 +113,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/radiusedittext"
-            android:hint="Xác nhận mật khẩu"
+            android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:lines="1"
             android:padding="5dp">
@@ -119,12 +128,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@drawable/animationbuttonblue"
-            android:text="Đăng ký"
+            android:text="@string/sign_up"
             android:inputType="textCapSentences"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:ignore="TextViewEdits">
         </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

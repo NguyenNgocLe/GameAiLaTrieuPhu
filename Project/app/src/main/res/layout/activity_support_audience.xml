@@ -79,6 +79,42 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid1SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid4SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid5SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineMid6SupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineRightSupportAudience"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -111,30 +147,20 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/radiusbuttonsigupblue2"
             android:gravity="center"
-            android:text="Nnle"
+            android:text="@string/username_player"
             android:textSize="23sp">
         </TextView>
-
-        <!--        <ImageView-->
-        <!--            android:id="@+id/imgHeart"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:layout_weight="4"-->
-        <!--            android:background="@drawable/radiusbuttonsigupblue2"-->
-        <!--            android:src="@drawable/ic_heartavailable">-->
-        <!--        </ImageView>-->
 
         <ImageButton
             android:id="@+id/imgHeartShowSupportAudience"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="4"
             android:background="@drawable/animationbuttonblue"
             android:src="@drawable/ic_heartavailable">
@@ -144,10 +170,10 @@
             android:id="@+id/btnScoreShowSupportAudience"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
             android:layout_weight="3"
             android:background="@drawable/animationbuttonyellow"
-            android:text="2.000"
+            android:text="@string/credit_number"
             android:textColor="#FFFF"
             android:textColorHighlight="@drawable/animationbuttonblue"
             android:textSize="23sp">
@@ -158,7 +184,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="1"
             android:background="@drawable/animationbuttonyellow"
             android:src="@drawable/ic_diamond">
@@ -181,9 +207,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="Điểm: 0"
+            android:text="@string/number_score_user_player"
             android:textColor="#D50A84"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold">
 
         </TextView>
@@ -194,9 +220,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="Câu hỏi"
+            android:text="@string/title_question"
             android:textColor="#008EFF"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold">
 
         </TextView>
@@ -209,9 +235,9 @@
             android:layout_weight="4"
             android:background="@drawable/radiusbuttonblue"
             android:gravity="center"
-            android:text="9"
+            android:text="@string/number_question"
             android:textColor="#FFFFFF"
-            android:textSize="40dp">
+            android:textSize="40sp">
 
         </Button>
 
@@ -222,8 +248,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="2.5"
             android:gravity="center"
-            android:text="Đại ngu là quốc hiệu của triều đại nào...?"
-            android:textSize="15dp">
+            android:text="@string/contain_question"
+            android:textSize="15sp">
 
         </TextView>
     </LinearLayout>
@@ -255,25 +281,66 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:text="Trợ giúp của khán giả"
+                android:text="@string/support_audience"
                 android:layout_marginBottom="5dp"
                 android:textColor="#3A103A"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnThanks"
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </com.github.mikephil.charting.charts.BarChart>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/radiusbuttonsigupblue2"
-                android:text="Xin cám ơn"
-                android:textAllCaps="false">
-            </Button>
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/FormShowChartSupportAudience"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/lineMid5SupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineMid1SupportAudience"
+        app:layout_constraintBottom_toBottomOf="@id/lineMid6SupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineMid4SupportAudience">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FormShowThanksSupportAudience"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/lineMid6SupportAudience"
+        app:layout_constraintStart_toStartOf="@id/lineMid1SupportAudience"
+        app:layout_constraintBottom_toBottomOf="@id/lineMid2SupportAudience"
+        app:layout_constraintEnd_toEndOf="@id/lineMid4SupportAudience">
+        <Button
+            android:id="@+id/btnThanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/animationbuttonblue"
+            android:text="@string/thanks_you"
+            android:textAllCaps="false">
+        </Button>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/FormSupport"
@@ -312,7 +379,7 @@
             android:id="@+id/btnSupportAudience"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="2"
             android:background="@drawable/animationbuttonyellow"
             android:src="@drawable/ic_supportaudience">
@@ -335,10 +402,9 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/animationbuttonyellow"
-            android:drawableRight="@drawable/ic_diamond"
-            android:text="100"
-            android:textSize="23dp">
+            android:drawableEnd="@drawable/ic_diamond"
+            android:text="@string/number_credit"
+            android:textSize="23sp">
         </Button>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

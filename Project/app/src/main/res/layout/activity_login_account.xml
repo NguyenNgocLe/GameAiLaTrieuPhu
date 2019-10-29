@@ -84,7 +84,7 @@
             android:id="@+id/txtUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tên đăng nhập"
+            android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
             android:layout_margin="5dp"
             android:background="@drawable/radiusedittext"
@@ -95,7 +95,7 @@
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mật khẩu"
+            android:hint="@string/hint_password"
             android:lines="1"
             android:layout_margin="5dp"
             android:inputType="textPassword"
@@ -107,7 +107,7 @@
             android:id="@+id/btnSignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đăng nhập"
+            android:text="@string/login"
             android:background="@drawable/animationbuttonblue"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="5dp"
@@ -118,17 +118,17 @@
             android:id="@+id/btnForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quên mật khẩu"
+            android:text="@string/forgot_password"
             android:background="@drawable/animationbuttongreen"
             android:layout_marginHorizontal="5dp"
             android:textAllCaps="false"
             android:layout_weight="2">
         </Button>
         <Button
-            android:id="@+id/btnSignup"
+            android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đăng Ký"
+            android:text="@string/sign_up"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/animationbuttonred"
             android:layout_marginTop="5dp"
@@ -155,18 +155,18 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_facebook"
+            android:drawableStart="@drawable/ic_facebook"
             android:drawablePadding="10dp"
-            android:text="Đăng nhập với Facebook">
+            android:text="@string/login_facebook">
         </TextView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_weight="1"
-            android:text="Đăng nhập với Skype"
+            android:text="@string/login_google"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_googleplus"
+            android:drawableStart="@drawable/ic_googleplus"
             android:drawablePadding="10dp">
         </TextView>
 

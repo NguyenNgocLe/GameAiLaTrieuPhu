@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ailatrieuphu.ManageAccount.View.ManageActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topManageAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomManageAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftManageAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightManageAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:id="@+id/FormManageAccount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="@id/bottomManageAccount"
+        app:layout_constraintEnd_toStartOf="@id/rightManageAccount"
+        app:layout_constraintStart_toStartOf="@id/leftManageAccount"
+        app:layout_constraintTop_toBottomOf="@id/topManageAccount">
+
+        <ImageView
+            android:id="@+id/imgManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginHorizontal="5dp"
+            android:padding="50dp"
+            android:src="@drawable/ic_userplayer">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtEditAvatarManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:text="@string/change_avatar"
+            android:textColor="#008EFF">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtUserNameManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="@string/hint_user_login"
+            android:inputType="textCapSentences"
+            android:padding="5dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtEmailManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="@string/email"
+            android:inputType="textCapSentences"
+            android:lines="1"
+            android:padding="5dp"
+            tools:ignore="TextFields">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtPasswordManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="5dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtConfirmPasswordManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiusedittext"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="5dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btnUpdateManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/animationbuttonblue"
+            android:inputType="textCapSentences"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextViewEdits">
+        </Button>
+    </LinearLayout>
+    <!--     update code layout-->
+</androidx.constraintlayout.widget.ConstraintLayout>
