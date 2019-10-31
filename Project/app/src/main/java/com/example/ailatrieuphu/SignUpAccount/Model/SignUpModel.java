@@ -1,21 +1,18 @@
 package com.example.ailatrieuphu.SignUpAccount.Model;
 
-import android.widget.Button;
+public class SignUpModel implements ISignUp{
 
-public class SignupModel {
-    private String nameLogin, EmailLogin, Password, cofirmPassword;
-    private Button Signup;
+    private String nameLogin, EmailLogin, Password, conFirmPassword;
 
-    public SignupModel(){
+    public SignUpModel() {
 
     }
 
-    public SignupModel(String nameLogin, String emailLogin, String password, String cofirmPassword, Button signup) {
+    public SignUpModel(String nameLogin, String emailLogin, String password, String conFirmPassword) {
         this.nameLogin = nameLogin;
         EmailLogin = emailLogin;
         Password = password;
-        this.cofirmPassword = cofirmPassword;
-        Signup = signup;
+        this.conFirmPassword = conFirmPassword;
     }
 
     public String getNameLogin() {
@@ -43,18 +40,13 @@ public class SignupModel {
     }
 
     public String getCofirmPassword() {
-        return cofirmPassword;
+        return conFirmPassword;
     }
 
-    public void setCofirmPassword(String cofirmPassword) {
-        this.cofirmPassword = cofirmPassword;
-    }
+    public void setCofirmPassword(String conFirmPassword) { this.conFirmPassword = conFirmPassword; }
 
-    public Button getSignup() {
-        return Signup;
-    }
+    @Override
+    public void AddSignUpAccount() {
 
-    public void setSignup(Button signup) {
-        Signup = signup;
     }
 }

@@ -24,6 +24,6 @@ public class LoginModel {
     public void setCurrentPassword(String currentPassword) { this.currentPassword = currentPassword; }
 
     public void addUserAccount(){
-
+        // add user account into database
     }
 }

@@ -1,14 +1,15 @@
 package com.example.ailatrieuphu.SignUpAccount.Presenter;
 
-import com.example.ailatrieuphu.SignUpAccount.Model.SignupModel;
+import com.example.ailatrieuphu.SignUpAccount.Model.SignUpModel;
 import com.example.ailatrieuphu.SignUpAccount.View.SignUpView;
 
 public class SignUpPresenterImp implements SignUpPresenter {
-    private SignupModel model;
+    private SignUpModel model;
     private SignUpView callBack;
 
     @Override
-    public void onButtonSignupClick() {
+    public void onButtonSignUpClick() {
 
     }
+
 }

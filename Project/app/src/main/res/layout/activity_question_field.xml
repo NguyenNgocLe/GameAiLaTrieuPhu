@@ -89,53 +89,10 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftStatus"
         app:layout_constraintTop_toBottomOf="@id/lineTopStatus">
 
-        <TextView
-            android:id="@+id/txtUserName"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginRight="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/radiusbuttonsigupblue2"
-            android:gravity="center"
-            android:text="Nnle"
-            android:textSize="23sp">
-        </TextView>
+        <include
+            layout="@layout/activity_header">
+        </include>
 
-        <ImageButton
-            android:id="@+id/imgHeart"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_weight="4"
-            android:background="@drawable/animationbuttonblue"
-            android:src="@drawable/ic_heartavailable">
-        </ImageButton>
-
-        <Button
-            android:id="@+id/btnScore"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="45dp"
-            android:layout_weight="3"
-            android:background="@drawable/animationbuttonyellow"
-            android:text="@string/credit_number"
-            android:textColor="#FFFF"
-            android:textColorHighlight="@drawable/animationbuttonblue"
-            android:textSize="23sp">
-        </Button>
-
-        <ImageButton
-            android:id="@+id/btnCreditQuestionField"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_diamond">
-        </ImageButton>
     </LinearLayout>
 
     <LinearLayout
