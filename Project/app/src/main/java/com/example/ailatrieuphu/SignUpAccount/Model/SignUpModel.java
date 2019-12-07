@@ -1,6 +1,6 @@
 package com.example.ailatrieuphu.SignUpAccount.Model;
 
-public class SignUpModel implements ISignUp{
+public class SignUpModel /*implements ISignUp*/ {
 
     private String nameLogin, EmailLogin, Password, conFirmPassword;
 
@@ -43,10 +43,17 @@ public class SignUpModel implements ISignUp{
         return conFirmPassword;
     }
 
-    public void setCofirmPassword(String conFirmPassword) { this.conFirmPassword = conFirmPassword; }
-
-    @Override
-    public void AddSignUpAccount() {
-
+    public void setCofirmPassword(String conFirmPassword) {
+        this.conFirmPassword = conFirmPassword;
     }
+
+    // @Override
+//    public void AddSignUpAccount() {
+//        new apiAsyncTask(this, NetworkUtils.GET, null){
+//            @Override
+//            public void xuly(Context context, String json) {
+//                // xu ly du lieu o day
+//            }
+//        }.execute("");
+//    }
 }

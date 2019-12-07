@@ -1,5 +1,8 @@
 package com.example.ailatrieuphu.LoginScreen.View;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,8 +11,18 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ailatrieuphu.Dialog.CustomDialog;
 import com.example.ailatrieuphu.LoginScreen.Presenter.LoginPresenterImp;
+import com.example.ailatrieuphu.MainActivity.View.MainActivity;
 import com.example.ailatrieuphu.R;
+import com.example.ailatrieuphu.SignUpAccount.View.SignUpActivity;
+import com.example.ailatrieuphu.api.apiAsyncTask;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity implements LoginView, View.OnClickListener {
 
@@ -28,8 +41,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
         buttonSignIn.setOnClickListener(this);
         buttonSignUp.setOnClickListener(this);
         textViewUserName.setOnClickListener(this);
-        textViewFacebook.setOnClickListener(this);
-        textViewGoogle.setOnClickListener(this);
+        textViewPassword.setOnClickListener(this);
+        //textViewFacebook.setOnClickListener(this);
+        //textViewGoogle.setOnClickListener(this);
     }
 
     private void initView() {
@@ -41,28 +55,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
     }
 
     @Override
-    public void showButtonSignIn() {
-        buttonSignIn.setVisibility(View.VISIBLE);
-    }
-
-    @Override
-    public void showButtonSignUp() {
-        buttonSignUp.setVisibility(View.VISIBLE);
-    }
-
-    @Override
     public void showButtonForgot() {
         buttonForgot.setVisibility(View.VISIBLE);
-    }
-
-    @Override
-    public void hideButtonSignIn() {
-        buttonSignIn.setVisibility(View.INVISIBLE);
-    }
-
-    @Override
-    public void hideButtonSignUp() {
-        buttonSignUp.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -86,11 +80,69 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
     }
 
     @Override
+    public void handlingLogin() {
+
+        String userName = textViewUserName.getText().toString().trim();
+        String password = textViewPassword.getText().toString().trim();
+        // kiểm tra tên đăng nhập và mật khẩu có trống hay không
+        loginPresenterImp.checkUserLogin(userName, password);
+
+        Map<String, String> paramets = new HashMap<>();
+        paramets.put("ten_dang_nhap", userName);
+        paramets.put("mat_khau", password);
+
+        // lấy api gọi hàm progressbar
+        @SuppressLint("StaticFieldLeak") apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(this, "POST", paramets, "Đăng nhập", "Chờ chút nha...") {
+            @Override
+            public void xuly(Context context, String json) {
+
+                try {
+                    JSONObject jsonObject = new JSONObject(json);
+                    //Log.d("json",json);
+                    Intent intent = new Intent(context, MainActivity.class);
+                    // gửi dữ liệu của người dùng qua màn hình activity khác bằng string (vì api là json cần phải chuyển sang string
+                    // mới nhận được dữ liệu
+                    intent.putExtra("nguoi_dung", jsonObject.getJSONObject("data").toString());
+                    startActivity(intent);
+                    //Log.d("abc", jsonObject.getJSONObject("data").toString());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        apiAsyncTask_call_api.execute("nguoi-choi/kiem-tra-dang-nhap");
+    }
+
+    public void handlingSignup() {
+        // class login gọi đến class signup
+        Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void showAccountFailed() {
+        new CustomDialog(this, "Thông báo!", "Tên đăng nhập hoặc mật khẩu không được trống!", "Thoát", CustomDialog.SIZE_M).show();
+        Toast.makeText(this, "user name or password is not null!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void loginSuccess() {
+        new CustomDialog(this, "Thông báo!", "Đăng nhập thành công!", "OK", CustomDialog.SIZE_M).show();
+        Toast.makeText(this, "Login success!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void loginFailed() {
+        new CustomDialog(this, "Thông báo ", "Đăng nhập thất bại!", "Thoát", CustomDialog.SIZE_M).show();
+        //Toast.makeText(this, "Đăng nhập thất bại!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
             case R.id.btnSignin: {
-                loginPresenterImp.onButtonSignInClick();
+                handlingLogin();
                 break;
             }
             case R.id.btnForgotPassword: {
@@ -98,12 +150,22 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
                 break;
             }
             case R.id.btnSignUp: {
-                loginPresenterImp.onButtonSignUpClick();
+                handlingSignup();
                 break;
             }
-//            case: {
-//                break;
-//            }
+            default: {
+                break;
+            }
         }
+    }
+
+    public void btnLogin(View view) {
+        // nhảy vào case để khi người dùng nhập tên đăng nhập và mật khẩu thì sẽ login vào hệ thống khi nhấn
+        // button đăng nhập
+    }
+
+    public void btnSignup(View view) {
+        // nhảy vào case để khi người dùng nhập tên đăng ký và mật khẩu thì sẽ login vào hệ thống khi nhấn
+        // button đăng ký
     }
 }
