@@ -1,5 +1,6 @@
 package com.example.ailatrieuphu.SignUpAccount.Presenter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
@@ -27,7 +28,7 @@ public class SignUpPresenterImp  {
         } else {
             Log.d("object", nguoi_dung.toString());
             SignUpModel.addSignUpAccount(context ,nguoi_dung);
-
+            ((Activity)context).finish(); // tắt màn hình hiện tại và chuyển qua màn hình login
         }
     }
 

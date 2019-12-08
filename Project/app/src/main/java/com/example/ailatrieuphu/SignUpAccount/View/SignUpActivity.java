@@ -37,9 +37,6 @@ public class SignUpActivity extends AppCompatActivity implements  View.OnClickLi
         edtPathImage = findViewById(R.id.imgSignUp);
         mBtnSignUp = findViewById(R.id.btnSignUpAccount);
         mBtnSignUp.setOnClickListener(this);
-
-
-
     }
 
     @Override
@@ -132,5 +129,4 @@ public class SignUpActivity extends AppCompatActivity implements  View.OnClickLi
 //    public void setEdtUsernameLogin(String s) {
 //        edtUserNameLogin.setText(s);
 //    }
-
 }

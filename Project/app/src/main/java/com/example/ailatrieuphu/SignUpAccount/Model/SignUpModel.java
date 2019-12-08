@@ -16,15 +16,15 @@ import java.util.Map;
 public class SignUpModel {
 
 
-    public static void addSignUpAccount(Context context ,User nguoi_dung) {
+    public static void addSignUpAccount(Context context, User nguoi_dung) {
         Map<String, String> paramets = new HashMap<>();
         paramets.put("ten_dang_nhap", nguoi_dung.getUsername());
         paramets.put("email", nguoi_dung.getEmail());
         paramets.put("mat_khau", nguoi_dung.getPassword());
 
-         //lấy api gọi hàm xử lý đưa dữ liệu lên để đăng ký tài khoản
+        //lấy api gọi hàm xử lý đưa dữ liệu lên để đăng ký tài khoản
         Log.d("api", paramets + "");
-         apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(context, "POST", paramets, "Đăng ký", "Chờ xíu nha...") {
+        apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(context, "POST", paramets, "Đăng ký", "Chờ xíu nha...") {
 
             @Override
             public void xuLy(Context context, String json) {
