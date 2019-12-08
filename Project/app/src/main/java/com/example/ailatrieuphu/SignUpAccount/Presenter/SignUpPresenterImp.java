@@ -31,13 +31,13 @@ public class SignUpPresenterImp implements SignUpPresenter {
 
     @Override
     public void checkDataSignUpAndSync(UserAccount userAccount) {
-        if (userAccount.isEmpty()) {
-            Log.d("loine", "loine");
+        //Log.d("object", userAccount.toString());
+        if (userAccount.empty() || !(userAccount.getPassword().equals(userAccount.getPrePassword()))) {
             signUpView.signUpFailed();
         } else {
             Log.d("dangky", "thanh cong");
             signUpView.signUpSuccess();
-            //model.addSignUpAccount(context);
+            model.addSignUpAccount(context);
         }
     }
 

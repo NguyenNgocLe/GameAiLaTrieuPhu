@@ -36,7 +36,7 @@ public class UserAccount {
     }
 
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
@@ -51,8 +51,8 @@ public class UserAccount {
         this.prePassword = prePassword;
     }
 
-    public boolean isEmpty() {
-        return (userName.isEmpty() || email.isEmpty() || password.isEmpty() || prePassword.isEmpty() || pathImage.isEmpty());
+    public boolean empty() {
+        return (userName.equals("") || email.equals("") || password.equals("") || prePassword.equals(""));
     }
 
     public boolean isConfirmPassCorrect(String prePassword, String password) {

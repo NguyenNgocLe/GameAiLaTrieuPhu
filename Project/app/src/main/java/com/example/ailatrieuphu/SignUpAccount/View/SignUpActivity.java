@@ -83,6 +83,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpView, Vie
 
     @Override
     public void signUpFailed() {
+       // Log.d("loioday","ccbskdfj");
         new CustomDialog(this, "Thông báo", "Đăng ký thất bại!", "Cancel", CustomDialog.SIZE_M).show();
     }
 
