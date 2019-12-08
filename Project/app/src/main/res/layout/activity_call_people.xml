@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CallPeople.View.CallAcitivity">
+    tools:context=".Controller.CallAcitivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusCallPeople"

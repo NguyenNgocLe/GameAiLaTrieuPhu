@@ -14,69 +14,69 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.example.ailatrieuphu.ManageAccount.View.ManageActivity"
+            android:name="com.example.ailatrieuphu.Controller.ManageActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".ChooseAnswer.View.ChooseActivity"
+            android:name=".Controller.ChooseActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".RightAnswer.View.RightActivity"
+            android:name=".Controller.RightActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".WrongAnswer.View.WrongActivity"
+            android:name=".Controller.WrongActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".SupportAudience.View.SupportActivity"
+            android:name=".Controller.SupportActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".CallPeople.View.CallAcitivity"
+            android:name=".Controller.CallAcitivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".EndPlay.View.EndActivity"
+            android:name=".Controller.EndActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".RankPlayer.View.RankAcitivity"
+            android:name=".Controller.RankAcitivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".HistoryPlayer.View.HistoryActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
-
-        <activity
-            android:name=".BuyCredit.View.BuyActivity"
+            android:name=".Controller.HistoryActivity"
             android:screenOrientation="portrait">
 
         </activity>
 
         <activity
-            android:name=".ShowQuestion.View.ShowActivity"
+            android:name=".Controller.BuyActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Controller.ShowActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".QuestionField.View.QuestionActivity"
+            android:name=".Controller.QuestionActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".LoginScreen.View.LoginActivity"
+            android:name=".Controller.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,16 +84,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUpAccount.View.SignUpActivity"
+            android:name=".Controller.SignUpActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".ForgotPassword.View.ForgotActivity"
+            android:name=".Controller.ForgotActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MainActivity.View.MainActivity"
+            android:name=".Controller.MainActivity"
             android:screenOrientation="portrait">
 
         </activity>

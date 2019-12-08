@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowQuestion.View.ShowActivity">
+    tools:context=".Controller.ShowActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusQuestion"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ailatrieuphu.ManageAccount.View.ManageActivity">
+    tools:context="com.example.ailatrieuphu.Controller.ManageActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/topManageAccount"

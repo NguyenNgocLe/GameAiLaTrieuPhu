@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EndPlay.View.EndActivity">
+    tools:context=".Controller.EndActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusEndPlay"
