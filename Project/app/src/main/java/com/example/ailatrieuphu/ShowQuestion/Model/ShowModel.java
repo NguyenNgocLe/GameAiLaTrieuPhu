@@ -11,7 +11,6 @@ public class ShowModel {
     private ImageButton imbLifePlayer;
     private TextView txtQuestion, txtTimeAnswer, txtScorePlayer, txtUserNamePlayer;
     private ProgressBar psbAnimationTime;
-
     //
     public ShowModel() {
 

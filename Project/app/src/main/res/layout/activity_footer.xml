@@ -1,0 +1,61 @@
+<LinearLayout android:id="@+id/FormSupportQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/btnUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/animationbuttonyellow"
+        android:src="@drawable/ic_undo">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnFiftyPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/animationbuttonyellow"
+        android:src="@drawable/ic_fiftyprecent">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnSupportAudience"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/animationbuttonyellow"
+        android:src="@drawable/ic_supportaudience">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnCallPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@drawable/animationbuttonyellow"
+        android:src="@drawable/ic_call2">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/btnCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:drawableEnd="@drawable/ic_diamond"
+        android:background="@drawable/animationbuttonyellow"
+        android:text="@string/number_credit"
+        android:textSize="23sp">
+    </Button>
+</LinearLayout>

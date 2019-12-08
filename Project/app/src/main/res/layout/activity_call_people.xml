@@ -7,7 +7,7 @@
     tools:context=".CallPeople.View.CallAcitivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTopStatusSupportAudience"
+        android:id="@+id/lineTopStatusCallPeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineTopSupportAudience"
+        android:id="@+id/lineTopCallPeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -25,7 +25,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMidSupportAudience"
+        android:id="@+id/lineMidCallPeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -34,7 +34,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid2SupportAudience"
+        android:id="@+id/lineMid2CallPeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -43,7 +43,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineMid3SupportAudience"
+        android:id="@+id/lineMid3CallPeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -52,7 +52,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineBottomSupportAudience"
+        android:id="@+id/lineBottomCallPeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -61,7 +61,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineLeftStatusSupportAudience"
+        android:id="@+id/lineLeftStatusCallPeople"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -70,7 +70,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineLeftSupportAudience"
+        android:id="@+id/lineLeftCallPeople"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -79,7 +79,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineRightSupportAudience"
+        android:id="@+id/lineRightCallPeople"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -88,7 +88,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineRightStatusSupportAudience"
+        android:id="@+id/lineRightStatusCallPeople"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -97,62 +97,18 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <LinearLayout
-        android:id="@+id/FormStatusSupportAudience"
+        android:id="@+id/FormStatusCallPeople"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/lineTopSupportAudience"
-        app:layout_constraintEnd_toStartOf="@id/lineRightStatusSupportAudience"
-        app:layout_constraintStart_toStartOf="@id/lineLeftStatusSupportAudience"
-        app:layout_constraintTop_toBottomOf="@id/lineTopStatusSupportAudience">
+        app:layout_constraintBottom_toTopOf="@id/lineTopCallPeople"
+        app:layout_constraintEnd_toStartOf="@id/lineRightStatusCallPeople"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusCallPeople"
+        app:layout_constraintTop_toBottomOf="@id/lineTopStatusCallPeople">
 
-        <TextView
-            android:id="@+id/txtUserNameShowSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/radiusbuttonsigupblue2"
-            android:gravity="center"
-            android:text="@string/username_player"
-            android:textSize="23sp">
-        </TextView>
-
-        <ImageButton
-            android:id="@+id/imgHeartShowSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_weight="4"
-            android:background="@drawable/animationbuttonblue"
-            android:src="@drawable/ic_heartavailable">
-        </ImageButton>
-
-        <Button
-            android:id="@+id/btnScoreShowSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="45dp"
-            android:layout_weight="3"
-            android:background="@drawable/animationbuttonyellow"
-            android:text="@string/credit_number"
-            android:textColor="#FFFF"
-            android:textColorHighlight="@drawable/animationbuttonblue"
-            android:textSize="23sp">
-        </Button>
-
-        <ImageButton
-            android:id="@+id/btnCreditShowSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_diamond">
-        </ImageButton>
+        <include
+            layout="@layout/activity_header">
+        </include>
 
     </LinearLayout>
 
@@ -161,62 +117,15 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/lineMidSupportAudience"
-        app:layout_constraintEnd_toEndOf="@id/lineRightSupportAudience"
-        app:layout_constraintStart_toStartOf="@id/lineLeftSupportAudience"
-        app:layout_constraintTop_toBottomOf="@id/lineTopSupportAudience">
+        app:layout_constraintBottom_toTopOf="@id/lineMidCallPeople"
+        app:layout_constraintEnd_toEndOf="@id/lineRightCallPeople"
+        app:layout_constraintStart_toStartOf="@id/lineLeftCallPeople"
+        app:layout_constraintTop_toBottomOf="@id/lineTopCallPeople">
 
-        <TextView
-            android:id="@+id/txtScoreSupportAudience"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="@string/number_score_user_player"
-            android:textColor="#D50A84"
-            android:textSize="30sp"
-            android:textStyle="bold">
+        <include
+            layout="@layout/activity_number_question">
+        </include>
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/txtNumberSupportAudience"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text="@string/title_question"
-            android:textColor="#008EFF"
-            android:textSize="20sp"
-            android:textStyle="bold">
-
-        </TextView>
-
-        <Button
-            android:id="@+id/edtNumberSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="4"
-            android:background="@drawable/radiusbuttonblue"
-            android:gravity="center"
-            android:text="@string/number_question_exists"
-            android:textColor="#FFFFFF"
-            android:textSize="40sp">
-
-        </Button>
-
-        <TextView
-            android:id="@+id/txtQuestionSupportAudience"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="2.5"
-            android:gravity="center"
-            android:text="@string/contain_question"
-            android:textSize="15sp">
-
-        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -225,10 +134,10 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineMid2SupportAudience"
-        app:layout_constraintEnd_toEndOf="@id/lineRightSupportAudience"
-        app:layout_constraintStart_toStartOf="@id/lineLeftSupportAudience"
-        app:layout_constraintTop_toBottomOf="@id/lineMidSupportAudience"
+        app:layout_constraintBottom_toTopOf="@id/lineMid2CallPeople"
+        app:layout_constraintEnd_toEndOf="@id/lineRightCallPeople"
+        app:layout_constraintStart_toStartOf="@id/lineLeftCallPeople"
+        app:layout_constraintTop_toBottomOf="@id/lineMidCallPeople"
         android:background="@drawable/boxshadow">
 
         <TextView
@@ -273,63 +182,14 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:weightSum="10"
-        app:layout_constraintBottom_toTopOf="@id/lineBottomSupportAudience"
-        app:layout_constraintEnd_toEndOf="@id/lineRightSupportAudience"
-        app:layout_constraintStart_toStartOf="@id/lineLeftSupportAudience"
-        app:layout_constraintTop_toBottomOf="@id/lineMid3SupportAudience">
+        app:layout_constraintBottom_toTopOf="@id/lineBottomCallPeople"
+        app:layout_constraintEnd_toEndOf="@id/lineRightStatusCallPeople"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusCallPeople"
+        app:layout_constraintTop_toBottomOf="@id/lineMid3CallPeople">
 
-        <ImageButton
-            android:id="@+id/btnUndo"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_undo">
+        <include
+            layout="@layout/activity_footer">
+        </include>
 
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/btnFiftyPercent"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_fiftyprecent">
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/btnSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_supportaudience">
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/btnCallPeople"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_call2">
-        </ImageButton>
-
-        <Button
-            android:id="@+id/btnCredit"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:drawableEnd="@drawable/ic_diamond"
-            android:background="@drawable/animationbuttonyellow"
-            android:text="@string/number_credit"
-            android:textSize="23sp">
-        </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

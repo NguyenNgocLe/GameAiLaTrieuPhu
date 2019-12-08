@@ -3,21 +3,20 @@ package com.example.ailatrieuphu.LoginScreen.Presenter;
 import com.example.ailatrieuphu.LoginScreen.Model.LoginModel;
 import com.example.ailatrieuphu.LoginScreen.View.LoginView;
 
-public class LoginPresenterImp implements LoginPresenter {
+public class LoginPresenterImp implements LoginPresenter, LoginView {
+
+    LoginView loginView;
 
     private LoginModel model;
     private LoginView view;
 
-
-    public LoginPresenterImp(LoginView view) {
-        model = new LoginModel();
-        this.view = view;
+    public LoginPresenterImp(LoginView loginView) {
+        this.loginView = loginView;
     }
 
     @Override
     public void onButtonSignInClick() {
         view.showToast("name: " + model.getCurrentName() + "\npass: " + model.getCurrentPassword());
-        view.hideButtonForgot();
     }
 
     @Override
@@ -30,6 +29,15 @@ public class LoginPresenterImp implements LoginPresenter {
     @Override
     public void onButtonForgotClick() {
 
+    }
+
+    @Override
+    public void checkUserLogin(String userName, String password) {
+        if (userName.isEmpty() || password.isEmpty()) {
+            loginView.showAccountFailed();
+        } else {
+            loginView.loginFailed();
+        }
     }
 
     @Override
@@ -57,6 +65,51 @@ public class LoginPresenterImp implements LoginPresenter {
 
     @Override
     public void onTextViewGoogleSignInClick() {
+
+    }
+
+    @Override
+    public void showButtonForgot() {
+
+    }
+
+    @Override
+    public void hideButtonForgot() {
+
+    }
+
+    @Override
+    public void showToast(String text) {
+
+    }
+
+    @Override
+    public String getTextName() {
+        return null;
+    }
+
+    @Override
+    public String getPassword() {
+        return null;
+    }
+
+    @Override
+    public void handlingLogin() {
+
+    }
+
+    @Override
+    public void showAccountFailed() {
+
+    }
+
+    @Override
+    public void loginSuccess() {
+
+    }
+
+    @Override
+    public void loginFailed() {
 
     }
 }

@@ -1,0 +1,54 @@
+<LinearLayout android:id="@+id/FormStatusQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtUserNameShowQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/radiusbuttonsigupblue2"
+        android:gravity="center"
+        android:text="@string/username_player"
+        android:textSize="23sp">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imgHeartShowQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_weight="4"
+        android:background="@drawable/animationbuttonblue"
+        android:src="@drawable/ic_heartavailable">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/btnScoreShowQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="45dp"
+        android:layout_weight="3"
+        android:background="@drawable/animationbuttonyellow"
+        android:text="@string/credit_number"
+        android:textColor="#FFFF"
+        android:textColorHighlight="@drawable/animationbuttonblue"
+        android:textSize="23sp">
+    </Button>
+
+    <ImageButton
+        android:id="@+id/btnCreditShowQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/animationbuttonyellow"
+        android:src="@drawable/ic_diamond">
+    </ImageButton>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout android:id="@+id/FormNumberQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtScoreQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/number_score_user_player"
+        android:textColor="#D50A84"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtQuestionNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="@string/title_question"
+        android:textColor="#008EFF"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/edtNumberQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4"
+        android:background="@drawable/radiusbuttonblue"
+        android:gravity="center"
+        android:text="@string/number_question"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:text="@string/contain_question"
+        android:textSize="15sp">
+
+    </TextView>
+</LinearLayout>

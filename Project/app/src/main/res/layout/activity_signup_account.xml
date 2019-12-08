@@ -7,7 +7,7 @@
     tools:context=".SignUpAccount.View.SignUpActivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/topSignup"
+        android:id="@+id/topSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bottomSignup"
+        android:id="@+id/bottomSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -25,7 +25,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/leftSignup"
+        android:id="@+id/leftSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -34,7 +34,7 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/rightSignup"
+        android:id="@+id/rightSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -43,28 +43,29 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <LinearLayout
-        android:id="@+id/FormSignup"
+        android:id="@+id/FormSignUp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:weightSum="10"
-        app:layout_constraintBottom_toBottomOf="@id/bottomSignup"
-        app:layout_constraintEnd_toStartOf="@id/rightSignup"
-        app:layout_constraintStart_toStartOf="@id/leftSignup"
-        app:layout_constraintTop_toBottomOf="@id/topSignup">
+        app:layout_constraintBottom_toBottomOf="@id/bottomSignUp"
+        app:layout_constraintEnd_toStartOf="@id/rightSignUp"
+        app:layout_constraintStart_toStartOf="@id/leftSignUp"
+        app:layout_constraintTop_toBottomOf="@id/topSignUp">
 
         <ImageView
-            android:id="@+id/imgSignup"
+            android:id="@+id/imgSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="5"
+            android:clickable="true"
+            android:focusable="true"
             android:padding="50dp"
             android:src="@drawable/ic_userplayer">
-
         </ImageView>
 
         <EditText
-            android:id="@+id/txtUserNameSignup"
+            android:id="@+id/edtUserNameSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -78,7 +79,7 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txtEmailSignup"
+            android:id="@+id/edtEmailSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -94,7 +95,7 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txtPasswordSignup"
+            android:id="@+id/edtPasswordSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -109,7 +110,7 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txtConfirmPasswordSignup"
+            android:id="@+id/edtConfirmPasswordSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -124,7 +125,7 @@
         </EditText>
 
         <Button
-            android:id="@+id/btnSignupAccount"
+            android:id="@+id/btnSignUpAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"

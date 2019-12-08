@@ -1,0 +1,3 @@
++ Khi đưa dữ liệu người dùng đăng ký từ app lên cho serve thì serve sẽ xử lý tất cả các
+trường hợp lỗi có thể xãy ra. Ví dụ như tên đăng nhập đã tồn tại ....
++ App chỉ xử lý việc người dùng thao tác nhập đủ các trường dữ liệu lên cho serve việc còn lại serve sẽ xử lý

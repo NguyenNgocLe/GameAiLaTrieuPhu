@@ -104,10 +104,11 @@
         </EditText>
 
         <Button
-            android:id="@+id/btnSignin"
+            android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login"
+            android:onClick="btnLogin"
             android:background="@drawable/animationbuttonblue"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="5dp"
@@ -129,6 +130,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
+            android:onClick="btnSignUp"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/animationbuttonred"
             android:layout_marginTop="5dp"

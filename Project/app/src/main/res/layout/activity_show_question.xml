@@ -105,53 +105,11 @@
         app:layout_constraintEnd_toStartOf="@id/lineRightStatusQuestion"
         app:layout_constraintStart_toStartOf="@id/lineLeftStatusQuestion"
         app:layout_constraintTop_toBottomOf="@id/lineTopStatusQuestion">
-        <TextView
-            android:id="@+id/txtUserNameShowQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/radiusbuttonsigupblue2"
-            android:gravity="center"
-            android:text="@string/username_player"
-            android:textSize="23sp">
-        </TextView>
 
-        <ImageButton
-            android:id="@+id/imgHeartShowQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_weight="4"
-            android:background="@drawable/animationbuttonblue"
-            android:src="@drawable/ic_heartavailable">
-        </ImageButton>
+        <include
+            layout="@layout/activity_header">
+        </include>
 
-        <Button
-            android:id="@+id/btnScoreShowQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="45dp"
-            android:layout_weight="3"
-            android:background="@drawable/animationbuttonyellow"
-            android:text="@string/credit_number"
-            android:textColor="#FFFF"
-            android:textColorHighlight="@drawable/animationbuttonblue"
-            android:textSize="23sp">
-        </Button>
-
-        <ImageButton
-            android:id="@+id/btnCreditShowQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_diamond">
-        </ImageButton>
     </LinearLayout>
 
     <LinearLayout
@@ -164,57 +122,10 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
         app:layout_constraintTop_toBottomOf="@id/lineTopQuestion">
 
-        <TextView
-            android:id="@+id/txtScoreQuestion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="@string/number_score_user_player"
-            android:textColor="#D50A84"
-            android:textSize="30sp"
-            android:textStyle="bold">
+       <include
+           layout="@layout/activity_number_question">
+       </include>
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/txtQuestionNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text="@string/title_question"
-            android:textColor="#008EFF"
-            android:textSize="20sp"
-            android:textStyle="bold">
-
-        </TextView>
-
-        <Button
-            android:id="@+id/edtNumberQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="4"
-            android:background="@drawable/animationbuttonblue"
-            android:gravity="center"
-            android:text="@string/number_question"
-            android:textColor="#FFFFFF"
-            android:textSize="40sp">
-
-        </Button>
-
-        <TextView
-            android:id="@+id/txtQuestion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="2.5"
-            android:gravity="center"
-            android:text="@string/contain_question"
-            android:textSize="15sp">
-
-        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -228,65 +139,9 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
         app:layout_constraintTop_toBottomOf="@id/lineMidQuestion">
 
-        <Button
-            android:id="@+id/btnAnswerA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="2"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:gravity="center"
-            android:background="@drawable/animationbuttonblue2"
-            android:text="@string/answer_a"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
-
-        <Button
-            android:id="@+id/btnAnswerB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:background="@drawable/animationbuttonblue2"
-            android:text="@string/answer_b"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
-
-        <Button
-            android:id="@+id/btnAnswerC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:background="@drawable/animationbuttonblue2"
-            android:text="@string/answer_c"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
-
-        <Button
-            android:id="@+id/btnAnswerD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:background="@drawable/animationbuttonblue2"
-            android:text="@string/answer_d"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF">
-        </Button>
+        <include
+            layout="@layout/activity_answer">
+        </include>
 
     </LinearLayout>
 
@@ -322,63 +177,14 @@
         android:orientation="horizontal"
         android:weightSum="10"
         app:layout_constraintBottom_toTopOf="@id/lineBottomQuestion"
-        app:layout_constraintEnd_toEndOf="@id/lineRightQuestion"
-        app:layout_constraintStart_toStartOf="@id/lineLeftQuestion"
+        app:layout_constraintEnd_toEndOf="@id/lineRightStatusQuestion"
+        app:layout_constraintStart_toStartOf="@id/lineLeftStatusQuestion"
         app:layout_constraintTop_toBottomOf="@id/lineMid3Question">
 
-        <ImageButton
-            android:id="@+id/btnUndo"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:layout_weight="2"
-           android:src="@drawable/ic_undo"
-            android:background="@drawable/animationbuttonyellow">
+       <include
+           layout="@layout/activity_footer">
+       </include>
 
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/btnFiftyPercent"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/ic_fiftyprecent"
-            android:background="@drawable/animationbuttonyellow"
-            android:layout_weight="2">
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/btnSupportAudience"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="5dp"
-            android:src="@drawable/ic_supportaudience"
-            android:background="@drawable/animationbuttonyellow"
-            android:layout_weight="2">
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/btnCallPeople"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_call2"
-            android:background="@drawable/animationbuttonyellow"
-            android:layout_weight="3">
-        </ImageButton>
-
-        <Button
-            android:id="@+id/btnCredit"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:drawableEnd="@drawable/ic_diamond"
-            android:background="@drawable/animationbuttonyellow"
-            android:text="@string/number_credit"
-            android:textSize="23sp">
-        </Button>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
