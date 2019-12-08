@@ -95,7 +95,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
         @SuppressLint("StaticFieldLeak") apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(this, "POST", paramets, "Đăng nhập", "Chờ chút nha...") {
             @Override
             public void xuLy(Context context, String json) {
-
                 try {
                     JSONObject jsonObject = new JSONObject(json);
                     //Log.d("json",json);
@@ -122,13 +121,13 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
     @Override
     public void showAccountFailed() {
         new CustomDialog(this, "Thông báo!", "Tên đăng nhập hoặc mật khẩu không được trống!", "Thoát", CustomDialog.SIZE_M).show();
-        Toast.makeText(this, "user name or password is not null!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "user name or password is not null!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void loginSuccess() {
         new CustomDialog(this, "Thông báo!", "Đăng nhập thành công!", "OK", CustomDialog.SIZE_M).show();
-        Toast.makeText(this, "Login success!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Login success!", Toast.LENGTH_SHORT).show();
     }
 
     @Override

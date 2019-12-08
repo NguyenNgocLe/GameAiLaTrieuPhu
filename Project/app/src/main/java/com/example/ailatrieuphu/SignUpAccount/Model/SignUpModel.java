@@ -1,10 +1,11 @@
 package com.example.ailatrieuphu.SignUpAccount.Model;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
+import android.util.Log;
 
-import com.example.ailatrieuphu.SignUpAccount.View.SignUpActivity;
 import com.example.ailatrieuphu.Api.apiAsyncTask;
+import com.example.ailatrieuphu.Dialog.CustomDialog;
+import com.example.ailatrieuphu.object.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,44 +15,25 @@ import java.util.Map;
 
 public class SignUpModel {
 
-    private UserAccount currentUser;
-    private Context context;
-    private SignUpActivity signUpActivity;
 
-    public SignUpModel(Context context) {
-        this.context = context;
-        currentUser = new UserAccount();
-        signUpActivity = new SignUpActivity();
-    }
-
-    public UserAccount getCurrentUser() {
-        return currentUser;
-    }
-
-    public void setCurrentUser(String nameLogin, String emailLogin, String password, String conFirmPassword) {
-        this.currentUser.setUserName(nameLogin);
-        this.currentUser.setEmail(emailLogin);
-        this.currentUser.setPassword(password);
-        this.currentUser.setPrePassword(conFirmPassword);
-    }
-
-    public void addSignUpAccount(Context context) {
+    public static void addSignUpAccount(Context context ,User nguoi_dung) {
         Map<String, String> paramets = new HashMap<>();
-        paramets.put("ten_dang_nhap", currentUser.getUserName());
-        paramets.put("email", currentUser.getEmail());
-        paramets.put("mat_khau", currentUser.getPassword());
-        //paramets.put("hinh_dai_dien", currentUser.getPathImage());
-        // lấy api gọi hàm xử lý đưa dữ liệu lên để đăng ký tài khoản
-        @SuppressLint("StaticFieldLeak") apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(context, "POST", paramets, "Đăng ký", "Chờ xíu nha...") {
+        paramets.put("ten_dang_nhap", nguoi_dung.getUsername());
+        paramets.put("email", nguoi_dung.getEmail());
+        paramets.put("mat_khau", nguoi_dung.getPassword());
+
+         //lấy api gọi hàm xử lý đưa dữ liệu lên để đăng ký tài khoản
+        Log.d("api", paramets + "");
+         apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(context, "POST", paramets, "Đăng ký", "Chờ xíu nha...") {
 
             @Override
             public void xuLy(Context context, String json) {
                 try {
                     JSONObject jsonObject = new JSONObject(json);
                     if (jsonObject.getBoolean("success")) {
-                        signUpActivity.signUpSuccess();
+                        new CustomDialog(context, "Thông báo", "Đăng ký thành công!", "OK", CustomDialog.SIZE_M).show();
                     } else {
-                        signUpActivity.signUpFailed();
+                        new CustomDialog(context, "Thông báo", "Đăng ký thất bại!", "OK", CustomDialog.SIZE_M).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
