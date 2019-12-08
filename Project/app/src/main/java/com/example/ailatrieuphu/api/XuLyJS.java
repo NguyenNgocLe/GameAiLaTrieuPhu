@@ -1,7 +1,7 @@
-package com.example.ailatrieuphu.api;
+package com.example.ailatrieuphu.Api;
 
 import android.content.Context;
 
 public interface XuLyJS {
-    void xuly(Context context, String json);
+    void xuLy(Context context, String json);
 }

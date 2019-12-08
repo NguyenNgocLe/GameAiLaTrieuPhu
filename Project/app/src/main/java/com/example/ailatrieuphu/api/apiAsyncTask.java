@@ -1,4 +1,4 @@
-package com.example.ailatrieuphu.api;
+package com.example.ailatrieuphu.Api;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -14,13 +14,13 @@ public class apiAsyncTask extends AsyncTask<String, Void, String> implements XuL
     private String messages;
     ProgressDialog progressDialog;
     private boolean flagProgressBar;
-
+    // hiển thị xử lý có 4 tham số truyền vào
     public apiAsyncTask(Context context,String METHOD, Map<String, String> paramets) {
         this.METHOD = METHOD;
         this.paramets = paramets;
         this.context = context;
     }
-
+    // hiển thị thanh progressbar custom
     public apiAsyncTask(Context context,String METHOD, Map<String, String> paramets, String titleProgressbar, String messages) {
         this.METHOD = METHOD;
         this.paramets = paramets;
@@ -42,14 +42,13 @@ public class apiAsyncTask extends AsyncTask<String, Void, String> implements XuL
 
     @Override
     protected String doInBackground(String... strings) {
-
         return NetworkUtils.getJSONData(strings[0], this.METHOD, this.paramets);
     }
 
     @Override
     protected void onPostExecute(String json) {
 
-        xuly(context,json);
+        xuLy(context,json);
         // nếu progressbar chưa đc khởi tạo thì dismiss nó đi
         if(flagProgressBar){
             progressDialog.dismiss();
@@ -57,7 +56,7 @@ public class apiAsyncTask extends AsyncTask<String, Void, String> implements XuL
     }
 
     @Override
-    public void xuly(Context context, String json) {
+    public void xuLy(Context context, String json) {
 
     }
 }

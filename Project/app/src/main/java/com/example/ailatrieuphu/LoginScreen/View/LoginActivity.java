@@ -16,7 +16,7 @@ import com.example.ailatrieuphu.LoginScreen.Presenter.LoginPresenterImp;
 import com.example.ailatrieuphu.MainActivity.View.MainActivity;
 import com.example.ailatrieuphu.R;
 import com.example.ailatrieuphu.SignUpAccount.View.SignUpActivity;
-import com.example.ailatrieuphu.api.apiAsyncTask;
+import com.example.ailatrieuphu.Api.apiAsyncTask;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
 
     private void initView() {
         buttonForgot = findViewById(R.id.btnForgotPassword);
-        buttonSignIn = findViewById(R.id.btnSignin);
+        buttonSignIn = findViewById(R.id.btnSignIn);
         buttonSignUp = findViewById(R.id.btnSignUp);
         textViewUserName = findViewById(R.id.txtUserName);
         textViewPassword = findViewById(R.id.txtPassword);
@@ -94,7 +94,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
         // lấy api gọi hàm progressbar
         @SuppressLint("StaticFieldLeak") apiAsyncTask apiAsyncTask_call_api = new apiAsyncTask(this, "POST", paramets, "Đăng nhập", "Chờ chút nha...") {
             @Override
-            public void xuly(Context context, String json) {
+            public void xuLy(Context context, String json) {
 
                 try {
                     JSONObject jsonObject = new JSONObject(json);
@@ -113,8 +113,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
         apiAsyncTask_call_api.execute("nguoi-choi/kiem-tra-dang-nhap");
     }
 
-    public void handlingSignup() {
-        // class login gọi đến class signup
+    public void handlingSignUp() {
+        // class login gọi đến class signUp
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
@@ -141,7 +141,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
-            case R.id.btnSignin: {
+            case R.id.btnSignIn: {
                 handlingLogin();
                 break;
             }
@@ -150,7 +150,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
                 break;
             }
             case R.id.btnSignUp: {
-                handlingSignup();
+                handlingSignUp();
                 break;
             }
             default: {
@@ -164,8 +164,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
         // button đăng nhập
     }
 
-    public void btnSignup(View view) {
-        // nhảy vào case để khi người dùng nhập tên đăng ký và mật khẩu thì sẽ login vào hệ thống khi nhấn
-        // button đăng ký
+    public void btnSignUp(View view) {
     }
 }

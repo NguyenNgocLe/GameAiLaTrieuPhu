@@ -33,14 +33,9 @@ public class LoginPresenterImp implements LoginPresenter, LoginView {
 
     @Override
     public void checkUserLogin(String userName, String password) {
-
-        if (userName.isEmpty() || password.isEmpty()){
+        if (userName.isEmpty() || password.isEmpty()) {
             loginView.showAccountFailed();
-        }
-        else if(userName.equals("ngocle") && password.equals("123")) {
-            loginView.loginSuccess();
-        }
-        else {
+        } else {
             loginView.loginFailed();
         }
     }
