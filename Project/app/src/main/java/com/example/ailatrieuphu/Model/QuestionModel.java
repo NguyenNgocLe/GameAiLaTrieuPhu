@@ -101,4 +101,17 @@ public class QuestionModel {
     public void setLinh_vuc_id(int linh_vuc_id) {
         this.linh_vuc_id = linh_vuc_id;
     }
+
+    //
+    public int getDap_an_Number() {
+        switch (dap_an) {
+            case "A":
+                return 0;
+            case "B":
+                return 1;
+            case "C":
+                return 2;
+        }
+        return 3;
+    }
 }
