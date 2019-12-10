@@ -60,7 +60,7 @@
             android:layout_weight="4"
             android:layout_marginHorizontal="5dp"
             android:padding="50dp"
-            android:src="@drawable/ic_userplayer">
+            android:src="@drawable/ic_user_player">
         </ImageView>
 
         <TextView
@@ -80,7 +80,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:background="@drawable/radiusedittext"
+            android:background="@drawable/radius_user_edit_text"
             android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
             android:padding="5dp">
@@ -93,7 +93,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:background="@drawable/radiusedittext"
+            android:background="@drawable/radius_user_edit_text"
             android:hint="@string/email"
             android:inputType="textCapSentences"
             android:lines="1"
@@ -108,7 +108,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:background="@drawable/radiusedittext"
+            android:background="@drawable/radius_user_edit_text"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:lines="1"
@@ -122,7 +122,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:background="@drawable/radiusedittext"
+            android:background="@drawable/radius_user_edit_text"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:lines="1"

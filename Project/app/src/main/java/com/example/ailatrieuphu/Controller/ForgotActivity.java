@@ -1,82 +1,58 @@
 package com.example.ailatrieuphu.Controller;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ailatrieuphu.PresenterImp.LoginPresenterImp;
 import com.example.ailatrieuphu.R;
 
-public class ForgotActivity extends AppCompatActivity implements ForgotView {
-    private LoginPresenterImp loginPresenterImp;
-    private TextView userName, email;
-    // dang lam toi day cho gui api doi mat khau
+public class ForgotActivity extends AppCompatActivity {
+
+    private EditText edtUserName, edtEmail;
+    private Button btnLayLaiMatKhau;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
+        initial();
         //
-        initView();
     }
 
-    public ForgotActivity(TextView userName, TextView email) {
-        this.userName = userName;
-        this.email = email;
-        //loginPresenterImp = new LoginPresenterImp();
+//    public ForgotActivity(EditText edtUserName, EditText edtEmail, Button btnLayLaiMatKhau) {
+//        this.edtUserName = edtUserName;
+//        this.edtEmail = edtEmail;
+//        this.btnLayLaiMatKhau = btnLayLaiMatKhau;
+//    }
+
+    public void initial() {
+        edtUserName = findViewById(R.id.edtUserNameForgotPassword);
+        edtEmail = findViewById(R.id.edtEmailForgotPassword);
+        btnLayLaiMatKhau = findViewById(R.id.btnPasswordRetrieval);
+    }
+    public EditText getEdtUserName() {
+        return edtUserName;
     }
 
-    public ForgotActivity(int contentLayoutId, TextView userName, TextView email) {
-        super(contentLayoutId);
-        this.userName = userName;
-        this.email = email;
+    public void setEdtUserName(EditText edtUserName) {
+        this.edtUserName = edtUserName;
     }
 
-    void initView() {
-        userName = findViewById(R.id.txtUserNameForgotPassword);
-        email = findViewById(R.id.txtEmailForgotPassword);
+    public EditText getEdtEmail() {
+        return edtEmail;
     }
 
-    @Override
-    public void onClick(View view) {
-        int id = view.getId();
-        switch (id) {
-            case R.id.btnPasswordRetrieval: {
-                //
-                handlingPasswordRetrieval();
-                break;
-            }
-            default: {
-
-                break;
-            }
-        }
-
+    public void setEdtEmail(EditText edtEmail) {
+        this.edtEmail = edtEmail;
     }
 
-    @Override
-    public void handlingPasswordRetrieval() {
-        String userName = getUserName().getText().toString().trim();
-        String email = getEmail().getText().toString().trim();
-        //
-
+    public Button getBtnLayLaiMatKhau() {
+        return btnLayLaiMatKhau;
     }
 
-    public TextView getUserName() {
-        return userName;
-    }
-
-    public void setUserName(TextView userName) {
-        this.userName = userName;
-    }
-
-    public TextView getEmail() {
-        return email;
-    }
-
-    public void setEmail(TextView email) {
-        this.email = email;
+    public void setBtnLayLaiMatKhau(Button btnLayLaiMatKhau) {
+        this.btnLayLaiMatKhau = btnLayLaiMatKhau;
     }
 }

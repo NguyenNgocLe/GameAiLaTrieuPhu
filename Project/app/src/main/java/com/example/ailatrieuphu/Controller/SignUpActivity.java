@@ -4,20 +4,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ailatrieuphu.R;
-import com.example.ailatrieuphu.PresenterImp.SignUpPresenterImp;
-import com.example.ailatrieuphu.Object.User;
 
-public class SignUpActivity extends AppCompatActivity implements  View.OnClickListener {
+public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mBtnSignUp;
-    EditText edtUserNameLogin, edtEmail, edtPassword, edtPrePassword;
-    ImageView edtPathImage;
-    private User nguoi_dung;
+    private EditText edtUserNameLogin, edtEmail, edtPassword, edtPrePassword;
+    //ImageView edtPathImage;
+    //private User nguoi_dung;
 
 
     @Override
@@ -25,19 +22,19 @@ public class SignUpActivity extends AppCompatActivity implements  View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_account);
 
-        intView();
+        //intView();
     }
 
-    private void intView() {
-        edtUserNameLogin = findViewById(R.id.edtUserNameSignUp);
-        //Log.d("abc", edtUserNameLogin.toString());
-        edtEmail = findViewById(R.id.edtEmailSignUp);
-        edtPassword = findViewById(R.id.edtPasswordSignUp);
-        edtPrePassword = findViewById(R.id.edtConfirmPasswordSignUp);
-        edtPathImage = findViewById(R.id.imgSignUp);
-        mBtnSignUp = findViewById(R.id.btnSignUpAccount);
-        mBtnSignUp.setOnClickListener(this);
-    }
+//    private void intView() {
+//        edtUserNameLogin = findViewById(R.id.edtUserNameSignUp);
+//        //Log.d("abc", edtUserNameLogin.toString());
+//        edtEmail = findViewById(R.id.edtEmailSignUp);
+//        edtPassword = findViewById(R.id.edtPasswordSignUp);
+//        edtPrePassword = findViewById(R.id.edtConfirmPasswordSignUp);
+//        edtPathImage = findViewById(R.id.imgSignUp);
+//        mBtnSignUp = findViewById(R.id.btnSignUpAccount);
+//        mBtnSignUp.setOnClickListener(this);
+//    }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
@@ -51,13 +48,13 @@ public class SignUpActivity extends AppCompatActivity implements  View.OnClickLi
             case R.id.btnSignUpAccount: {
 
                 //set data
-                nguoi_dung = new User();
-                nguoi_dung.setUsername(edtUserNameLogin.getText().toString());
-                nguoi_dung.setEmail(edtEmail.getText().toString());
-                nguoi_dung.setPassword(edtPassword.getText().toString());
-                nguoi_dung.setPrePassword(edtPrePassword.getText().toString());
+//                nguoi_dung = new User();
+//                nguoi_dung.setUsername(edtUserNameLogin.getText().toString());
+//                nguoi_dung.setEmail(edtEmail.getText().toString());
+//                nguoi_dung.setPassword(edtPassword.getText().toString());
+//                nguoi_dung.setPrePassword(edtPrePassword.getText().toString());
 
-                SignUpPresenterImp.onButtonSignUpClick(this, nguoi_dung);
+               // SignUpPresenterImp.onButtonSignUpClick(this, nguoi_dung);
                 break;
             }
             default: {
@@ -65,6 +62,7 @@ public class SignUpActivity extends AppCompatActivity implements  View.OnClickLi
             }
         }
     }
+
 //
 //    @Override
 //    public void showButtonSignUpClick() {

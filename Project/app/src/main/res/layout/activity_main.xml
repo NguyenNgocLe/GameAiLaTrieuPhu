@@ -56,7 +56,7 @@
         android:id="@+id/imgLogoLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_userplayer"
+        android:src="@drawable/ic_user_player"
         app:layout_constraintBottom_toTopOf="@id/lineMidActivityMain"
         app:layout_constraintEnd_toStartOf="@id/lineRightActivityMain"
         app:layout_constraintStart_toStartOf="@id/lineLeftActivityMain"
