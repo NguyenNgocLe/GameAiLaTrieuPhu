@@ -2,7 +2,6 @@ package com.example.ailatrieuphu.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,20 +12,32 @@ import com.example.ailatrieuphu.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button btnNewGame;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    Button btnManageAccount, btnNewGame, btnPlayHistory, btnRankPlayer, btnBuyCredit;
+
     JSONObject saveJson;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //
-        initiView();
+        initialView();
     }
 
-    public void initiView() {
+    public void initialView() {
         this.btnNewGame = findViewById(R.id.btnNewGame);
+        this.btnManageAccount = findViewById(R.id.btnManageAccountLogin);
+        this.btnPlayHistory = findViewById(R.id.btnPlayHistory);
+        this.btnRankPlayer = findViewById(R.id.btnRankPlayer);
+        this.btnBuyCredit = findViewById(R.id.btnBuyCredit);
+        //
         btnNewGame.setOnClickListener(this);
+        btnManageAccount.setOnClickListener(this);
+        btnPlayHistory.setOnClickListener(this);
+        btnRankPlayer.setOnClickListener(this);
+        btnBuyCredit.setOnClickListener(this);
+        //
         Intent getJson = getIntent(); // lấy dữ liệu từ màn hình login
         getJson.getStringExtra("nguoi_dung"); // lấy đc dữ liệu của người dùng
         try {
@@ -40,10 +51,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        Log.d("debug" ,id + "");
+        //Log.d("debug", id + "");
         switch (id) {
+            case R.id.btnManageAccountLogin: {
+                handlingManageAccountLogin();
+                break;
+            }
             case R.id.btnNewGame: {
                 handlingNewGame();
+                break;
+            }
+            case R.id.btnPlayHistory: {
+                handlingPlayHistory();
+                break;
+            }
+            case R.id.btnRankPlayer: {
+                btnRankPlayer();
+                break;
+            }
+            case R.id.btnBuyCredit: {
+                btnBuyCredit();
+                break;
             }
             default: {
                 break;
@@ -51,8 +79,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public void handlingManageAccountLogin() {
+        Intent intent = new Intent(this, ManageActivity.class);
+        startActivity(intent);
+    }
+
     public void handlingNewGame() {
         Intent intent = new Intent(this, ChooseActivity.class);
+        startActivity(intent);
+    }
+
+    public void handlingPlayHistory() {
+        Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void btnRankPlayer() {
+        Intent intent = new Intent(this, RankAcitivity.class);
+        startActivity(intent);
+    }
+
+    public void btnBuyCredit() {
+        Intent intent = new Intent(this, BuyActivity.class);
         startActivity(intent);
     }
 }
