@@ -37,4 +37,5 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     // add library
     implementation 'com.github.HotBitmapGG:RingProgressbar:V1.2.2'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }

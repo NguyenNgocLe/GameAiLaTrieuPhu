@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
     private Button buttonForgot, buttonSignIn, buttonSignUp;
     private LoginPresenterImp loginPresenterImp;
     private TextView textViewUserName, textViewPassword, textViewFacebook, textViewGoogle;
-
+    public static String nguoiDung = "nguoi_dung";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +98,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
                     Intent intent = new Intent(context, MainActivity.class);
                     // gửi dữ liệu của người dùng qua màn hình activity khác bằng string (vì api là json cần phải chuyển sang string
                     // mới nhận được dữ liệu
-                    intent.putExtra("nguoi_dung", jsonObject.getJSONObject("data").toString());
+                    //Log.e("aaaa","json ok " + jsonObject.getJSONObject("data").toString());
+                    intent.putExtra(nguoiDung, jsonObject.getJSONObject("data").toString());
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();

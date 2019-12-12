@@ -1,6 +1,8 @@
 package com.example.ailatrieuphu.Controller;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +14,7 @@ import com.example.ailatrieuphu.PresenterImp.ManagePresenterImp;
 import com.example.ailatrieuphu.R;
 import com.example.ailatrieuphu.Utilities.Dialog.CustomDialog;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ManageActivity extends AppCompatActivity implements View.OnClickListener, ManageView {
@@ -20,7 +23,7 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
     private Button btnUpdateAccount;
     private ManagePresenterImp managePresenterImp;
     private User nguoi_dung;
-    JSONObject saveJsonObject;
+    private JSONObject saveJsonObject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +37,24 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void initialView() {
-        edtUserName = findViewById(R.id.txtUserNameManageAccount);
-        edtEmail = findViewById(R.id.edtEmailManageAccount);
-        edtPassword = findViewById(R.id.edtPasswordManageAccount);
-        edtPrePassword = findViewById(R.id.edtConfirmPasswordManageAccount);
-        btnUpdateAccount = findViewById(R.id.btnUpdateManageAccount);
+        this.edtUserName = findViewById(R.id.txtUserNameManageAccount);
+        this.edtEmail = findViewById(R.id.edtEmailManageAccount);
+        this.edtPassword = findViewById(R.id.edtPasswordManageAccount);
+        this.edtPrePassword = findViewById(R.id.edtConfirmPasswordManageAccount);
+        this.btnUpdateAccount = findViewById(R.id.btnUpdateManageAccount);
+        Intent intent = getIntent();
+        if (intent != null) {
+            try {
+                saveJsonObject = new JSONObject(intent.getStringExtra("nguoi_dung"));
+                //Log.e("aaaa", intent.getStringExtra("nguoi_dung"));
+                edtUserName.setText(saveJsonObject.getString("ten_dang_nhap"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        } else {
+            Log.e("aaaa", "null");
+        }
+
     }
 
     public EditText getEdtUserName() {
@@ -86,13 +102,14 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
         int id = v.getId();
         switch (id) {
             case R.id.btnUpdateManageAccount: {
+
                 nguoi_dung = new User();
                 nguoi_dung.setUsername(edtUserName.getText().toString().trim());
                 nguoi_dung.setEmail(edtEmail.getText().toString().trim());
                 nguoi_dung.setPassword(edtPassword.getText().toString().trim());
                 nguoi_dung.setPrePassword(edtPrePassword.getText().toString().trim());
                 //
-                managePresenterImp.onButtonUpdateAccountClick(this, nguoi_dung);
+                ManagePresenterImp.onButtonUpdateAccountClick(this, nguoi_dung);
             }
         }
     }
@@ -131,4 +148,11 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
         new CustomDialog(this, "Thông báo!", "Mật khẩu không trùng khớp!", "OK", CustomDialog.SIZE_M).show();
     }
 
+    public JSONObject getSaveJsonObject() {
+        return saveJsonObject;
+    }
+
+    public void setSaveJsonObject(JSONObject saveJsonObject) {
+        this.saveJsonObject = saveJsonObject;
+    }
 }

@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getJson.getStringExtra("nguoi_dung"); // lấy đc dữ liệu của người dùng
         try {
             saveJson = new JSONObject(getJson.getStringExtra("nguoi_dung"));
-            //Log.d("abc", luuJson.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        //Log.d("debug", id + "");
         switch (id) {
             case R.id.btnManageAccountLogin: {
                 handlingManageAccountLogin();
@@ -81,6 +79,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void handlingManageAccountLogin() {
         Intent intent = new Intent(this, ManageActivity.class);
+        //Log.e("aaaa","json ok " + getIntent().getStringExtra("nguoi_dung"));
+        intent.putExtra("nguoi_dung",getIntent().getStringExtra("nguoi_dung")); // gửi dữ liệu người dùng từ login sang mainactivity sang manage
         startActivity(intent);
     }
 

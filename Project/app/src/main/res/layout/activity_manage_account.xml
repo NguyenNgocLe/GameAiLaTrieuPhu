@@ -77,11 +77,11 @@
             android:id="@+id/txtUserNameManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:enabled="false"
             android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:background="@drawable/radius_user_edit_text"
+            android:enabled="false"
             android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
             android:padding="5dp">
