@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class SignUpModel {
 
-//dnG KY
+    //dang ky
     public static void addSignUpAccount(Context context, User nguoi_dung) {
         Map<String, String> paramets = new HashMap<>();
         paramets.put("ten_dang_nhap", nguoi_dung.getUsername());

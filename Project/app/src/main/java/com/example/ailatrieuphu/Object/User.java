@@ -13,6 +13,9 @@ public class User {
     public boolean isEmpty() {
         return (username.equals("") || email.equals("") || password.equals("") || prePassword.equals(""));
     }
+    public boolean isUpdateEmpty() {
+        return (username.equals("") || email.equals("") || password.equals("") || prePassword.equals(""));
+    }
 
     public User(String username, String email, String password, String prePassword) {
         this.username = username;

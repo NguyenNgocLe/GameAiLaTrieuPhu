@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_weight="4"
-        android:background="@drawable/radiusbuttonblue"
+        android:background="@drawable/radius_button_blue"
         android:gravity="center"
         android:text="@string/number_question"
         android:textColor="#FFFFFF"

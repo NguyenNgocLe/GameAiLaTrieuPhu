@@ -24,7 +24,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="5dp"
         android:layout_weight="4"
-        android:background="@drawable/animationbuttonblue"
+        android:background="@drawable/animation_button_blue"
         android:src="@drawable/ic_heartavailable">
     </ImageButton>
 
@@ -34,10 +34,10 @@
         android:layout_height="match_parent"
         android:layout_marginStart="45dp"
         android:layout_weight="3"
-        android:background="@drawable/animationbuttonyellow"
+        android:background="@drawable/animation_button_yellow"
         android:text="@string/credit_number"
         android:textColor="#FFFF"
-        android:textColorHighlight="@drawable/animationbuttonblue"
+        android:textColorHighlight="@drawable/animation_button_blue"
         android:textSize="23sp">
     </Button>
 
@@ -48,7 +48,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="5dp"
         android:layout_weight="1"
-        android:background="@drawable/animationbuttonyellow"
+        android:background="@drawable/animation_button_yellow"
         android:src="@drawable/ic_diamond">
     </ImageButton>
 </LinearLayout>

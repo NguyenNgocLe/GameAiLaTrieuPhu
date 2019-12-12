@@ -174,10 +174,10 @@
             android:layout_height="match_parent"
             android:layout_marginStart="45dp"
             android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:text="@string/credit_number"
             android:textColor="#FFFF"
-            android:textColorHighlight="@drawable/animationbuttonblue"
+            android:textColorHighlight="@drawable/animation_button_blue"
             android:textSize="23sp">
         </Button>
 
@@ -189,7 +189,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:src="@drawable/ic_diamond">
         </ImageButton>
     </LinearLayout>
@@ -243,7 +243,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -273,7 +273,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -303,7 +303,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -333,7 +333,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -363,7 +363,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -393,7 +393,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -423,7 +423,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -453,7 +453,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 
@@ -483,7 +483,7 @@
             android:text="2.000 Điểm"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:textColor="@drawable/animationbuttonblue">
+            android:textColor="@drawable/animation_button_blue">
         </TextView>
     </androidx.cardview.widget.CardView>
 

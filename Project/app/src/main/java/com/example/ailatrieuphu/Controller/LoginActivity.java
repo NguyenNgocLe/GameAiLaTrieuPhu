@@ -158,9 +158,4 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
             }
         }
     }
-
-    public void btnLogin(View view) {
-        // nhảy vào case để khi người dùng nhập tên đăng nhập và mật khẩu thì sẽ login vào hệ thống khi nhấn
-        // button đăng nhập
-    }
 }

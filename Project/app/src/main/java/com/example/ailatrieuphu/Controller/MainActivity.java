@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void handlingNewGame() {
-        Intent intent = new Intent(this, ChooseActivity.class);
+        Intent intent = new Intent(this, QuestionActivity.class);
         startActivity(intent);
     }
 
