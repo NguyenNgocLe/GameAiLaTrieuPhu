@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.RankAcitivity">
+    tools:context=".Controller.RankActivity">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -107,7 +107,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="6"
-            android:background="@drawable/radiusbuttonsigupblue2"
+            android:background="@drawable/radius_button_sign_up_blue2"
             android:gravity="center"
             android:text="Nnle"
             android:textSize="23sp">
@@ -306,8 +306,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:drawableStart="@drawable/ic_diamond"
-            android:drawableEnd="@drawable/ic_heartavailable"
-            android:background="@drawable/radiusbuttonwhite"
+            android:drawableEnd="@drawable/ic_heart_available"
+            android:background="@drawable/radius_button_white"
             android:layout_marginBottom="5dp"
             android:textSize="30sp"
             android:textColor="#161615">
@@ -320,7 +320,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/radiusbuttonwhite"
+            android:background="@drawable/radius_button_white"
             android:layout_marginBottom="5dp"
             android:textSize="30sp"
             android:textColor="#161615">
@@ -333,7 +333,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/radiusbuttonwhite"
+            android:background="@drawable/radius_button_white"
             android:layout_marginBottom="5dp"
             android:textSize="30sp"
             android:textColor="#161615">

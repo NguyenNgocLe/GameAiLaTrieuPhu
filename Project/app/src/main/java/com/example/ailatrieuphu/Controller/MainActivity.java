@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void btnRankPlayer() {
-        Intent intent = new Intent(this, RankAcitivity.class);
+        Intent intent = new Intent(this, RankActivity.class);
         startActivity(intent);
     }
 

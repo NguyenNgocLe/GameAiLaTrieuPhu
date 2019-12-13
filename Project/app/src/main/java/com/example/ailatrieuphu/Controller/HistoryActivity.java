@@ -25,7 +25,7 @@ public class HistoryActivity extends AppCompatActivity {
         this.recyclerView = findViewById(R.id.RecylerView);
         userAccounts = new ArrayList<>();
         UserAccount userAccount = new UserAccount("cc","aaaa","ancnc","sns",0,100,1,200,false);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             userAccounts.add(userAccount);
         }
         //

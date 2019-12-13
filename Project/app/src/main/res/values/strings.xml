@@ -6,7 +6,7 @@
     <string name="number_5000">5.000</string>
     <string name="email">Email</string>
     <string name="number_450">450$</string>
-    <string name="username_player">Nnle</string>
+    <string name="username_player">....</string>
     <string name="number_3000">3.000</string>
     <string name="number_290">290$</string>
     <string name="number_1000">1.000</string>
@@ -28,7 +28,7 @@
     <string name="answer_c">C. Triều Lý</string>
     <string name="answer_d">D. Triều Nguyễn</string>
     <string name="count_time">10s</string>
-    <string name="title_end_game">Lượt chơi đã kết thúc</string>
+    <string name="title_end_game">Lượt chơi đã kết thúc.</string>
     <string name="congratulations">Xin chúc mừng bạn đã đạt được:</string>
     <string name="number_score">10000</string>
     <string name="add_one_more_300">Thêm một lượt chơi 300</string>

@@ -98,7 +98,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="6"
-            android:background="@drawable/radiusbuttonsigupblue2"
+            android:background="@drawable/radius_button_sign_up_blue2"
             android:gravity="center"
             android:text="@string/username_player"
             android:textSize="23sp">

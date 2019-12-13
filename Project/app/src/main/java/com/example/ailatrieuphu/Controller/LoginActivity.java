@@ -129,7 +129,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
 
     @Override
     public void loginFailed() {
-        new CustomDialog(this, "Thông báo ", "Đăng nhập thất bại!", "Thoát", CustomDialog.SIZE_M).show();
+        new CustomDialog(this, "Thông báo ", "Đăng nhập thất bại!", "OK", CustomDialog.SIZE_M).show();
         //Toast.makeText(this, "Đăng nhập thất bại!", Toast.LENGTH_SHORT).show();
     }
 

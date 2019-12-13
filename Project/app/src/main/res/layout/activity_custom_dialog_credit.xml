@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="300dp"
-    android:gravity="center"
-
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
     android:background="@drawable/custom_dialog"
-    android:layout_height="wrap_content">
+
+    android:gravity="center"
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/txtTitle"
-        android:textColor="#042CA2"
-        android:textSize="20dp"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Title">
+        android:layout_marginTop="15dp"
+        android:text="Title"
+        android:textColor="#FFE600"
+        android:textSize="20dp"
+        android:textStyle="bold">
     </TextView>
+
     <TextView
         android:id="@+id/txtContent"
-        android:text="B"
-        android:textColor="#0DAC6A"
-        android:textSize="50dp"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textColor="#4CAF50"
+        android:textSize="50dp"
+        android:textStyle="bold">
     </TextView>
 
     <LinearLayout
@@ -34,11 +38,13 @@
             android:id="@+id/btnOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/custom_button_dialog"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animation_button_yellow"
             android:text="OK"
             android:textAllCaps="false"
-            android:textColor="#FFDD00">
+            android:textColor="#FFFFFF">
         </Button>
 
         <Button
@@ -46,10 +52,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:background="@drawable/custom_button_dialog"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/animation_button_yellow"
             android:text="Cancel"
             android:textAllCaps="false"
-            android:textColor="#FFDD00">
+            android:textColor="#FFFFFF">
         </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
     </LinearLayout>
 </LinearLayout>

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ailatrieuphu">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
 
     <application
         android:allowBackup="true"
@@ -14,45 +15,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Utilities.Dialog.CustomDialogCredit"></activity>
+        <activity android:name=".Utilities.Dialog.CustomDialogCredit">
+        </activity>
         <activity
             android:name=".Controller.ManageActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Controller.ChooseActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Controller.RightActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Controller.WrongActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Controller.SupportActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
-            android:name=".Controller.CallAcitivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.EndActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.RankAcitivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.HistoryActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.BuyActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.ShowActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.QuestionActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Controller.LoginActivity"
+            android:name=".Controller.callActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,14 +47,46 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Controller.EndActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.RankActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.HistoryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.BuyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.ShowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.QuestionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.LoginActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
             android:name=".Controller.SignUpActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Controller.ForgotActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Controller.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

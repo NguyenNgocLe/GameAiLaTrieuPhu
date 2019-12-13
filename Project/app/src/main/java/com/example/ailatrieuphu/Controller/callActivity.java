@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ailatrieuphu.R;
 
-public class RankAcitivity extends AppCompatActivity {
+public class callActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rank);
+        setContentView(R.layout.activity_call_people);
     }
 }

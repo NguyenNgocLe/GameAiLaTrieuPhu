@@ -11,7 +11,7 @@
         android:layout_gravity="center"
         android:layout_marginEnd="5dp"
         android:layout_weight="2"
-        android:background="@drawable/radiusbuttonsigupblue2"
+        android:background="@drawable/radius_button_sign_up_blue2"
         android:gravity="center"
         android:text="@string/username_player"
         android:textSize="23sp">
@@ -22,19 +22,19 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginStart="5dp"
-        android:layout_weight="4"
-        android:background="@drawable/animation_button_blue"
-        android:src="@drawable/ic_heartavailable">
+        android:layout_marginEnd="5dp"
+        android:layout_weight="7"
+        android:src="@drawable/ic_health_not_exists"
+        android:background="@drawable/animation_button_white">
+
     </ImageButton>
 
     <Button
         android:id="@+id/btnScoreShowQuestion"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginStart="45dp"
-        android:layout_weight="3"
-        android:background="@drawable/animation_button_yellow"
+        android:layout_weight="0.1"
+        android:background="@drawable/radius_button_yellow"
         android:text="@string/credit_number"
         android:textColor="#FFFF"
         android:textColorHighlight="@drawable/animation_button_blue"
@@ -48,7 +48,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="5dp"
         android:layout_weight="1"
-        android:background="@drawable/animation_button_yellow"
+        android:background="@drawable/radius_button_yellow"
         android:src="@drawable/ic_diamond">
     </ImageButton>
 </LinearLayout>
