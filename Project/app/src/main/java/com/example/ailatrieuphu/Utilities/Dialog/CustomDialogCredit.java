@@ -65,4 +65,22 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
     public void onClick(View v) {
         this.dismiss();
     }
+
+    //
+    public String getTextButton() {
+        return textButton;
+    }
+
+    public void setTextButton(String textButton) {
+        this.textButton = textButton;
+    }
+
+    public String getTextButton2() {
+        return textButton2;
+    }
+
+    public void setTextButton2(String textButton2) {
+        this.textButton2 = textButton2;
+    }
+    //
 }

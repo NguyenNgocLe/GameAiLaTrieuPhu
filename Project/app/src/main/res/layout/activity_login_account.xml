@@ -168,7 +168,7 @@
             android:layout_weight="1"
             android:text="@string/login_google"
             android:gravity="center_vertical"
-            android:drawableStart="@drawable/ic_googleplus"
+            android:drawableStart="@drawable/ic_google_plus"
             android:drawablePadding="10dp">
         </TextView>
 

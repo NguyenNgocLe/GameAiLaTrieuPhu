@@ -2,6 +2,7 @@ package com.example.ailatrieuphu.Controller;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,12 +36,15 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     //
     public void initialView() {
         btnDataField = new Button[4];
-
         btnDataField[0] = findViewById(R.id.btnFieldOne);
         btnDataField[1] = findViewById(R.id.btnFieldTwo);
         btnDataField[2] = findViewById(R.id.btnFieldThree);
         btnDataField[3] = findViewById(R.id.btnFieldFour);
-
+        //
+        this.btnDataField[0].setOnClickListener(this);
+        this.btnDataField[1].setOnClickListener(this);
+        this.btnDataField[2].setOnClickListener(this);
+        this.btnDataField[3].setOnClickListener(this);
         //
         mListIdField = new int[4];
 
@@ -51,6 +55,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                 JSONObject jsonObject = null;
                 try {
                     jsonObject = new JSONObject(json);
+
                     JSONArray jsonArray = (JSONArray) jsonObject.getJSONArray("data");
                     //Log.e("abc", jsonArray + " ");
                     for (int i = 0; i < jsonArray.length(); i++) {
@@ -71,19 +76,44 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         int id = v.getId();
         switch (id) {
             case R.id.btnFieldOne: {
-                //startActivity(id.);
+                startActivityAnswerWithFieldOne();
                 break;
             }
             case R.id.btnFieldTwo: {
+                startActivityAnswerWithFieldTwo();
                 break;
             }
             case R.id.btnFieldThree: {
+                startActivityAnswerWithFieldThree();
                 break;
             }
             case R.id.btnFieldFour: {
+                startActivityAnswerWithFieldFour();
                 break;
             }
         }
     }
 
+    //
+    public void startActivityAnswerWithFieldOne() {
+        Intent intent = new Intent(this, ChooseActivity.class);
+        startActivity(intent);
+    }
+
+    //
+    public void startActivityAnswerWithFieldTwo() {
+        Intent intent = new Intent(this, ChooseActivity.class);
+        startActivity(intent);
+    }
+
+    //
+    public void startActivityAnswerWithFieldThree() {
+        Intent intent = new Intent(this, ChooseActivity.class);
+        startActivity(intent);
+    }
+    //
+    public void startActivityAnswerWithFieldFour() {
+        Intent intent = new Intent(this, ChooseActivity.class);
+        startActivity(intent);
+    }
 }

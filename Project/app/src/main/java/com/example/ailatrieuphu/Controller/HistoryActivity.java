@@ -35,5 +35,4 @@ public class HistoryActivity extends AppCompatActivity {
         recyclerView.setAdapter(playerAdapter);
 
     }
-//    public void
 }

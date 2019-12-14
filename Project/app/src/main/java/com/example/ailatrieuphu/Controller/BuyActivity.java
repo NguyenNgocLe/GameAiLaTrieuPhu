@@ -38,6 +38,7 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         switch (id) {
             case R.id.btnCreditFiveThousandDollars: {
                 new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 5.000?", "OK","Cancel",CustomDialogCredit.SIZE_M).show();
+
                 break;
             }
             case R.id.btnCreditThreeThousandDollars: {

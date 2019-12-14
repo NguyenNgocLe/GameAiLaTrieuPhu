@@ -9,6 +9,7 @@
     <string name="username_player">....</string>
     <string name="number_3000">3.000</string>
     <string name="number_290">290$</string>
+    <string name="score_number">290 điểm</string>
     <string name="number_1000">1.000</string>
     <string name="number_95">95$</string>
     <string name="number_500">500</string>
@@ -53,4 +54,6 @@
     <string name="history_geography">Lịch sử</string>
     <string name="sport">Thể thao</string>
     <string name="support_audience">Trợ giúp của khán giả</string>
+    <string name="bang_xep_hang">Bảng xếp hạng</string>
+    <string name="btnRank">1</string>
 </resources>

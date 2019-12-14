@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/colorcardinal" android:state_pressed="true" />
-    <item android:drawable="@drawable/radiusbuttoncardinal" />
+    <item android:drawable="@drawable/color_cardinal" android:state_pressed="true" />
+    <item android:drawable="@drawable/radius_button_cardinal" />
 </selector>

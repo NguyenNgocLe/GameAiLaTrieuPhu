@@ -14,6 +14,7 @@ public class User {
     public boolean isEmpty() {
         return (username.equals("") || email.equals("") || password.equals("") || prePassword.equals(""));
     }
+
     public boolean isUpdateEmpty() {
         return (username.equals("") || email.equals("") || password.equals("") || prePassword.equals(""));
     }
