@@ -50,7 +50,7 @@
     <string name="choose_field">Chọn lĩnh vực</string>
     <string name="science_technology">Khoa học kỹ thuật</string>
     <string name="cultural_society_art">Văn hóa - Xã hội - nghệ thuật</string>
-    <string name="history_geography">Lịch sử - Địa lý</string>
+    <string name="history_geography">Lịch sử</string>
     <string name="sport">Thể thao</string>
     <string name="support_audience">Trợ giúp của khán giả</string>
 </resources>

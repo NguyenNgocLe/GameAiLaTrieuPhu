@@ -80,12 +80,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void handlingManageAccountLogin() {
         Intent intent = new Intent(this, ManageActivity.class);
         //Log.e("aaaa","json ok " + getIntent().getStringExtra("nguoi_dung"));
-        intent.putExtra("nguoi_dung",getIntent().getStringExtra("nguoi_dung")); // gửi dữ liệu người dùng từ login sang mainactivity sang manage
+        intent.putExtra("nguoi_dung",getIntent().getStringExtra("nguoi_dung")); // gửi dữ liệu người dùng từ login sang main activity sang manage
         startActivity(intent);
     }
 
     public void handlingNewGame() {
         Intent intent = new Intent(this, QuestionActivity.class);
+        intent.putExtra("nguoi_dung", getIntent().getStringExtra("nguoi_dung"));
         startActivity(intent);
     }
 

@@ -30,7 +30,7 @@ public class CustomDialog extends Dialog implements android.view.View.OnClickLis
         this.SIZE = SIZE;
     }
 
-    public CustomDialog(@NonNull Context context) {
+    public CustomDialog(@NonNull Context context, String s, String s1, int sizeM) {
         super(context);
         this.context = context;
     }

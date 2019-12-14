@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:weightSum="10"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
@@ -10,30 +11,70 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginEnd="5dp"
-        android:layout_weight="2"
+        android:layout_weight="4"
         android:background="@drawable/radius_button_sign_up_blue2"
         android:gravity="center"
         android:text="@string/username_player"
         android:textSize="23sp">
     </TextView>
-
-    <ImageButton
-        android:id="@+id/imgHeartShowQuestion"
+    <LinearLayout
+        android:layout_weight="3"
+        android:background="@drawable/animation_button_white"
+        android:layout_marginRight="5dp"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginEnd="5dp"
-        android:layout_weight="7"
-        android:src="@drawable/ic_health_not_exists"
-        android:background="@drawable/animation_button_white">
-
-    </ImageButton>
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/animation_button_white"
+            android:src="@drawable/ic_heart_available">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/animation_button_white"
+            android:src="@drawable/ic_heart_available">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/animation_button_white"
+            android:src="@drawable/ic_heart_available">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/animation_button_white"
+            android:src="@drawable/ic_heart_available">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/imgHeartShowQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/animation_button_white"
+            android:src="@drawable/ic_heart_not_exists">
+        </ImageButton>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnScoreShowQuestion"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="0.1"
+        android:layout_weight="1.5"
         android:background="@drawable/radius_button_yellow"
         android:text="@string/credit_number"
         android:textColor="#FFFF"
@@ -47,7 +88,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginStart="5dp"
-        android:layout_weight="1"
+        android:layout_weight="1.5"
         android:background="@drawable/radius_button_yellow"
         android:src="@drawable/ic_diamond">
     </ImageButton>
