@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ailatrieuphu.R;
-import com.example.ailatrieuphu.UserAccount.UserAccount;
+import com.example.ailatrieuphu.Object.UserAccount;
 
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.ViewHolder
         String txtUserName, txtEmail, txtHighScore, txtCredit;
         txtUserName = data.get(position).getUserName(); // sét text
         txtEmail = data.get(position).getEmail();
-        txtHighScore = String.valueOf(data.get(position).getHighedScore());
+        txtHighScore = String.valueOf(data.get(position).getScore());
         txtCredit = String.valueOf(data.get(position).getCredit());
 
     }

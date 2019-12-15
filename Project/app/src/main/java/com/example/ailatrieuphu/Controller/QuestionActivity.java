@@ -55,9 +55,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                 JSONObject jsonObject = null;
                 try {
                     jsonObject = new JSONObject(json);
-
                     JSONArray jsonArray = (JSONArray) jsonObject.getJSONArray("data");
-                    //Log.e("abc", jsonArray + " ");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         mListIdField[i] = jsonArray.getJSONObject(i).getInt("id");
                         //Log.d("id", mListIdField[i] + " ");
