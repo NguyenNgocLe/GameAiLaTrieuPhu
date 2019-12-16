@@ -36,10 +36,10 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     //
     public void initialView() {
         btnDataField = new Button[4];
-        btnDataField[0] = findViewById(R.id.btnFieldOne);
-        btnDataField[1] = findViewById(R.id.btnFieldTwo);
-        btnDataField[2] = findViewById(R.id.btnFieldThree);
-        btnDataField[3] = findViewById(R.id.btnFieldFour);
+        btnDataField[0] = findViewById(R.id.A);
+        btnDataField[1] = findViewById(R.id.B);
+        btnDataField[2] = findViewById(R.id.C);
+        btnDataField[3] = findViewById(R.id.D);
         //
         this.btnDataField[0].setOnClickListener(this);
         this.btnDataField[1].setOnClickListener(this);
@@ -73,19 +73,19 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
-            case R.id.btnFieldOne: {
+            case R.id.A: {
                 startActivityAnswerWithFieldOne();
                 break;
             }
-            case R.id.btnFieldTwo: {
+            case R.id.B: {
                 startActivityAnswerWithFieldTwo();
                 break;
             }
-            case R.id.btnFieldThree: {
+            case R.id.C: {
                 startActivityAnswerWithFieldThree();
                 break;
             }
-            case R.id.btnFieldFour: {
+            case R.id.D: {
                 startActivityAnswerWithFieldFour();
                 break;
             }
@@ -95,23 +95,27 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     //
     public void startActivityAnswerWithFieldOne() {
         Intent intent = new Intent(this, ChooseActivity.class);
+        intent.putExtra("id", 1);
         startActivity(intent);
     }
 
     //
     public void startActivityAnswerWithFieldTwo() {
         Intent intent = new Intent(this, ChooseActivity.class);
+        intent.putExtra("id", 2);
         startActivity(intent);
     }
 
     //
     public void startActivityAnswerWithFieldThree() {
         Intent intent = new Intent(this, ChooseActivity.class);
+        intent.putExtra("id", 3);
         startActivity(intent);
     }
     //
     public void startActivityAnswerWithFieldFour() {
         Intent intent = new Intent(this, ChooseActivity.class);
+        intent.putExtra("id", 4);
         startActivity(intent);
     }
 }

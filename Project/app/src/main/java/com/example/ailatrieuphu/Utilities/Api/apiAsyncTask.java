@@ -14,6 +14,7 @@ public class apiAsyncTask extends AsyncTask<String, Void, String> implements XuL
     private String messages;
     ProgressDialog progressDialog;
     private boolean flagProgressBar;
+
     // hiển thị xử lý có 4 tham số truyền vào
     public apiAsyncTask(Context context,String METHOD, Map<String, String> paramets) {
         this.METHOD = METHOD;

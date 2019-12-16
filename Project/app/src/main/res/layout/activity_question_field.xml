@@ -166,7 +166,7 @@
         app:layout_constraintTop_toBottomOf="@id/lineMidQuestionField">
 
         <Button
-            android:id="@+id/btnFieldOne"
+            android:id="@+id/A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -180,7 +180,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btnFieldTwo"
+            android:id="@+id/B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -194,7 +194,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btnFieldThree"
+            android:id="@+id/C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -208,7 +208,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btnFieldFour"
+            android:id="@+id/D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"

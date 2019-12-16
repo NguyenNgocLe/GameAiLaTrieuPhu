@@ -14,7 +14,7 @@
         android:layout_weight="4"
         android:background="@drawable/radius_button_sign_up_blue_2"
         android:gravity="center"
-        android:text="@string/username_player"
+        android:text="@string/history_name"
         android:textSize="23sp">
     </TextView>
     <LinearLayout

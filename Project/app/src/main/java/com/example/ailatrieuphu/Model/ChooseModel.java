@@ -1,10 +1,12 @@
 package com.example.ailatrieuphu.Model;
 
+import android.app.Activity;
+import android.content.Context;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ChooseModel {
-
     private String noi_dung;
     private String cau_hoi_a;
     private String cau_hoi_b;
@@ -13,7 +15,12 @@ public class ChooseModel {
     private String dap_an;
     private int id;
     private int linh_vuc_id;
+    private int categoryId;
+    private Context context;
 
+    public ChooseModel(Context context) {
+        categoryId = ((Activity)context).getIntent().getIntExtra("id",1);
+    }
 
     public String getNoi_dung() {
         return noi_dung;
@@ -79,10 +86,6 @@ public class ChooseModel {
         this.linh_vuc_id = linh_vuc_id;
     }
 
-    public ChooseModel() {
-
-    }
-
     public ChooseModel(String noi_dung, String cau_hoi_a, String cau_hoi_b, String cau_hoi_c, String cau_hoi_d, String dap_an, int id, int linh_vuc_id) {
         this.noi_dung = noi_dung;
         this.cau_hoi_a = cau_hoi_a;
@@ -105,5 +108,21 @@ public class ChooseModel {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Context getContext() {
+        return context;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
     }
 }

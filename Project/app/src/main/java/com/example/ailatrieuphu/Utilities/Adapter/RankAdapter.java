@@ -30,6 +30,7 @@ public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
         return new ViewHolder(mItemView);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // đổ dữ liệu của array list người chơi lên cho từng item trên recycle view

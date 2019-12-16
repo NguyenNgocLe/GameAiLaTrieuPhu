@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Button
-        android:id="@+id/btnAnswerA"
+        android:id="@+id/A"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -18,7 +18,7 @@
     </Button>
 
     <Button
-        android:id="@+id/btnAnswerB"
+        android:id="@+id/B"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -30,7 +30,7 @@
     </Button>
 
     <Button
-        android:id="@+id/btnAnswerC"
+        android:id="@+id/C"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -42,7 +42,7 @@
     </Button>
 
     <Button
-        android:id="@+id/btnAnswerD"
+        android:id="@+id/D"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

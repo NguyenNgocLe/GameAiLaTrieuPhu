@@ -107,7 +107,8 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftStatusChooseAnswer"
         app:layout_constraintTop_toBottomOf="@id/lineTopStatusChooseAnswer">
 
-        <include layout="@layout/activity_header"></include>
+        <include layout="@layout/activity_header">
+        </include>
     </LinearLayout>
 
 
@@ -121,7 +122,8 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
         app:layout_constraintTop_toBottomOf="@id/lineTopChooseAnswer">
 
-        <include layout="@layout/activity_number_question"></include>
+        <include layout="@layout/activity_number_question">
+        </include>
 
     </LinearLayout>
 
@@ -136,7 +138,8 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftChooseAnswer"
         app:layout_constraintTop_toBottomOf="@id/lineMidChooseAnswer">
 
-        <include layout="@layout/activity_answer"></include>
+        <include layout="@layout/activity_answer">
+        </include>
 
     </LinearLayout>
 
@@ -160,14 +163,16 @@
             app:ringProgressColor="@color/colorProgressbar"
             app:style="FILL"
             app:textIsShow="true"
-            app:textSize="10sp"></io.netopen.hotbitmapgg.library.view.RingProgressBar>
+            app:textSize="10sp">
+        </io.netopen.hotbitmapgg.library.view.RingProgressBar>
 
         <TextView
             android:id="@+id/txtTimeAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/count_time"
-            android:textSize="30sp"></TextView>
+            android:textSize="30sp">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -181,6 +186,7 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftStatusChooseAnswer"
         app:layout_constraintTop_toBottomOf="@id/lineMid3ChooseAnswer">
 
-        <include layout="@layout/activity_footer"></include>
+        <include layout="@layout/activity_footer">
+        </include>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
