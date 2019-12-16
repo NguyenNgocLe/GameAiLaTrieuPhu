@@ -1,63 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/FormPlayUserTopOneHistory"
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:background="#A2A2A2"
+    android:layout_margin="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:background="@drawable/animation_button_white">
+        tools:context=".Controller.WrongActivity">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineMidItemHistoryPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5">
+
+        </androidx.constraintlayout.widget.Guideline>
+
+        <LinearLayout
+            android:id="@+id/FormNumberQuestionHistoryPlayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/lineMidItemHistoryPlayer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtHistoryTimePlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/username_player"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/time_color_brown"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtNumberQuestionHistoryPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/so_cau"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/number_question_color_brown_pale"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="ten_dang_nhap">
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:text="email">
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="diem_cao_nhat">
+            android:id="@+id/txtScoreHistoryPlayer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/_200_diem"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/number_question_color_brown_pale"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/lineMidItemHistoryPlayer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
         </TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="credit">
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="thoi_gian">
-        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="2.000 Điểm"
-            android:textColor="@drawable/animation_button_blue"
-            android:textSize="20sp">
-        </TextView>
-    </LinearLayout>
-</LinearLayout>
+</androidx.cardview.widget.CardView>
+

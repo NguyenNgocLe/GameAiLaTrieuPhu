@@ -5,8 +5,13 @@ import org.json.JSONObject;
 
 public class UserAccount {
     private String userName, passWord, email, avatar;
-    private int credit, id, score;
+    private int credit;
+    private int id;
+    private int score;
+    private int rankPlayer;
+    private int numberQuestion;
     private String delete;
+    private String dateTime;
 
     public UserAccount() {
 
@@ -14,14 +19,17 @@ public class UserAccount {
 
     public UserAccount(JSONObject jsonObject) {
         try {
-            this.id = jsonObject.getInt("id");
-            this.userName = jsonObject.getString("ten_dang_nhap");
-//            this.passWord = jsonObject.getString("password");
-            this.email = jsonObject.getString("email");
-            this.avatar = jsonObject.getString("hinh_dai_dien");
-            this.score = jsonObject.getInt("diem_cao_nhat");
-            this.credit = jsonObject.getInt("credit");
-            this.delete = jsonObject.getString("deleted_at");
+//            this.id = jsonObject.getInt("id");
+//            this.userName = jsonObject.getString("ten_dang_nhap");
+//            this.email = jsonObject.getString("email");
+//            this.avatar = jsonObject.getString("hinh_dai_dien");
+//            this.score = jsonObject.getInt("diem_cao_nhat");
+//            this.credit = jsonObject.getInt("credit");
+//            this.delete = jsonObject.getString("deleted_at");
+            //
+            this.dateTime = jsonObject.getString("ngay_gio");
+            this.numberQuestion = jsonObject.getInt("so_cau");
+            this.score = jsonObject.getInt("diem");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -101,5 +109,29 @@ public class UserAccount {
 
     public void setDelete(String delete) {
         this.delete = delete;
+    }
+
+    public int getRankPlayer() {
+        return rankPlayer;
+    }
+
+    public void setRankPlayer(int rankPlayer) {
+        this.rankPlayer = rankPlayer;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
+    }
+
+    public int getNumberQuestion() {
+        return numberQuestion;
+    }
+
+    public void setNumberQuestion(int numberQuestion) {
+        this.numberQuestion = numberQuestion;
     }
 }

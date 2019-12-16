@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ailatrieuphu.Object.UserAccount;
+import com.example.ailatrieuphu.Object.User;
 import com.example.ailatrieuphu.R;
 import com.example.ailatrieuphu.Utilities.Adapter.RankAdapter;
 import com.example.ailatrieuphu.Utilities.Api.apiAsyncTask;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class RankActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private ArrayList<UserAccount> userAccounts;
+    private ArrayList<User> userAccounts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,7 @@ public class RankActivity extends AppCompatActivity {
 
     //
     public void handlingGetRetrievePlayerData() {
+        // ánh xạ
         this.recyclerView = findViewById(R.id.RecylerViewRank);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         userAccounts = new ArrayList<>();
@@ -56,12 +57,13 @@ public class RankActivity extends AppCompatActivity {
             public void xuLy(Context context, String json) {
                 JSONObject jsonObject = null;
                 try {
-                    ArrayList<UserAccount> userAccounts = new ArrayList<>();
+                    ArrayList<User> userAccounts = new ArrayList<>();
                     jsonObject = new JSONObject(json);
                     JSONArray jsonArray = (JSONArray) jsonObject.getJSONArray("data");
+                    //Log.e("xxx", jsonArray.toString() + " ");
 
                     for (int i = 0; i < jsonArray.length(); i++) {
-                        userAccounts.add(new UserAccount(jsonArray.getJSONObject(i)));
+                        userAccounts.add(new User(jsonArray.getJSONObject(i)));
                     }
                     RankAdapter rankAdapter;
                     rankAdapter = new RankAdapter(context, userAccounts);

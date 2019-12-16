@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorProgressbar">#e61610</color>
+    <color name="time_color_brown">#FF6F00</color>
+    <color name="number_question_color_brown_pale">#FF9800</color>
 </resources>

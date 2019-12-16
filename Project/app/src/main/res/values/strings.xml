@@ -6,7 +6,7 @@
     <string name="number_5000">5.000</string>
     <string name="email">Email</string>
     <string name="number_450">450$</string>
-    <string name="username_player">....</string>
+    <string name="username_player">thời gian</string>
     <string name="number_3000">3.000</string>
     <string name="number_290">290$</string>
     <string name="score_number">290 điểm</string>
@@ -56,4 +56,12 @@
     <string name="support_audience">Trợ giúp của khán giả</string>
     <string name="bang_xep_hang">Bảng xếp hạng</string>
     <string name="btnRank">1</string>
+    <string name="diem_cao_nhat">diem_cao_nhat</string>
+    <string name="credit">credit</string>
+    <string name="thoi_gian">thoi_gian</string>
+    <string name="ten_dang_nhap">ten_dang_nhap</string>
+    <string name="_200_diem">2.000 Điểm</string>
+    <string name="so_cau">Số câu: 10</string>
+    <string name="history_name">...</string>
 </resources>
+

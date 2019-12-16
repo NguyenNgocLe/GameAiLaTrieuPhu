@@ -7,12 +7,13 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ailatrieuphu.Object.UserAccount;
 import com.example.ailatrieuphu.R;
-import com.example.ailatrieuphu.Utilities.Adapter.RankAdapter;
+import com.example.ailatrieuphu.Utilities.Adapter.PlayerAdapter;
 import com.example.ailatrieuphu.Utilities.Api.apiAsyncTask;
 
 import org.json.JSONArray;
@@ -37,26 +38,37 @@ public class HistoryActivity extends AppCompatActivity {
     //
     public void handlingGetDataHistoryPlayer() {
         // ánh xạ
-        this.recyclerView = findViewById(R.id.RecylerView);
-//         thiết lập 1 layout manager mặc định
+        recyclerView = findViewById(R.id.RecylerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.HORIZONTAL));
+        userAccounts = new ArrayList<>();
+        //
         @SuppressLint("StaticFieldLeak") apiAsyncTask apiAsyncTask = new apiAsyncTask(this, "GET", null, "Lấy lịch sử chơi", "chờ xíu nha...") {
             @Override
             public void xuLy(Context context, String json) {
-                ArrayList<UserAccount> userAccounts = new ArrayList<UserAccount>();
-                try {
-                    JSONObject jsonObject = new JSONObject(json);
-                    JSONArray jsonArray = (JSONArray) jsonObject.getJSONArray("data");
-                    Log.e("json", jsonArray + " ");
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        userAccounts.add(new UserAccount(jsonObject.getJSONObject("data")));
-                        Toast.makeText(context, "abc", Toast.LENGTH_SHORT).show();
+                JSONObject jsonObject = null;
+                if (json != null) {
+                    try {
+                        ArrayList<UserAccount> userAccounts = new ArrayList<>();
+                        jsonObject = new JSONObject(json);
+                        //Log.e("json", jsonObject + " ");
+                        JSONArray jsonArray = (JSONArray) jsonObject.getJSONArray("data");
+                        Log.e("arr", jsonArray.toString() + " ");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            Log.e("cc", jsonArray.getJSONObject(i) + " ");
+                            userAccounts.add(new UserAccount(jsonArray.getJSONObject(i)));
+                        }
+                        Log.e("his", jsonArray + "");
+                        PlayerAdapter playerAdapter;
+                        playerAdapter = new PlayerAdapter(context, userAccounts);
+                        recyclerView.setAdapter(playerAdapter);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
-                    RankAdapter adapter = new RankAdapter(context, userAccounts);
-                    recyclerView.setAdapter(adapter);
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                } else {
+                    Toast.makeText(context, "k co du lieu", Toast.LENGTH_SHORT).show();
                 }
+
             }
         };
         apiAsyncTask.execute("luot-choi/danh-sach");
