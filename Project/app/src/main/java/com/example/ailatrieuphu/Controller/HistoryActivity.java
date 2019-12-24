@@ -55,7 +55,7 @@ public class HistoryActivity extends AppCompatActivity {
                         JSONArray jsonArray = (JSONArray) jsonObject.getJSONArray("data");
                         Log.e("arr", jsonArray.toString() + " ");
                         for (int i = 0; i < jsonArray.length(); i++) {
-                            Log.e("cc", jsonArray.getJSONObject(i) + " ");
+                            //Log.e("abc", jsonArray.getJSONObject(i) + " ");
                             userAccounts.add(new UserAccount(jsonArray.getJSONObject(i)));
                         }
                         Log.e("his", jsonArray + "");

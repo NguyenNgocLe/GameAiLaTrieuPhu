@@ -13,7 +13,8 @@ import java.util.Map;
 
 public class NetworkUtils {
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
-    private static final String BASE_URL =  "http://10.0.3.2:8000/api/"; // AVD
+    public static final String BASE_URL =  "http://10.0.3.2:8000/api/"; // AVD
+    public static final String FIELD_URL = "cau-hoi/linh-vuc/";
     public static String GET = "GET";
     public static String POST = "POST";
 
@@ -76,9 +77,9 @@ public class NetworkUtils {
         return jsonString;
     }
 
-    static String getJSONData(String uri, String method, Map<String, String> paramets) {
+    public static String getJSONData(String uri, String method, Map<String, String> paramets) {
         HttpURLConnection urlConnection = null;
-        String jsonString = null;
+        String jsonString = "";
         Uri.Builder builder =  Uri.parse(BASE_URL + uri).buildUpon();
         if (paramets != null) {
             for (String key: paramets.keySet() ) {

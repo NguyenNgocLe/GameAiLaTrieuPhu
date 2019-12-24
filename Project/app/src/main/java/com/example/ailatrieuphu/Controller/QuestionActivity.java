@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.ailatrieuphu.PresenterImp.QuestionPresenterImp;
 import com.example.ailatrieuphu.R;
 import com.example.ailatrieuphu.Utilities.Api.apiAsyncTask;
+import com.example.ailatrieuphu.View.ChooseActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -112,6 +113,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         intent.putExtra("id", 3);
         startActivity(intent);
     }
+
     //
     public void startActivityAnswerWithFieldFour() {
         Intent intent = new Intent(this, ChooseActivity.class);

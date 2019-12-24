@@ -1,9 +1,16 @@
 package com.example.ailatrieuphu.Object;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
 public class Question {
+    private int id;
+    private int fieldId;
     private String question;
     private String answer_correct;
-    private String answer_wrong;
     private String answer_a;
     private String answer_b;
     private String answer_c;
@@ -16,12 +23,39 @@ public class Question {
     public Question(String question, String answer_correct, String answer_wrong, String answer_a, String answer_b, String answer_c, String answer_d) {
         this.question = question;
         this.answer_correct = answer_correct;
-        this.answer_wrong = answer_wrong;
         this.answer_a = answer_a;
         this.answer_b = answer_b;
         this.answer_c = answer_c;
         this.answer_d = answer_d;
     }
+
+    public Question(JSONObject json){
+        try {
+            this.id = json.getInt("id");
+            this.question = json.getString("noi_dung");
+            this.answer_a = json.getString("phuong_an_a");
+            this.answer_b = json.getString("phuong_an_b");
+            this.answer_c = json.getString("phuong_an_c");
+            this.answer_d = json.getString("phuong_an_d");
+            this.answer_correct = json.getString("dap_an");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static ArrayList<Question> getArrQuestionFromJson(JSONObject json){
+        ArrayList<Question> results = new ArrayList<>();
+        try {
+            JSONArray arr = json.getJSONArray("data");
+            for(int i=0;i<arr.length();i++){
+                results.add(new Question(arr.getJSONObject(i)));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return results;
+    }
+
 
     public String getQuestion() {
         return question;
@@ -69,13 +103,5 @@ public class Question {
 
     public void setAnswer_d(String answer_d) {
         this.answer_d = answer_d;
-    }
-
-    public String getAnswer_wrong() {
-        return answer_wrong;
-    }
-
-    public void setAnswer_wrong(String answer_wrong) {
-        this.answer_wrong = answer_wrong;
     }
 }

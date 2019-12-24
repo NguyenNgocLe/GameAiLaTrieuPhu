@@ -3,112 +3,24 @@ package com.example.ailatrieuphu.Model;
 import android.app.Activity;
 import android.content.Context;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.example.ailatrieuphu.Object.Question;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class ChooseModel {
-    private String noi_dung;
-    private String cau_hoi_a;
-    private String cau_hoi_b;
-    private String cau_hoi_c;
-    private String cau_hoi_d;
-    private String dap_an;
-    private int id;
-    private int linh_vuc_id;
-    private int categoryId;
     private Context context;
+    private int categoryId;
+    private Question currentQuestion;
+    private int currentQuestionNumber = 1;
+    private int currentScore = 0;
+    private ArrayList<Question> questions = new ArrayList<>();
 
     public ChooseModel(Context context) {
-        categoryId = ((Activity)context).getIntent().getIntExtra("id",1);
+        categoryId = ((Activity) context).getIntent().getIntExtra("id", 1);
     }
 
-    public String getNoi_dung() {
-        return noi_dung;
-    }
 
-    public void setNoi_dung(String noi_dung) {
-        this.noi_dung = noi_dung;
-    }
-
-    public String getCau_hoi_a() {
-        return cau_hoi_a;
-    }
-
-    public void setCau_hoi_a(String cau_hoi_a) {
-        this.cau_hoi_a = cau_hoi_a;
-    }
-
-    public String getCau_hoi_b() {
-        return cau_hoi_b;
-    }
-
-    public void setCau_hoi_b(String cau_hoi_b) {
-        this.cau_hoi_b = cau_hoi_b;
-    }
-
-    public String getCau_hoi_c() {
-        return cau_hoi_c;
-    }
-
-    public void setCau_hoi_c(String cau_hoi_c) {
-        this.cau_hoi_c = cau_hoi_c;
-    }
-
-    public String getCau_hoi_d() {
-        return cau_hoi_d;
-    }
-
-    public void setCau_hoi_d(String cau_hoi_d) {
-        this.cau_hoi_d = cau_hoi_d;
-    }
-
-    public String getDap_an() {
-        return dap_an;
-    }
-
-    public void setDap_an(String dap_an) {
-        this.dap_an = dap_an;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getLinh_vuc_id() {
-        return linh_vuc_id;
-    }
-
-    public void setLinh_vuc_id(int linh_vuc_id) {
-        this.linh_vuc_id = linh_vuc_id;
-    }
-
-    public ChooseModel(String noi_dung, String cau_hoi_a, String cau_hoi_b, String cau_hoi_c, String cau_hoi_d, String dap_an, int id, int linh_vuc_id) {
-        this.noi_dung = noi_dung;
-        this.cau_hoi_a = cau_hoi_a;
-        this.cau_hoi_b = cau_hoi_b;
-        this.cau_hoi_c = cau_hoi_c;
-        this.cau_hoi_d = cau_hoi_d;
-        this.dap_an = dap_an;
-        this.id = id;
-        this.linh_vuc_id = linh_vuc_id;
-    }
-
-    public ChooseModel(JSONObject jsonObject) {
-        try {
-            this.id = jsonObject.getInt("id");
-            this.cau_hoi_a = jsonObject.getString("cau_hoi_a");
-            this.cau_hoi_b = jsonObject.getString("cau_hoi_b");
-            this.cau_hoi_c = jsonObject.getString("cau_hoi_c");
-            this.cau_hoi_d = jsonObject.getString("cau_hoi_d");
-            this.dap_an = jsonObject.getString("dap_an");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
 
     public int getCategoryId() {
         return categoryId;
@@ -124,5 +36,41 @@ public class ChooseModel {
 
     public void setContext(Context context) {
         this.context = context;
+    }
+
+    public Question getCurrentQuestion() {
+        return currentQuestion;
+    }
+
+    public void setCurrentQuestion(Question currentQuestion) {
+        this.currentQuestion = currentQuestion;
+    }
+
+    public ArrayList<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(ArrayList<Question> questions) {
+        this.questions = questions;
+    }
+
+    public Question getRandomQuestion(){
+        return questions.get((new Random()).nextInt(questions.size() - 1));
+    }
+
+    public int getCurrentQuestionNumber() {
+        return currentQuestionNumber;
+    }
+
+    public void setCurrentQuestionNumber(int currentQuestionNumber) {
+        this.currentQuestionNumber = currentQuestionNumber;
+    }
+
+    public int getCurrentScore() {
+        return currentScore;
+    }
+
+    public void setCurrentScore(int currentScore) {
+        this.currentScore = currentScore;
     }
 }

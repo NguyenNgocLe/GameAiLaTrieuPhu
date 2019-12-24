@@ -22,7 +22,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".Controller.ChooseActivity"
+            android:name=".View.ChooseActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
