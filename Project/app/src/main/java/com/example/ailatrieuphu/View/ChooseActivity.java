@@ -23,7 +23,7 @@ import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
 public class ChooseActivity extends AppCompatActivity implements RingProgressBar.OnProgressListener,
         ChooseView,
-        View.OnClickListener{
+        View.OnClickListener {
     private RingProgressBar mRingProgressBar;
     private int progress = 1, mMaxProgress;
     private RingProgressbarAsyntask mThreadCountdown;
@@ -35,11 +35,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private Button btnC;
     private Button btnD;
     private Button btnQuestion;
-    private ImageButton btnUndo;
-    private ImageButton btnFiftyPercent;
-    private ImageButton btnSupportAudience;
-    private ImageButton btnCallPeople;
-    private Button buttonQuestionNumber;
+    private ImageButton imbUndo;
+    private ImageButton imbFiftyPercent;
+    private ImageButton imbSupportAudience;
+    private ImageButton imbCallPeople;
+    private Button btnQuestionNumber;
     private Button btnCredit;
     private TextView txtQuestion;
     private TextView txtScore;
@@ -48,8 +48,8 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private ProgressBar progressBarLoadData;
     private View layoutContent;
     private Dialog dialogNotify;
-    private TextView titleDialogNotify, answerCorect;
-    private Button buttonOkDialog;
+    private TextView txtTitleDialogNotify, txtAnswerCorrect;
+    private Button btnOkDialog;
     //
     private ChoosePresenterImp choosePresenterImp;
 
@@ -76,7 +76,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     public void InitialView() {
         layoutContent = findViewById(R.id.contentLayout);
         progressBarLoadData = findViewById(R.id.process_loadData);
-        buttonQuestionNumber = findViewById(R.id.edtNumberQuestion);
+        btnQuestionNumber = findViewById(R.id.edtNumberQuestion);
         txtQuestion = findViewById(R.id.txtQuestion);
         btnA = findViewById(R.id.A);
         btnB = findViewById(R.id.B);
@@ -86,16 +86,26 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         btnB.setOnClickListener(this);
         btnC.setOnClickListener(this);
         btnD.setOnClickListener(this);
+        this.imbUndo = findViewById(R.id.imbUndo);
+        this.imbFiftyPercent = findViewById(R.id.imbFiftyPercent);
+        this.imbSupportAudience = findViewById(R.id.imbSupportAudience);
+        this.imbCallPeople = findViewById(R.id.imbCallPeople);
+        this.btnCredit = findViewById(R.id.btnCredit);
+        imbUndo.setOnClickListener(this);
+        imbFiftyPercent.setOnClickListener(this);
+        imbSupportAudience.setOnClickListener(this);
+        imbCallPeople.setOnClickListener(this);
+        btnCredit.setOnClickListener(this);
         dialogNotify = new Dialog(this);
         dialogNotify.setContentView(R.layout.thong_bao);
-        titleDialogNotify = dialogNotify.findViewById(R.id.txtTitle);
-        answerCorect = dialogNotify.findViewById(R.id.txtContent);
-        buttonOkDialog = dialogNotify.findViewById(R.id.btnOk);
+        txtTitleDialogNotify = dialogNotify.findViewById(R.id.txtTitle);
+        txtAnswerCorrect = dialogNotify.findViewById(R.id.txtContent);
+        btnOkDialog = dialogNotify.findViewById(R.id.btnOk);
         txtScore = findViewById(R.id.txtScoreQuestion);
-        this.btnUndo = findViewById(R.id.btnUndo);
-        this.btnFiftyPercent = findViewById(R.id.btnFiftyPercent);
-        this.btnSupportAudience = findViewById(R.id.btnSupportAudience);
-        this.btnCallPeople = findViewById(R.id.btnCallPeople);
+        this.imbUndo = findViewById(R.id.imbUndo);
+        this.imbFiftyPercent = findViewById(R.id.imbFiftyPercent);
+        this.imbSupportAudience = findViewById(R.id.imbSupportAudience);
+        this.imbCallPeople = findViewById(R.id.imbCallPeople);
         this.btnCredit = findViewById(R.id.btnCredit);
         //RingProgress
         mRingProgressBar = findViewById(R.id.ringProgress); // tìm cái ringProgressbar
@@ -106,9 +116,9 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 //        mThreadCountdown = new RingProgressbarAsyntask(this, timeAnswer, mRingProgressBar, progress, mMaxProgress); // luồng xử lý việc bất đồng bộ của RingProgressbar countdown
 //        mThreadCountdown.execute(); // thực thi RingProgressBar
         // tạo lớp đối tượng choosePresenter để gọi hàm xử lý gán câu hỏi cho màn hình
-        choosePresenterImp = new ChoosePresenterImp(this,this);
+        choosePresenterImp = new ChoosePresenterImp(this, this);
 
-        buttonOkDialog.setOnClickListener(new View.OnClickListener() {
+        btnOkDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 choosePresenterImp.onButtonOkClick();
@@ -116,7 +126,6 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         });
 
     }
-
 
     @Override
     public void setQuesA(String text) {
@@ -144,6 +153,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
+    public void setTextCredit(String text) {
+        btnCredit.setText(text);
+    }
+
+    @Override
     public String getTextA() {
         return btnA.getText().toString();
     }
@@ -161,6 +175,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     @Override
     public String getTextD() {
         return btnD.getText().toString();
+    }
+
+    @Override
+    public String getTextCredit() {
+        return btnCredit.getText().toString();
     }
 
     @Override
@@ -195,12 +214,12 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 
     @Override
     public void setTextTitleDialog(String text) {
-        titleDialogNotify.setText(text);
+        txtTitleDialogNotify.setText(text);
     }
 
     @Override
     public void setAnswerTitleDialog(String text) {
-        answerCorect.setText(text);
+        txtAnswerCorrect.setText(text);
     }
 
     @Override
@@ -215,27 +234,56 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 
     @Override
     public void setQuestionNumber(String number) {
-        buttonQuestionNumber.setText(number);
+        btnQuestionNumber.setText(number);
+    }
+
+    @Override
+    public void showToastStringText(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id){
-            case R.id.A:{
+        switch (id) {
+            case R.id.A: {
                 choosePresenterImp.onButtonAClick();
                 break;
             }
-            case R.id.B:{
+            case R.id.B: {
                 choosePresenterImp.onButtonBClick();
                 break;
             }
-            case R.id.C:{
+            case R.id.C: {
                 choosePresenterImp.onButtonCClick();
                 break;
             }
-            case R.id.D:{
+            case R.id.D: {
                 choosePresenterImp.onButtonDClick();
+                break;
+            }
+            case R.id.imbUndo: {
+                choosePresenterImp.onImageButtonUndoClick();
+                //Toast.makeText(this, "button undo", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.imbFiftyPercent: {
+                choosePresenterImp.onImageButtonFiftyPercentClick();
+                //Toast.makeText(this, "button 50:50", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.imbSupportAudience: {
+                choosePresenterImp.onImageButtonSupportAudiencesClick();
+                //Toast.makeText(this, "Button support audience", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.imbCallPeople: {
+                choosePresenterImp.onImageButtonCallPeopleClick();
+                //Toast.makeText(this, "Button call people", Toast.LENGTH_SHORT).show();
+            }
+            default: {
+                choosePresenterImp.onImageButtonCreditClick();
+                //Toast.makeText(this, "Button credit people", Toast.LENGTH_SHORT).show();
                 break;
             }
         }

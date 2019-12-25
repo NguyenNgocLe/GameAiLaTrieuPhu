@@ -6,10 +6,12 @@ public interface ChooseView {
     void setQuesC(String text);
     void setQuesD(String text);
     void setTextQues(String text);
+    void setTextCredit(String text);
     String getTextA();
     String getTextB();
     String getTextC();
     String getTextD();
+    String getTextCredit();
     void setQuesId(int id);
     void setScore(String score);
     void showProcessLoadData();
@@ -21,4 +23,5 @@ public interface ChooseView {
     void showDialogAnswer();
     void hideDialogAnswer();
     void setQuestionNumber(String number);
+    void showToastStringText(String text);
 }

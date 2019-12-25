@@ -6,18 +6,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageButton
-        android:id="@+id/btnUndo"
+        android:id="@+id/imbUndo"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
         android:layout_weight="2"
+        android:layout_gravity="center"
         android:background="@drawable/animation_button_yellow"
         android:src="@drawable/ic_undo">
-
     </ImageButton>
 
     <ImageButton
-        android:id="@+id/btnFiftyPercent"
+        android:id="@+id/imbFiftyPercent"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="5dp"
@@ -28,7 +28,7 @@
     </ImageButton>
 
     <ImageButton
-        android:id="@+id/btnSupportAudience"
+        android:id="@+id/imbSupportAudience"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginEnd="5dp"
@@ -38,7 +38,7 @@
     </ImageButton>
 
     <ImageButton
-        android:id="@+id/btnCallPeople"
+        android:id="@+id/imbCallPeople"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="3"

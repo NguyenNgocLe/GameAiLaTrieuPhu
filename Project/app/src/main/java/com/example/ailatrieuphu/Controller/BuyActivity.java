@@ -37,21 +37,23 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         int id = v.getId();
         switch (id) {
             case R.id.btnCreditFiveThousandDollars: {
-                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 5.000?", "OK","Cancel",CustomDialogCredit.SIZE_M).show();
-
+                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 5.000?", "OK", "Cancel", CustomDialogCredit.SIZE_M, 5000).show();
                 break;
             }
             case R.id.btnCreditThreeThousandDollars: {
-                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 3.000?", "OK","Cancel",CustomDialogCredit.SIZE_M).show();
+
+                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 3.000?", "OK", "Cancel", CustomDialogCredit.SIZE_M, 3000).show();
                 break;
             }
             case R.id.btnCreditOneThousandDollars: {
-                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 1.000?", "OK","Cancel",CustomDialogCredit.SIZE_M).show();
+
+                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 1.000?", "OK", "Cancel", CustomDialogCredit.SIZE_M, 1000).show();
 
                 break;
             }
             case R.id.btnCreditFiveHundredDollars: {
-                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 500?", "OK","Cancel",CustomDialogCredit.SIZE_M).show();
+
+                new CustomDialogCredit(this, "Thông báo!", "Bạn muốn mua gói credit 500?", "OK", "Cancel", CustomDialogCredit.SIZE_M, 500).show();
 
                 break;
             }

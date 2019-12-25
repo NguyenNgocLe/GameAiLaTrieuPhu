@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -19,6 +20,19 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
     private String textButton;
     private String textButton2;
     private int SIZE;
+
+    public CustomDialogCredit(@NonNull Context context, Context context1, String title, String content, String textButton, String textButton2, int SIZE, int numberCredit) {
+        super(context);
+        this.context = context1;
+        this.title = title;
+        this.content = content;
+        this.textButton = textButton;
+        this.textButton2 = textButton2;
+        this.SIZE = SIZE;
+        this.numberCredit = numberCredit;
+    }
+
+    private int numberCredit;
     public static int SIZE_M = 15, SIZE_L = 20;
 
     public CustomDialogCredit(Context context, String title, String content, String textButton, String textButton2, int SIZE) {
@@ -32,9 +46,15 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
     }
 
 
-    public CustomDialogCredit(@NonNull Context context) {
+    public CustomDialogCredit(@NonNull Context context, String s, String s1, String ok, String cancel, int sizeM, int i) {
         super(context);
         this.context = context;
+        this.title = s;
+        this.content = s1;
+        this.textButton = ok;
+        this.textButton2 = cancel;
+        this.SIZE = sizeM;
+        this.numberCredit = i;
     }
 
     @Override
@@ -44,7 +64,6 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
         //
         setCancelable(true);
         // ánh xạ view
-        //ánh xạ view
         TextView mTitle = findViewById(R.id.txtTitle);
         TextView mContent = findViewById(R.id.txtContent);
         Button mButtonOk = findViewById(R.id.btnOk);
@@ -54,8 +73,7 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
         mButtonOk.setText(this.textButton);
         mButtonCancel.setText(this.textButton2);
         mContent.setTextSize(this.SIZE);
-
-//set onclick
+        //
         mButtonOk.setOnClickListener(this);
         mButtonCancel.setOnClickListener(this);
     }
@@ -63,6 +81,22 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        int id = v.getId();
+        switch (id) {
+            case R.id.btnOk: {
+                int numberCredit = 5000;
+                // đang làm tăng số credit lên cho người chơi
+                Toast.makeText(context, "5.000", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.btnCancel: {
+                int numberCredit = 3000;
+                Toast.makeText(context, "Cancel", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            default:
+                break;
+        }
         this.dismiss();
     }
 
@@ -82,5 +116,12 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
     public void setTextButton2(String textButton2) {
         this.textButton2 = textButton2;
     }
-    //
+
+    public int getNumberCredit() {
+        return numberCredit;
+    }
+
+    public void setNumberCredit(int numberCredit) {
+        this.numberCredit = numberCredit;
+    }
 }

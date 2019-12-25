@@ -13,10 +13,9 @@ import com.example.ailatrieuphu.View.ChooseView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ChoosePresenterImp implements ChoosePresenter{
+public class ChoosePresenterImp implements ChoosePresenter {
     private ChooseModel model;
     private ChooseView callBack;
-//    private CauHoi
 
     public ChoosePresenterImp(Context context, ChooseView callBack) {
         model = new ChooseModel(context);
@@ -44,15 +43,15 @@ public class ChoosePresenterImp implements ChoosePresenter{
                         , NetworkUtils.GET,
                         null);
             }
+
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 callBack.showLayoutContent();
                 callBack.hideProcessLoadData();
                 try {
-
                     model.setQuestions(Question.getArrQuestionFromJson(new JSONObject(s)));
-                    Log.e("json-err","size data: " + model.getQuestions().size());
+                    Log.e("json-err", "size data: " + model.getQuestions().size());
                     model.setCurrentQuestion(model.getQuestions().get(0));
                     callBack.setTextQues(model.getCurrentQuestion().getQuestion());
                     callBack.setScore(String.valueOf(model.getCurrentScore()));
@@ -64,21 +63,20 @@ public class ChoosePresenterImp implements ChoosePresenter{
                     callBack.setQuesId(model.getCurrentQuestionNumber());
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    Log.e("json-err",e+"");
+                    Log.e("json-err", e + "");
                 }
             }
-
         }).execute();
     }
 
     @Override
     public void onButtonAClick() {
         String title = "";
-        if (callBack.getTextA().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())){
-            title = "Dung roi em oi";
-            model.setCurrentScore(model.getCurrentScore()+1);
-        }else{
-            title = "Sai roi em oi";
+        if (callBack.getTextA().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+            title = "Câu trả lời chính xác!";
+            model.setCurrentScore(model.getCurrentScore() + 1);
+        } else {
+            title = "Sai rồi!";
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
@@ -89,11 +87,11 @@ public class ChoosePresenterImp implements ChoosePresenter{
     @Override
     public void onButtonBClick() {
         String title = "";
-        if (callBack.getTextB().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())){
-            title = "Dung roi em oi";
-            model.setCurrentScore(model.getCurrentScore()+1);
-        }else{
-            title = "Sai roi em oi";
+        if (callBack.getTextB().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+            title = "Câu trả lời chính xác!";
+            model.setCurrentScore(model.getCurrentScore() + 1);
+        } else {
+            title = "Sai rồi!";
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
@@ -104,11 +102,11 @@ public class ChoosePresenterImp implements ChoosePresenter{
     @Override
     public void onButtonCClick() {
         String title = "";
-        if (callBack.getTextC().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())){
-            title = "Dung roi em oi";
-            model.setCurrentScore(model.getCurrentScore()+1);
-        }else{
-            title = "Sai roi em oi";
+        if (callBack.getTextC().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+            title = "Câu trả lời chính xác!";
+            model.setCurrentScore(model.getCurrentScore() + 1);
+        } else {
+            title = "Sai rồi!";
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
@@ -119,11 +117,11 @@ public class ChoosePresenterImp implements ChoosePresenter{
     @Override
     public void onButtonDClick() {
         String title = "";
-        if (callBack.getTextD().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())){
-            title = "Dung roi em oi";
-            model.setCurrentScore(model.getCurrentScore()+1);
-        }else{
-            title = "Sai roi em oi";
+        if (callBack.getTextD().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+            title = "Câu trả lời chính xác!";
+            model.setCurrentScore(model.getCurrentScore() + 1);
+        } else {
+            title = "Sai rồi!";
         }
         model.getQuestions().remove(model.getCurrentQuestion());
 
@@ -136,7 +134,7 @@ public class ChoosePresenterImp implements ChoosePresenter{
     public void onButtonOkClick() {
         callBack.hideDialogAnswer();
         model.setCurrentQuestion(model.getRandomQuestion());
-        model.setCurrentQuestionNumber(model.getCurrentQuestionNumber()+1);
+        model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
         callBack.setScore(String.valueOf(model.getCurrentScore()));
         callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
         callBack.setTextQues(model.getCurrentQuestion().getQuestion());
@@ -144,5 +142,31 @@ public class ChoosePresenterImp implements ChoosePresenter{
         callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+    }
+
+    @Override
+    public void onImageButtonUndoClick() {
+        // xu ly goi model va set text o day
+        //callBack.showToastStringText("abc");
+    }
+
+    @Override
+    public void onImageButtonFiftyPercentClick() {
+
+    }
+
+    @Override
+    public void onImageButtonSupportAudiencesClick() {
+
+    }
+
+    @Override
+    public void onImageButtonCallPeopleClick() {
+
+    }
+
+    @Override
+    public void onImageButtonCreditClick() {
+
     }
 }

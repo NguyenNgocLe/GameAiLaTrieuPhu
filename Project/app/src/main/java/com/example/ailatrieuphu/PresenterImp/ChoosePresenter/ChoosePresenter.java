@@ -7,4 +7,9 @@ public interface ChoosePresenter {
     void onButtonCClick();
     void onButtonDClick();
     void onButtonOkClick();
+    void onImageButtonUndoClick();
+    void onImageButtonFiftyPercentClick();
+    void onImageButtonSupportAudiencesClick();
+    void onImageButtonCallPeopleClick();
+    void onImageButtonCreditClick();
 }
