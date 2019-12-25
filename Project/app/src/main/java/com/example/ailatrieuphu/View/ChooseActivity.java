@@ -17,8 +17,6 @@ import com.example.ailatrieuphu.PresenterImp.ChoosePresenter.ChoosePresenterImp;
 import com.example.ailatrieuphu.R;
 import com.example.ailatrieuphu.Utilities.RingProgressbarAsyntask;
 
-import org.json.JSONObject;
-
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
 public class ChooseActivity extends AppCompatActivity implements RingProgressBar.OnProgressListener,
@@ -29,12 +27,10 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private RingProgressbarAsyntask mThreadCountdown;
     private TextView timeAnswer;
     //
-    private JSONObject jsonObject;
     private Button btnA;
     private Button btnB;
     private Button btnC;
     private Button btnD;
-    private Button btnQuestion;
     private ImageButton imbUndo;
     private ImageButton imbFiftyPercent;
     private ImageButton imbSupportAudience;
@@ -44,14 +40,18 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private TextView txtQuestion;
     private TextView txtScore;
     private int[] mListIdQuestion;
-    private int categoryId;
     private ProgressBar progressBarLoadData;
     private View layoutContent;
     private Dialog dialogNotify;
-    private TextView txtTitleDialogNotify, txtAnswerCorrect;
+    private Dialog dialogQuestion;
+    private TextView txtTitleDialogNotify, txtAnswerCorrect, txtTitleQuestionSupport, txtContentQuestionSupport;
     private Button btnOkDialog;
     //
     private ChoosePresenterImp choosePresenterImp;
+
+    public ChooseActivity() {
+
+    }
 
     //
     @SuppressLint("StaticFieldLeak")
@@ -100,6 +100,10 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         dialogNotify.setContentView(R.layout.thong_bao);
         txtTitleDialogNotify = dialogNotify.findViewById(R.id.txtTitle);
         txtAnswerCorrect = dialogNotify.findViewById(R.id.txtContent);
+        dialogQuestion = new Dialog(this);
+        dialogQuestion.setContentView(R.layout.activity_custom_dialog_credit);
+        txtTitleQuestionSupport = dialogQuestion.findViewById(R.id.txtTitle);
+        txtContentQuestionSupport = dialogQuestion.findViewById(R.id.txtContent);
         btnOkDialog = dialogNotify.findViewById(R.id.btnOk);
         txtScore = findViewById(R.id.txtScoreQuestion);
         this.imbUndo = findViewById(R.id.imbUndo);
@@ -218,6 +222,16 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
+    public void setTextTitleQuestionSupportDialog(String text) {
+        txtTitleQuestionSupport.setText(text);
+    }
+
+    @Override
+    public void setTextContentQuestionSupportDialog(String text) {
+        txtContentQuestionSupport.setText(text);
+    }
+
+    @Override
     public void setAnswerTitleDialog(String text) {
         txtAnswerCorrect.setText(text);
     }
@@ -233,13 +247,18 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
+    public void showDialogQuestionSupport() {
+        dialogQuestion.show();
+    }
+
+    @Override
     public void setQuestionNumber(String number) {
         btnQuestionNumber.setText(number);
     }
 
     @Override
     public void showToastStringText(String text) {
-        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show(); // text debug :))
     }
 
     @Override

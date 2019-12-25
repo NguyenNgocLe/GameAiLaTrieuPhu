@@ -119,12 +119,11 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String title = "";
         if (callBack.getTextD().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
             title = "Câu trả lời chính xác!";
-            model.setCurrentScore(model.getCurrentScore() + 1);
+            model.setCurrentScore(model.getCurrentScore() + 1); // tang diem
         } else {
             title = "Sai rồi!";
         }
-        model.getQuestions().remove(model.getCurrentQuestion());
-
+        model.getQuestions().remove(model.getCurrentQuestion()); //xoa cau hoi da choi
         callBack.setTextTitleDialog(title);
         callBack.setAnswerTitleDialog("D");
         callBack.showDialogAnswer();
@@ -146,8 +145,12 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void onImageButtonUndoClick() {
-        // xu ly goi model va set text o day
-        //callBack.showToastStringText("abc");
+        // set custom dialog button undo
+        String title = "Bạn có muốn chuyển sang câu khác?";
+        callBack.setTextTitleQuestionSupportDialog(title);
+        String content = "OK hơm!";
+        callBack.setTextContentQuestionSupportDialog(content);
+        callBack.showDialogQuestionSupport();
     }
 
     @Override

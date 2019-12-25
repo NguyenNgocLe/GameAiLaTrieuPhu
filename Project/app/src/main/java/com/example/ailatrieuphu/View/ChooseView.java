@@ -19,9 +19,12 @@ public interface ChooseView {
     void showLayoutContent();
     void hideLayoutContent();
     void setTextTitleDialog(String text);
+    void setTextTitleQuestionSupportDialog(String text);
+    void setTextContentQuestionSupportDialog(String text);
     void setAnswerTitleDialog(String text);
     void showDialogAnswer();
     void hideDialogAnswer();
+    void showDialogQuestionSupport();
     void setQuestionNumber(String number);
     void showToastStringText(String text);
 }
