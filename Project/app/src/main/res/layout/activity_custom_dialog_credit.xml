@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:background="@drawable/custom_dialog"
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Title"
+        android:text="@string/title"
         android:gravity="center"
         android:padding="10dp"
         android:textColor="#FF5722"
@@ -24,7 +25,7 @@
         android:id="@+id/txtContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="B"
+        android:text="@string/b"
         android:padding="15dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
@@ -47,9 +48,10 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/animation_button_blue"
-            android:text="OK"
+            android:text="@string/ok"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonOrder,ButtonStyle">
         </Button>
 
         <Button
@@ -60,9 +62,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/animation_button_yellow"
-            android:text="Cancel"
+            android:text="@string/cancel"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonOrder,ButtonStyle">
         </Button>
     </LinearLayout>
     <LinearLayout

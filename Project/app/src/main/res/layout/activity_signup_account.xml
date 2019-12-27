@@ -61,7 +61,8 @@
             android:clickable="true"
             android:focusable="true"
             android:padding="50dp"
-            android:src="@drawable/ic_user_player">
+            android:src="@drawable/ic_user_player"
+            android:contentDescription="TODO">
         </ImageView>
 
         <EditText
@@ -75,7 +76,8 @@
             android:background="@drawable/radius_user_edit_text"
             android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:autofillHints="">
         </EditText>
 
         <EditText
@@ -91,7 +93,8 @@
             android:lines="1"
             android:inputType="textCapSentences"
             android:padding="5dp"
-            tools:ignore="TextFields">
+            tools:ignore="TextFields"
+            android:autofillHints="">
         </EditText>
 
         <EditText
@@ -106,7 +109,8 @@
             android:hint="@string/hint_password"
             android:lines="1"
             android:inputType="textPassword"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:autofillHints="">
         </EditText>
 
         <EditText
@@ -121,7 +125,8 @@
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:lines="1"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:autofillHints="">
         </EditText>
 
         <Button

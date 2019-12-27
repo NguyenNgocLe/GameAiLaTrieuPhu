@@ -60,7 +60,8 @@
         app:layout_constraintBottom_toTopOf="@id/lineMidActivityMain"
         app:layout_constraintEnd_toStartOf="@id/lineRightActivityMain"
         app:layout_constraintStart_toStartOf="@id/lineLeftActivityMain"
-        app:layout_constraintTop_toBottomOf="@id/lineTopActivityMain">
+        app:layout_constraintTop_toBottomOf="@id/lineTopActivityMain"
+        android:contentDescription="@string/todo">
     </ImageView>
 
     <LinearLayout
@@ -84,7 +85,8 @@
             android:padding="5dp"
             android:text="@string/manage_account"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
 
         <Button
@@ -98,7 +100,8 @@
             android:padding="5dp"
             android:text="@string/new_game"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
         <Button
             android:id="@+id/btnPlayHistory"
@@ -111,7 +114,8 @@
             android:padding="5dp"
             android:text="@string/history"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
         <Button
             android:id="@+id/btnRankPlayer"
@@ -124,7 +128,8 @@
             android:padding="5dp"
             android:text="@string/rank"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
 
         <Button
@@ -139,7 +144,8 @@
             android:padding="5dp"
             android:text="@string/buy_credit"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

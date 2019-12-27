@@ -60,7 +60,9 @@
             android:layout_weight="4"
             android:layout_marginHorizontal="5dp"
             android:padding="50dp"
-            android:src="@drawable/ic_user_player">
+            android:src="@drawable/ic_user_player"
+            android:contentDescription="@string/todo"
+            tools:targetApi="o">
         </ImageView>
 
         <TextView
@@ -70,7 +72,8 @@
             android:layout_marginHorizontal="5dp"
             android:gravity="center"
             android:text="@string/change_avatar"
-            android:textColor="#008EFF">
+            android:textColor="#008EFF"
+            tools:targetApi="o">
         </TextView>
 
         <EditText
@@ -84,8 +87,9 @@
             android:enabled="false"
             android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
-            android:padding="5dp">
-        </EditText>
+            android:padding="5dp"
+            tools:targetApi="o"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/edtEmailManageAccount"
@@ -99,7 +103,9 @@
             android:inputType="textCapSentences"
             android:lines="1"
             android:padding="5dp"
-            tools:ignore="TextFields">
+            tools:ignore="TextFields"
+            tools:targetApi="o"
+            android:autofillHints="">
         </EditText>
 
         <EditText
@@ -113,7 +119,9 @@
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:lines="1"
-            android:padding="5dp">
+            android:padding="5dp"
+            tools:targetApi="o"
+            android:autofillHints="">
         </EditText>
 
         <EditText
@@ -127,7 +135,9 @@
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:lines="1"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:autofillHints=""
+            tools:targetApi="o">
         </EditText>
 
         <Button
@@ -142,8 +152,8 @@
             android:text="@string/update"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            tools:ignore="TextViewEdits">
+            tools:ignore="TextViewEdits"
+            tools:targetApi="o">
         </Button>
     </LinearLayout>
-    <!--     update code layout-->
 </androidx.constraintlayout.widget.ConstraintLayout>
