@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Title"
+        android:gravity="center"
         android:padding="10dp"
-        android:textColor="#FFE600"
-        android:textSize="20dp"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
         android:textStyle="bold">
     </TextView>
 
@@ -24,9 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B"
-        android:padding="20dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
         android:textColor="#4CAF50"
-        android:textSize="50dp"
+        android:textSize="20sp"
         android:textStyle="bold">
     </TextView>
 
@@ -37,23 +40,23 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnOk"
+            android:id="@+id/btnOkSupportAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/animation_button_yellow"
+            android:background="@drawable/animation_button_blue"
             android:text="OK"
             android:textAllCaps="false"
             android:textColor="#FFFFFF">
         </Button>
 
         <Button
-            android:id="@+id/btnCancel"
+            android:id="@+id/btnCancelSupportAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/animation_button_yellow"

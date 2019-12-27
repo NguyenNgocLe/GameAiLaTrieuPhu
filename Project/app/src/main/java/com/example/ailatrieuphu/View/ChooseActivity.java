@@ -45,7 +45,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private Dialog dialogNotify;
     private Dialog dialogQuestion;
     private TextView txtTitleDialogNotify, txtAnswerCorrect, txtTitleQuestionSupport, txtContentQuestionSupport;
-    private Button btnOkDialog;
+    private Button btnOkDialog, btnOKSupportAnswer, btnCancelSupportAnswer;
     //
     private ChoosePresenterImp choosePresenterImp;
 
@@ -105,6 +105,8 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         txtTitleQuestionSupport = dialogQuestion.findViewById(R.id.txtTitle);
         txtContentQuestionSupport = dialogQuestion.findViewById(R.id.txtContent);
         btnOkDialog = dialogNotify.findViewById(R.id.btnOk);
+        btnOKSupportAnswer = dialogQuestion.findViewById(R.id.btnOkSupportAnswer);
+        btnCancelSupportAnswer = dialogQuestion.findViewById(R.id.btnCancelSupportAnswer);
         txtScore = findViewById(R.id.txtScoreQuestion);
         this.imbUndo = findViewById(R.id.imbUndo);
         this.imbFiftyPercent = findViewById(R.id.imbFiftyPercent);
@@ -128,7 +130,18 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
                 choosePresenterImp.onButtonOkClick();
             }
         });
-
+        btnOKSupportAnswer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkSupportClick();
+            }
+        });
+        btnCancelSupportAnswer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonCancelSupportClick();
+            }
+        });
     }
 
     @Override
@@ -247,6 +260,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
+    public void hideDialogSupportAnswer() {
+        dialogQuestion.dismiss();
+    }
+
+    @Override
     public void showDialogQuestionSupport() {
         dialogQuestion.show();
     }
@@ -283,17 +301,14 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
             }
             case R.id.imbUndo: {
                 choosePresenterImp.onImageButtonUndoClick();
-                //Toast.makeText(this, "button undo", Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.imbFiftyPercent: {
                 choosePresenterImp.onImageButtonFiftyPercentClick();
-                //Toast.makeText(this, "button 50:50", Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.imbSupportAudience: {
                 choosePresenterImp.onImageButtonSupportAudiencesClick();
-                //Toast.makeText(this, "Button support audience", Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.imbCallPeople: {
@@ -302,7 +317,6 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
             }
             default: {
                 choosePresenterImp.onImageButtonCreditClick();
-                //Toast.makeText(this, "Button credit people", Toast.LENGTH_SHORT).show();
                 break;
             }
         }

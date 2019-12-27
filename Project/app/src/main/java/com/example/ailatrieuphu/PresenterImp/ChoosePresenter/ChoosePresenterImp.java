@@ -144,32 +144,57 @@ public class ChoosePresenterImp implements ChoosePresenter {
     }
 
     @Override
+    public void onButtonOkSupportClick() {
+        callBack.hideDialogSupportAnswer();
+    }
+
+    @Override
+    public void onButtonCancelSupportClick() {
+        callBack.hideDialogSupportAnswer();
+    }
+
+    @Override
     public void onImageButtonUndoClick() {
-        // set custom dialog button undo
         String title = "Bạn có muốn chuyển sang câu khác?";
         callBack.setTextTitleQuestionSupportDialog(title);
-        String content = "OK hơm!";
+        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
         callBack.setTextContentQuestionSupportDialog(content);
         callBack.showDialogQuestionSupport();
     }
 
     @Override
     public void onImageButtonFiftyPercentClick() {
-
+        String title = "Bạn có muốn sử dụng 50:50?";
+        callBack.setTextTitleQuestionSupportDialog(title);
+        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
+        callBack.setTextContentQuestionSupportDialog(content);
+        callBack.showDialogQuestionSupport();
     }
 
     @Override
     public void onImageButtonSupportAudiencesClick() {
-
+        String title = "Bạn có muốn hỏi ý kiến khán giả?";
+        callBack.setTextTitleQuestionSupportDialog(title);
+        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
+        callBack.setTextContentQuestionSupportDialog(content);
+        callBack.showDialogQuestionSupport();
     }
 
     @Override
     public void onImageButtonCallPeopleClick() {
-
+        String title = "Bạn có muốn gọi điện thoại cho người thân?";
+        callBack.setTextTitleQuestionSupportDialog(title);
+        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
+        callBack.setTextContentQuestionSupportDialog(content);
+        callBack.showDialogQuestionSupport();
     }
 
     @Override
     public void onImageButtonCreditClick() {
-
+        String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
+        callBack.setTextTitleQuestionSupportDialog(title);
+        String content = "Bạn được sử dụng quyền trợ giúp nhiều lần!";
+        callBack.setTextContentQuestionSupportDialog(content);
+        callBack.showDialogQuestionSupport();
     }
 }

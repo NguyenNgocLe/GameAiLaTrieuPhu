@@ -24,6 +24,7 @@ public interface ChooseView {
     void setAnswerTitleDialog(String text);
     void showDialogAnswer();
     void hideDialogAnswer();
+    void hideDialogSupportAnswer();
     void showDialogQuestionSupport();
     void setQuestionNumber(String number);
     void showToastStringText(String text);
