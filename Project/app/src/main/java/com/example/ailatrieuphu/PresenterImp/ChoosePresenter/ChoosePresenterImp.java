@@ -72,7 +72,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
     @Override
     public void onButtonAClick() {
         String title = "";
-        if (callBack.getTextA().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+        if ("A".equals(model.getCurrentQuestion().getAnswer_correct())) {
             title = "Câu trả lời chính xác!";
             model.setCurrentScore(model.getCurrentScore() + 1);
         } else {
@@ -87,7 +87,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
     @Override
     public void onButtonBClick() {
         String title = "";
-        if (callBack.getTextB().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+        if ("B".equals(model.getCurrentQuestion().getAnswer_correct())) {
             title = "Câu trả lời chính xác!";
             model.setCurrentScore(model.getCurrentScore() + 1);
         } else {
@@ -102,7 +102,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
     @Override
     public void onButtonCClick() {
         String title = "";
-        if (callBack.getTextC().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+        if ("C".equals(model.getCurrentQuestion().getAnswer_correct())) {
             title = "Câu trả lời chính xác!";
             model.setCurrentScore(model.getCurrentScore() + 1);
         } else {
@@ -117,7 +117,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
     @Override
     public void onButtonDClick() {
         String title = "";
-        if (callBack.getTextD().toLowerCase().equals(model.getCurrentQuestion().getAnswer_correct())) {
+        if ("D".equals(model.getCurrentQuestion().getAnswer_correct())) {
             title = "Câu trả lời chính xác!";
             model.setCurrentScore(model.getCurrentScore() + 1); // tang diem
         } else {
@@ -141,11 +141,22 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+        // hidden button support random question
+
     }
 
     @Override
     public void onButtonOkSupportClick() {
         callBack.hideDialogSupportAnswer();
+        model.setCurrentQuestion(model.getRandomQuestion());
+        model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
+        callBack.setScore(String.valueOf(model.getCurrentScore()));
+        callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
+        callBack.setTextQues(model.getCurrentQuestion().getQuestion());
+        callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
+        callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
+        callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
+        callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
     }
 
     @Override
@@ -160,6 +171,9 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
         callBack.setTextContentQuestionSupportDialog(content);
         callBack.showDialogQuestionSupport();
+//        if () {
+            hiddenButtonUndoClick();
+//        }
     }
 
     @Override
@@ -196,5 +210,45 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String content = "Bạn được sử dụng quyền trợ giúp nhiều lần!";
         callBack.setTextContentQuestionSupportDialog(content);
         callBack.showDialogQuestionSupport();
+    }
+
+    @Override
+    public void hiddenButtonUndoClick() {
+        callBack.hiddenImageButtonSupportUndoQuestion();
+    }
+
+    @Override
+    public void hiddenButtonFiftyPercentClick() {
+
+    }
+
+    @Override
+    public void hiddenButtonSupportAudiences() {
+
+    }
+
+    @Override
+    public void hiddenButtonCallPeople() {
+
+    }
+
+    @Override
+    public void showButtonUndoClick() {
+
+    }
+
+    @Override
+    public void showButtonFiftyPercentClick() {
+
+    }
+
+    @Override
+    public void showButtonSupportAudiences() {
+
+    }
+
+    @Override
+    public void showButtonCallPeople() {
+
     }
 }

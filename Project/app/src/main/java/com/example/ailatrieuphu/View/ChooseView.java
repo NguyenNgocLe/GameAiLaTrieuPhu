@@ -28,4 +28,5 @@ public interface ChooseView {
     void showDialogQuestionSupport();
     void setQuestionNumber(String number);
     void showToastStringText(String text);
+    void hiddenImageButtonSupportUndoQuestion();
 }

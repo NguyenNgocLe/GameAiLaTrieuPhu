@@ -14,4 +14,13 @@ public interface ChoosePresenter {
     void onImageButtonSupportAudiencesClick();
     void onImageButtonCallPeopleClick();
     void onImageButtonCreditClick();
+    //
+    void hiddenButtonUndoClick();
+    void hiddenButtonFiftyPercentClick();
+    void hiddenButtonSupportAudiences();
+    void hiddenButtonCallPeople();
+    void showButtonUndoClick();
+    void showButtonFiftyPercentClick();
+    void showButtonSupportAudiences();
+    void showButtonCallPeople();
 }

@@ -97,7 +97,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         imbCallPeople.setOnClickListener(this);
         btnCredit.setOnClickListener(this);
         dialogNotify = new Dialog(this);
-        dialogNotify.setContentView(R.layout.thong_bao);
+        dialogNotify.setContentView(R.layout.notification);
         txtTitleDialogNotify = dialogNotify.findViewById(R.id.txtTitle);
         txtAnswerCorrect = dialogNotify.findViewById(R.id.txtContent);
         dialogQuestion = new Dialog(this);
@@ -277,6 +277,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     @Override
     public void showToastStringText(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show(); // text debug :))
+    }
+
+    @Override
+    public void hiddenImageButtonSupportUndoQuestion() {
+        imbUndo.setVisibility(View.INVISIBLE);
     }
 
     @Override

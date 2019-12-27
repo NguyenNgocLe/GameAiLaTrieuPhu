@@ -66,7 +66,7 @@
             android:layout_gravity="center"
             android:layout_marginEnd="5dp"
             android:background="@drawable/animation_button_white"
-            android:src="@drawable/ic_heart_not_exists">
+            android:src="@drawable/ic_heart_available">
         </ImageButton>
     </LinearLayout>
 
