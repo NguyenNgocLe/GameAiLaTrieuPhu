@@ -6,48 +6,48 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Button
-        android:id="@+id/btnAnswerA"
+        android:id="@+id/A"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonblue2"
+        android:background="@drawable/animation_button_blue2"
         android:text="@string/answer_a"
         android:textAllCaps="false"
         android:textColor="#FFFFFF">
     </Button>
 
     <Button
-        android:id="@+id/btnAnswerB"
+        android:id="@+id/B"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonblue2"
+        android:background="@drawable/animation_button_blue2"
         android:text="@string/answer_b"
         android:textAllCaps="false"
         android:textColor="#FFFFFF">
     </Button>
 
     <Button
-        android:id="@+id/btnAnswerC"
+        android:id="@+id/C"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonblue2"
+        android:background="@drawable/animation_button_blue2"
         android:text="@string/answer_c"
         android:textAllCaps="false"
         android:textColor="#FFFFFF">
     </Button>
 
     <Button
-        android:id="@+id/btnAnswerD"
+        android:id="@+id/D"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonblue2"
+        android:background="@drawable/animation_button_blue2"
         android:text="@string/answer_d"
         android:textAllCaps="false"
         android:textColor="#FFFFFF">

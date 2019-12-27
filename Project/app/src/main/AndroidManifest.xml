@@ -2,100 +2,92 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ailatrieuphu">
+
     <uses-permission android:name="android.permission.INTERNET">
     </uses-permission>
+
     <application
-        android:networkSecurityConfig="@xml/network_config"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name="com.example.ailatrieuphu.ManageAccount.View.ManageActivity"
-            android:screenOrientation="portrait">
-
+        <activity android:name=".Utilities.Dialog.CustomDialogCredit">
         </activity>
         <activity
-            android:name=".ChooseAnswer.View.ChooseActivity"
+            android:name=".Controller.ManageActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".RightAnswer.View.RightActivity"
+            android:name=".View.ChooseActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".WrongAnswer.View.WrongActivity"
+            android:name=".Controller.RightActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".SupportAudience.View.SupportActivity"
+            android:name=".Controller.WrongActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".CallPeople.View.CallAcitivity"
+            android:name=".Controller.SupportActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".EndPlay.View.EndActivity"
+            android:name=".Controller.CallActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".RankPlayer.View.RankAcitivity"
+            android:name=".Controller.EndActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".HistoryPlayer.View.HistoryActivity"
+            android:name=".Controller.RankActivity"
             android:screenOrientation="portrait">
-
-        </activity>
-
-        <activity
-            android:name=".BuyCredit.View.BuyActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
-
-        <activity
-            android:name=".ShowQuestion.View.ShowActivity"
-            android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".QuestionField.View.QuestionActivity"
+            android:name=".Controller.HistoryActivity"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
-            android:name=".LoginScreen.View.LoginActivity"
+            android:name=".Controller.BuyActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.ShowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.QuestionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.LoginActivity"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".SignUpAccount.View.SignUpActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".ForgotPassword.View.ForgotActivity"
-            android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MainActivity.View.MainActivity"
+            android:name=".Controller.SignUpActivity"
             android:screenOrientation="portrait">
-
+        </activity>
+        <activity
+            android:name=".Controller.ForgotActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controller.MainActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
+
 </manifest>

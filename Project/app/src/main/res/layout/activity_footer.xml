@@ -6,44 +6,48 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageButton
-        android:id="@+id/btnUndo"
+        android:id="@+id/imbUndo"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonyellow"
-        android:src="@drawable/ic_undo">
-
+        android:layout_gravity="center"
+        android:background="@drawable/animation_button_yellow"
+        android:src="@drawable/ic_undo"
+        android:contentDescription="@string/todo">
     </ImageButton>
 
     <ImageButton
-        android:id="@+id/btnFiftyPercent"
+        android:id="@+id/imbFiftyPercent"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonyellow"
-        android:src="@drawable/ic_fiftyprecent">
+        android:background="@drawable/animation_button_yellow"
+        android:src="@drawable/ic_fifty_percent"
+        android:contentDescription="@string/todo">
     </ImageButton>
 
     <ImageButton
-        android:id="@+id/btnSupportAudience"
+        android:id="@+id/imbSupportAudience"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginEnd="5dp"
         android:layout_weight="2"
-        android:background="@drawable/animationbuttonyellow"
-        android:src="@drawable/ic_supportaudience">
+        android:background="@drawable/animation_button_yellow"
+        android:src="@drawable/ic_support_audience"
+        android:contentDescription="@string/todo">
     </ImageButton>
 
     <ImageButton
-        android:id="@+id/btnCallPeople"
+        android:id="@+id/imbCallPeople"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:background="@drawable/animationbuttonyellow"
-        android:src="@drawable/ic_call2">
+        android:background="@drawable/animation_button_yellow"
+        android:src="@drawable/ic_call_2"
+        android:contentDescription="@string/todo">
     </ImageButton>
 
     <Button
@@ -54,7 +58,7 @@
         android:layout_marginRight="5dp"
         android:layout_weight="1"
         android:drawableEnd="@drawable/ic_diamond"
-        android:background="@drawable/animationbuttonyellow"
+        android:background="@drawable/animation_button_yellow"
         android:text="@string/number_credit"
         android:textSize="23sp">
     </Button>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EndPlay.View.EndActivity">
+    tools:context=".Controller.EndActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusEndPlay"
@@ -194,7 +194,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/animationpurple"
+                android:background="@drawable/animation_purple"
                 android:text="@string/add_one_more_300"
                 android:textColor="#FFFF00"
                 android:drawableEnd="@drawable/ic_diamond"
@@ -209,7 +209,7 @@
                 android:layout_weight="2"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/animationbuttongreen"
+                android:background="@drawable/animation_button_green"
                 android:text="@string/end_game"
                 android:textColor="#FFFF00"
                 android:textAllCaps="false">

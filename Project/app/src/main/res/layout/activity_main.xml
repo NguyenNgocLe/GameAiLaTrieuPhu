@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity.View.MainActivity">
+    tools:context=".Controller.MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopActivityMain"
@@ -56,11 +56,12 @@
         android:id="@+id/imgLogoLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_userplayer"
+        android:src="@drawable/ic_user_player"
         app:layout_constraintBottom_toTopOf="@id/lineMidActivityMain"
         app:layout_constraintEnd_toStartOf="@id/lineRightActivityMain"
         app:layout_constraintStart_toStartOf="@id/lineLeftActivityMain"
-        app:layout_constraintTop_toBottomOf="@id/lineTopActivityMain">
+        app:layout_constraintTop_toBottomOf="@id/lineTopActivityMain"
+        android:contentDescription="@string/todo">
     </ImageView>
 
     <LinearLayout
@@ -80,11 +81,12 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="5dp"
             android:layout_weight="2"
-            android:background="@drawable/animationbuttongreen"
+            android:background="@drawable/animation_button_green"
             android:padding="5dp"
             android:text="@string/manage_account"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
 
         <Button
@@ -94,11 +96,12 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="5dp"
             android:layout_weight="2"
-            android:background="@drawable/animationbuttonblue"
+            android:background="@drawable/animation_button_blue"
             android:padding="5dp"
             android:text="@string/new_game"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
         <Button
             android:id="@+id/btnPlayHistory"
@@ -107,11 +110,12 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="5dp"
             android:layout_weight="2"
-            android:background="@drawable/animationpurple"
+            android:background="@drawable/animation_purple"
             android:padding="5dp"
             android:text="@string/history"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
         <Button
             android:id="@+id/btnRankPlayer"
@@ -120,11 +124,12 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="5dp"
             android:layout_weight="2"
-            android:background="@drawable/animationbuttonpink"
+            android:background="@drawable/animation_button_pink"
             android:padding="5dp"
             android:text="@string/rank"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
 
         <Button
@@ -135,11 +140,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:padding="5dp"
             android:text="@string/buy_credit"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF">
+            android:textColor="#FFFFFF"
+            tools:targetApi="o">
         </Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

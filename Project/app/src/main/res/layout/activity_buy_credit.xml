@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuyCredit.View.BuyActivity">
+    tools:context=".Controller.BuyActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusBuyCredit"
@@ -114,8 +114,8 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:layout_weight="6"
-            android:background="@drawable/radiusbuttonsigupblue2"
+            android:layout_weight="4"
+            android:background="@drawable/radius_button_sign_up_blue_2"
             android:gravity="center"
             android:text="@string/username_player"
             android:textSize="23sp">
@@ -127,11 +127,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="45dp"
-            android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
+            android:layout_weight="3"
+            android:background="@drawable/animation_button_yellow"
             android:text="@string/credit_number"
             android:textColor="#FFFF"
-            android:textColorHighlight="@drawable/animationbuttonblue"
+            android:textColorHighlight="@drawable/animation_button_blue"
             android:textSize="23sp">
         </Button>
 
@@ -142,9 +142,10 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:layout_weight="2"
-            android:background="@drawable/animationbuttonyellow"
-            android:src="@drawable/ic_diamond">
+            android:layout_weight="3"
+            android:background="@drawable/animation_button_yellow"
+            android:src="@drawable/ic_diamond"
+            android:contentDescription="@string/todo">
         </ImageButton>
     </LinearLayout>
 
@@ -203,7 +204,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="6"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:drawableBottom="@drawable/ic_credit"
             android:text="@string/number_5000"
             android:textSize="30sp">
@@ -235,7 +236,7 @@
         app:layout_constraintTop_toBottomOf="@id/lineMidBuyCredit">
 
         <Button
-            android:id="@+id/btnCreditThreeThousand"
+            android:id="@+id/btnCreditThreeThousandDollars"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
@@ -243,7 +244,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="6"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:drawableBottom="@drawable/ic_credit"
             android:text="@string/number_3000"
             android:textSize="30sp">
@@ -283,7 +284,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="6"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:drawableBottom="@drawable/ic_credit"
             android:text="@string/number_1000"
             android:textSize="30sp">
@@ -323,7 +324,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="6"
-            android:background="@drawable/animationbuttonyellow"
+            android:background="@drawable/animation_button_yellow"
             android:drawableBottom="@drawable/ic_credit"
             android:text="@string/number_500"
             android:textSize="30sp">

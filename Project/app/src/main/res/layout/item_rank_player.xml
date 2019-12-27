@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FormRankAnswer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/btnRankPlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="3"
+        android:background="@drawable/radius_button_yellow"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="@string/btnRank">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/formInfoRankPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_weight="7"
+        android:background="@drawable/animation_button_white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_user_player"
+            tools:ignore="NestedWeights">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtUserNamePlayer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/username_player"
+            tools:ignore="Suspicious0dp">
+        </TextView>
+        <TextView
+            android:id="@+id/txtScorePlayer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/score_number"
+            tools:ignore="Suspicious0dp">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

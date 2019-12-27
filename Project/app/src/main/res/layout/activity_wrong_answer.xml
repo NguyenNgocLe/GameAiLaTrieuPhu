@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WrongAnswer.View.WrongActivity">
+    tools:context=".Controller.WrongActivity">
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTopStatusWrongAnswer"
         android:layout_width="match_parent"
@@ -160,4 +161,5 @@
        </include>
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
