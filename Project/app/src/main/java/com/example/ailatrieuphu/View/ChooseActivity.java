@@ -3,6 +3,7 @@ package com.example.ailatrieuphu.View;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -281,7 +282,9 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 
     @Override
     public void hiddenImageButtonSupportUndoQuestion() {
-        imbUndo.setVisibility(View.INVISIBLE);
+        imbUndo.setEnabled(false);
+        imbUndo.setBackgroundColor(Color.parseColor("#3f3c3c"));
+//        imbUndo.setImageResource(R.drawable.animation_button_gray);
     }
 
     @Override

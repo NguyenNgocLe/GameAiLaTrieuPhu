@@ -134,7 +134,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.hideDialogAnswer();
         model.setCurrentQuestion(model.getRandomQuestion());
         model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
-        callBack.setScore(String.valueOf(model.getCurrentScore()));
+        callBack.setScore("Điểm: "+String.valueOf(model.getCurrentScore()));
         callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
         callBack.setTextQues(model.getCurrentQuestion().getQuestion());
         callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
@@ -142,7 +142,6 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
         // hidden button support random question
-
     }
 
     @Override

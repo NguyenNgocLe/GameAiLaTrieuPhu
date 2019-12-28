@@ -114,7 +114,7 @@
             android:gravity="center"
             android:text="@string/number_score_user_player"
             android:textColor="#D50A84"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold">
         </TextView>
 

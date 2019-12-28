@@ -144,7 +144,8 @@
             android:layout_marginRight="5dp"
             android:layout_weight="3"
             android:background="@drawable/animation_button_yellow"
-            android:src="@drawable/ic_diamond">
+            android:src="@drawable/ic_diamond"
+            android:contentDescription="@string/todo">
         </ImageButton>
     </LinearLayout>
 

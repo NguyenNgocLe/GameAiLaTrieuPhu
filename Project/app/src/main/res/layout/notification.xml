@@ -14,11 +14,11 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Title">
+        android:text="@string/title">
     </TextView>
     <TextView
         android:id="@+id/txtContent"
-        android:text="B"
+        android:text="@string/b"
         android:textColor="#0DAC6A"
         android:textSize="50sp"
         android:textAlignment="center"
@@ -35,7 +35,7 @@
         android:textColor="#FFDD00"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Xin Cám ơn">
+        android:text="@string/thanks_you">
     </Button>
 
 </LinearLayout>
