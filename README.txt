@@ -1,6 +1,6 @@
 đồ án môn học Android
 muốn chạy app Android đầu tiên phải chạy File đồ án Laravel trong thư mục Project/laravel
-B1: Bật xampp và vào localhost:8000/phpmyadmin
+B1: Bật Xampp và vào localhost:8000/phpmyadmin
 B2: Tạo tên database là salesweb trên phpmyadmin
 B3: Chạy câu lệnh php artisan migrate 
 B4: Chạy câu lệnh php artisan db:seed
