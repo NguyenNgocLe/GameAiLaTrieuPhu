@@ -40,13 +40,21 @@ public class Barchart extends AppCompatActivity {
     }
     public void toTuVan(Dialog dialog){
 
-        BarChart barChart =dialog.findViewById(R.id.barChart);
+        BarChart barChart = dialog.findViewById(R.id.barChart);
 
         ArrayList<BarEntry> datas = new ArrayList<>();
-        datas.add(new BarEntry(0,9));
-        datas.add(new BarEntry(1, 2));
-        datas.add(new BarEntry(2, 3));
-        datas.add(new BarEntry(3, 1));
+
+        int random_one = (int) (Math.random() * 100);
+        int r2 = 100 - random_one;
+        int random_two = (int) (Math.random() * 100 % (r2 + 1));
+        int r3 = 100 - (random_one + random_two);
+        int random_three = (int) (Math.random() * 100 % (r3 + 1));
+        int random_four = 100 - (random_one + random_two + random_three);
+
+        datas.add(new BarEntry(0,random_one));
+        datas.add(new BarEntry(1, random_two));
+        datas.add(new BarEntry(2, random_three));
+        datas.add(new BarEntry(3, random_four));
 
         BarDataSet barDataSet = new BarDataSet(datas, "");
         barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
