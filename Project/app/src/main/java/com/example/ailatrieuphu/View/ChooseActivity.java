@@ -288,6 +288,27 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
+    public void hiddenImageButtonFiftyPercentQuestion() {
+
+    }
+
+    @Override
+    public void hiddenImageButtonSupportSupportAudiencesQuestion() {
+
+    }
+
+    @Override
+    public void hiddenImageButtonSupportCallPeopleQuestion() {
+        imbCallPeople.setEnabled(false);
+        imbCallPeople.setBackgroundColor(Color.parseColor("#3f3c3c"));
+    }
+
+    @Override
+    public void hiddenImageButtonSupportBuyQuestionByCredit() {
+
+    }
+
+    @Override
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
@@ -321,7 +342,6 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
             }
             case R.id.imbCallPeople: {
                 choosePresenterImp.onImageButtonCallPeopleClick();
-                //Toast.makeText(this, "Button call people", Toast.LENGTH_SHORT).show();
             }
             default: {
                 choosePresenterImp.onImageButtonCreditClick();

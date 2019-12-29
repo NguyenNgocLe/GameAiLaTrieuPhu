@@ -29,4 +29,8 @@ public interface ChooseView {
     void setQuestionNumber(String number);
     void showToastStringText(String text);
     void hiddenImageButtonSupportUndoQuestion();
+    void hiddenImageButtonFiftyPercentQuestion();
+    void hiddenImageButtonSupportSupportAudiencesQuestion();
+    void hiddenImageButtonSupportCallPeopleQuestion();
+    void hiddenImageButtonSupportBuyQuestionByCredit();
 }

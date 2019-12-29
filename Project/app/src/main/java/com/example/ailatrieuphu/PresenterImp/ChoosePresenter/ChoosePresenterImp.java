@@ -54,7 +54,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
                     Log.e("json-err", "size data: " + model.getQuestions().size());
                     model.setCurrentQuestion(model.getQuestions().get(0));
                     callBack.setTextQues(model.getCurrentQuestion().getQuestion());
-                    callBack.setScore(String.valueOf(model.getCurrentScore()));
+                    callBack.setScore("Điểm:"+String.valueOf(model.getCurrentScore()));
                     callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
                     callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
                     callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
@@ -168,6 +168,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String title = "Bạn có muốn chuyển sang câu khác?";
         callBack.setTextTitleQuestionSupportDialog(title);
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
+        callBack.showToastStringText("ASd");
         callBack.setTextContentQuestionSupportDialog(content);
         callBack.showDialogQuestionSupport();
 //        if () {
@@ -189,17 +190,20 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String title = "Bạn có muốn hỏi ý kiến khán giả?";
         callBack.setTextTitleQuestionSupportDialog(title);
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
-        callBack.setTextContentQuestionSupportDialog(content);
+        callBack.setTextTitleQuestionSupportDialog(content);
         callBack.showDialogQuestionSupport();
+
     }
 
     @Override
     public void onImageButtonCallPeopleClick() {
-        String title = "Bạn có muốn gọi điện thoại cho người thân?";
-        callBack.setTextTitleQuestionSupportDialog(title);
-        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
-        callBack.setTextContentQuestionSupportDialog(content);
-        callBack.showDialogQuestionSupport();
+        String title = "Thầy Tuấn bảo đáp án đúng là:";
+        String content = model.getCurrentQuestion().getAnswer_correct();
+        callBack.setTextTitleDialog(title);
+        callBack.setAnswerTitleDialog(content);
+        callBack.showDialogAnswer();
+        // đang bị lỗi code ở đây
+        hiddenButtonCallPeople();
     }
 
     @Override
@@ -228,7 +232,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void hiddenButtonCallPeople() {
-
+        callBack.hiddenImageButtonSupportCallPeopleQuestion();
     }
 
     @Override

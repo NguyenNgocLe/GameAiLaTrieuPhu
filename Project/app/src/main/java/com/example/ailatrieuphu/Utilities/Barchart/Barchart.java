@@ -27,18 +27,18 @@ public class Barchart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barchart);
         BarChart mchart = (BarChart) findViewById(R.id.barChart);
-        toTuVan(mchart);
+        toAdvance(mchart);
     }
     @SuppressLint("ResourceType")
-    public void toTuVan(View view) {
+    public void toAdvance(View view) {
         final Dialog dialog= new Dialog(this);
         dialog.setContentView(R.layout.activity_barchart);
         dialog.setCanceledOnTouchOutside(false);//->Click vào bên ngoài thì đóng dialog
         Objects.requireNonNull(dialog.getWindow()).setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.MATCH_PARENT);
-        toTuVan(dialog);
+        toAdvance(dialog);
         dialog.show();
     }
-    public void toTuVan(Dialog dialog){
+    public void toAdvance(Dialog dialog){
 
         BarChart barChart = dialog.findViewById(R.id.barChart);
 

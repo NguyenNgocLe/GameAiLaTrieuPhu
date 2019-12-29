@@ -25,10 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fae5725e-c40d-4350-b10c-3dc19503ea71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_Philjay_MPAndroidChart_v3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_fifty_percent_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Barchart/Barchart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Barchart/Barchart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_footer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_footer.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,37 +58,62 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#402#420#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3510">
+              <caret line="303" column="5" selection-start-line="303" selection-start-column="5" selection-end-line="303" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Barchart/Barchart.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state relative-caret-position="397">
+              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#onButtonOkClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#onButtonOkSupportClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#onImageButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#onImageButtonSupportAudiencesClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#onImageButtonCreditClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#hiddenButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#hiddenButtonSupportAudiences#0;class#ChoosePresenterImp#0" />
+                <element signature="method#showButtonUndoClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#showButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
+                <element signature="method#showButtonSupportAudiences#0;class#ChoosePresenterImp#0" />
+                <element signature="method#showButtonCallPeople#0;class#ChoosePresenterImp#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Dialog/CustomDialog.java">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_footer.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="405">
+              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -116,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Controller/LoginView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Model/WrongModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/WrongPresenterImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Controller/WrongActivity.java" />
@@ -141,14 +172,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Dialog/CustomDialogCredit.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/item_rank_player.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseView.java" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/color_cardinal.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/color_gray.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/animation_button_gray.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_footer.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout-v21/item_history_player.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_support_audience.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_rank.xml" />
@@ -164,9 +191,14 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Adapter/QuestionAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_abc.xml" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_barchart.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Barchart/Barchart.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_footer.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/drawable/ic_fifty_percent_2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java" />
       </list>
     </option>
   </component>
@@ -182,101 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ailatrieuphu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ailatrieuphu" type="462c0819:PsiDirectoryNode" />
-              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ailatrieuphu" type="462c0819:PsiDirectoryNode" />
-              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="Barchart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ailatrieuphu" type="462c0819:PsiDirectoryNode" />
-              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="Dialog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -284,6 +221,17 @@
             <path>
               <item name="AiLaTrieuPhu" type="58d84e3e:PackageViewProjectNode" />
               <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AiLaTrieuPhu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -506,9 +454,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32761088" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25250357" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -533,7 +482,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.2639485" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.24964234" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
@@ -568,61 +517,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Api/NetworkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1330">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Api/XuLyJS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Dialog/CustomDialogCredit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-939">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1416">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="152" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-535">
-          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
-          <folding>
-            <element signature="method#onImageButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#onImageButtonSupportAudiencesClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#onImageButtonCallPeopleClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#onImageButtonCreditClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#hiddenButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#hiddenButtonSupportAudiences#0;class#ChoosePresenterImp#0" />
-            <element signature="method#hiddenButtonCallPeople#0;class#ChoosePresenterImp#0" />
-            <element signature="method#showButtonUndoClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#showButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
-            <element signature="method#showButtonSupportAudiences#0;class#ChoosePresenterImp#0" />
-            <element signature="method#showButtonCallPeople#0;class#ChoosePresenterImp#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/WrongPresenterImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/SupportPresenterImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -722,154 +616,131 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_buy_credit.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="2205">
           <caret line="147" column="52" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_call_people.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_custom_dialog_credit.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
           <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_end_play.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_footer.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_header.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_history.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="130" column="52" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login_account.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_manage_account.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_number_question.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_question_field.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_rank.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_right_answer.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_show_question.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_signup_account.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_support_audience.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_wrong_answer.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_history_player.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_rank_player.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/notification.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Dialog/BarChart 2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Barchart/ABC.java" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_abc.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_choose_answer.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="172" column="24" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_answer.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_barchart.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#402#420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Dialog/CustomDialog.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -880,10 +751,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/Utilities/Barchart/Barchart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        <state relative-caret-position="465">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="e#402#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ic_fifty_percent_2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ic_back.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_choose_answer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="195" column="49" selection-start-line="195" selection-start-column="49" selection-end-line="195" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="303" column="5" selection-start-line="303" selection-start-column="5" selection-end-line="303" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_footer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/View/ChooseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ailatrieuphu/PresenterImp/ChoosePresenter/ChoosePresenterImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="method#onButtonOkClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#onButtonOkSupportClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#onImageButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#onImageButtonSupportAudiencesClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#onImageButtonCreditClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#hiddenButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#hiddenButtonSupportAudiences#0;class#ChoosePresenterImp#0" />
+            <element signature="method#showButtonUndoClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#showButtonFiftyPercentClick#0;class#ChoosePresenterImp#0" />
+            <element signature="method#showButtonSupportAudiences#0;class#ChoosePresenterImp#0" />
+            <element signature="method#showButtonCallPeople#0;class#ChoosePresenterImp#0" />
           </folding>
         </state>
       </provider>
