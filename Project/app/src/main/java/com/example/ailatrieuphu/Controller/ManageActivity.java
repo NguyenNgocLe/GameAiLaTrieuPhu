@@ -33,7 +33,6 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
         initialView();
         managePresenterImp = new ManagePresenterImp(this);
         btnUpdateAccount.setOnClickListener(this);
-
     }
 
     public void initialView() {

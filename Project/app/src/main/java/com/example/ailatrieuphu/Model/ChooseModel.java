@@ -20,8 +20,6 @@ public class ChooseModel {
         categoryId = ((Activity) context).getIntent().getIntExtra("id", 1);
     }
 
-
-
     public int getCategoryId() {
         return categoryId;
     }

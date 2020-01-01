@@ -62,11 +62,12 @@
     <string name="ten_dang_nhap">ten_dang_nhap</string>
     <string name="_200_diem">2.000 Điểm</string>
     <string name="so_cau">Số câu: 10</string>
-    <string name="history_name">...</string>
+    <string name="history_name">ngocle</string>
+    <string name="name">123123</string>
     <string name="todo">TODO</string>
     <string name="b">B</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
-    <string name="title">Title</string>
+    <string name="titleFiftyPercentSupport">Title</string>
 </resources>
 

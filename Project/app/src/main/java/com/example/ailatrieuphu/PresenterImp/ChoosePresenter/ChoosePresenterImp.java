@@ -22,7 +22,6 @@ public class ChoosePresenterImp implements ChoosePresenter {
         this.callBack = callBack;
     }
 
-    // cần load câu hỏi lên layout và random câu hỏi theo lĩnh vực đó
     @Override
     @SuppressLint("StaticFieldLeak")
     public void handlingGetQuestionByCategoryField() {
@@ -54,7 +53,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
                     Log.e("json-err", "size data: " + model.getQuestions().size());
                     model.setCurrentQuestion(model.getQuestions().get(0));
                     callBack.setTextQues(model.getCurrentQuestion().getQuestion());
-                    callBack.setScore("Điểm:"+String.valueOf(model.getCurrentScore()));
+                    callBack.setScore("Điểm:" + String.valueOf(model.getCurrentScore()));
                     callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
                     callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
                     callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
@@ -80,7 +79,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
-        callBack.setAnswerTitleDialog("A");
+        callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
         callBack.showDialogAnswer();
     }
 
@@ -95,7 +94,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
-        callBack.setAnswerTitleDialog("B");
+        callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
         callBack.showDialogAnswer();
     }
 
@@ -110,7 +109,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
-        callBack.setAnswerTitleDialog("C");
+        callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
         callBack.showDialogAnswer();
     }
 
@@ -125,23 +124,26 @@ public class ChoosePresenterImp implements ChoosePresenter {
         }
         model.getQuestions().remove(model.getCurrentQuestion()); //xoa cau hoi da choi
         callBack.setTextTitleDialog(title);
-        callBack.setAnswerTitleDialog("D");
+        callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
         callBack.showDialogAnswer();
     }
 
     @Override
-    public void onButtonOkClick() {
+    public void onButtonOkDialogAnswerClick() {
         callBack.hideDialogAnswer();
         model.setCurrentQuestion(model.getRandomQuestion());
         model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
-        callBack.setScore("Điểm: "+String.valueOf(model.getCurrentScore()));
+        callBack.setScore("Điểm: " + String.valueOf(model.getCurrentScore()));
         callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
         callBack.setTextQues(model.getCurrentQuestion().getQuestion());
         callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
         callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
-        // hidden button support random question
+        callBack.showButtonAnswer(callBack.getListButton(0)); // set lai text cho button khi su dung quyen 50/50 bi boi den
+        callBack.showButtonAnswer(callBack.getListButton(1));
+        callBack.showButtonAnswer(callBack.getListButton(2));
+        callBack.showButtonAnswer(callBack.getListButton(3));
     }
 
     @Override
@@ -149,7 +151,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.hideDialogSupportAnswer();
         model.setCurrentQuestion(model.getRandomQuestion());
         model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
-        callBack.setScore(String.valueOf(model.getCurrentScore()));
+        callBack.setScore("Điểm:" + String.valueOf(model.getCurrentScore()));
         callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
         callBack.setTextQues(model.getCurrentQuestion().getQuestion());
         callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
@@ -165,54 +167,65 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void onImageButtonUndoClick() {
-        String title = "Bạn có muốn chuyển sang câu khác?";
-        callBack.setTextTitleQuestionSupportDialog(title);
-        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
-        callBack.showToastStringText("ASd");
-        callBack.setTextContentQuestionSupportDialog(content);
-        callBack.showDialogQuestionSupport();
-//        if () {
-            hiddenButtonUndoClick();
-//        }
+        callBack.setTitleDialogRandom("Bạn có muốn chuyển sang câu khác?");
+        callBack.setContentDialogRandom("Bạn chỉ được sử dụng quyền trợ giúp 1 lần!");
+        callBack.showDialogRandom();
+        hiddenButtonUndoClick();
     }
 
     @Override
-    public void onImageButtonFiftyPercentClick() {
+    public void onImageButton5050Click() {
         String title = "Bạn có muốn sử dụng 50:50?";
-        callBack.setTextTitleQuestionSupportDialog(title);
+        callBack.setTitleDialog5050(title);
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
-        callBack.setTextContentQuestionSupportDialog(content);
-        callBack.showDialogQuestionSupport();
+        callBack.setContentDialog5050(content);
+        callBack.showDialog5050();
     }
 
     @Override
     public void onImageButtonSupportAudiencesClick() {
         String title = "Bạn có muốn hỏi ý kiến khán giả?";
-        callBack.setTextTitleQuestionSupportDialog(title);
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
-        callBack.setTextTitleQuestionSupportDialog(content);
+        callBack.setTextTitleQuestionSupportDialog(title);
+        callBack.setTextContentQuestionSupportDialog(content);
         callBack.showDialogQuestionSupport();
-
+        callBack.startActivityBarChart();
+        try {
+            Thread.sleep(1000);
+            hiddenButtonSupportAudiences();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void onImageButtonCallPeopleClick() {
-        String title = "Thầy Tuấn bảo đáp án đúng là:";
-        String content = model.getCurrentQuestion().getAnswer_correct();
-        callBack.setTextTitleDialog(title);
-        callBack.setAnswerTitleDialog(content);
-        callBack.showDialogAnswer();
+        try {
+            Thread.sleep(100);
+            String title = "Thầy Tuấn bảo đáp án đúng là:";
+            String content = model.getCurrentQuestion().getAnswer_correct();
+            callBack.setTextTitleDialog(title);
+            callBack.setAnswerTitleDialog(content);
+            callBack.showDialogAnswer();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         // đang bị lỗi code ở đây
         hiddenButtonCallPeople();
     }
 
     @Override
     public void onImageButtonCreditClick() {
-        String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
-        callBack.setTextTitleQuestionSupportDialog(title);
-        String content = "Bạn được sử dụng quyền trợ giúp nhiều lần!";
-        callBack.setTextContentQuestionSupportDialog(content);
-        callBack.showDialogQuestionSupport();
+        try {
+            Thread.sleep(100);
+            String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
+            callBack.setTextTitleQuestionSupportDialog(title);
+            String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
+            callBack.setTextContentQuestionSupportDialog(content);
+            callBack.showDialogQuestionSupport();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -222,12 +235,12 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void hiddenButtonFiftyPercentClick() {
-
+        callBack.hiddenImageButtonFiftyPercentQuestion();
     }
 
     @Override
     public void hiddenButtonSupportAudiences() {
-
+        callBack.hiddenImageButtonSupportSupportAudiencesQuestion();
     }
 
     @Override
@@ -253,5 +266,45 @@ public class ChoosePresenterImp implements ChoosePresenter {
     @Override
     public void showButtonCallPeople() {
 
+    }
+
+    @Override
+    public void onButtonOkDialogRandomClick() { // random cau hoi khac
+        callBack.hideDialogRandom();
+        model.setCurrentQuestion(model.getRandomQuestion());
+        model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
+        callBack.setScore("Điểm: " + String.valueOf(model.getCurrentScore()));
+        callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
+        callBack.setTextQues(model.getCurrentQuestion().getQuestion());
+        callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
+        callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
+        callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
+        callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+    }
+
+    @Override
+    public void onButtonCancelDialogRandomClick() {
+        callBack.hideDialogRandom();
+    }
+
+    @Override
+    public void onButtonOkDialog5050Click() {
+        // xử lý bỏ 2 câu đáp án sai
+        if (callBack.getIdButton(model.getCurrentQuestion().getAnswer_correct()) > 1) {
+            // disible button 0,1
+            callBack.hiddenButtonAnswer(callBack.getListButton(0));
+            callBack.hiddenButtonAnswer(callBack.getListButton(1));
+        } else {
+            // disible button 2,3
+            callBack.hiddenButtonAnswer(callBack.getListButton(2));
+            callBack.hiddenButtonAnswer(callBack.getListButton(3));
+        }
+        callBack.hideDialog5050();
+        hiddenButtonFiftyPercentClick();
+    }
+
+    @Override
+    public void onButtonCancelDialog5050Click() {
+        callBack.hideDialog5050();
     }
 }

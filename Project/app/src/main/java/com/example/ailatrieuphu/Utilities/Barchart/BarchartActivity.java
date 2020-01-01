@@ -20,7 +20,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Barchart extends AppCompatActivity {
+public class BarchartActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,29 +29,31 @@ public class Barchart extends AppCompatActivity {
         BarChart mchart = (BarChart) findViewById(R.id.barChart);
         toAdvance(mchart);
     }
+
     @SuppressLint("ResourceType")
     public void toAdvance(View view) {
-        final Dialog dialog= new Dialog(this);
+        final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.activity_barchart);
         dialog.setCanceledOnTouchOutside(false);//->Click vào bên ngoài thì đóng dialog
-        Objects.requireNonNull(dialog.getWindow()).setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.MATCH_PARENT);
+        Objects.requireNonNull(dialog.getWindow()).setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         toAdvance(dialog);
         dialog.show();
     }
-    public void toAdvance(Dialog dialog){
+
+    public void toAdvance(Dialog dialog) {
 
         BarChart barChart = dialog.findViewById(R.id.barChart);
 
         ArrayList<BarEntry> datas = new ArrayList<>();
-
+        // random 4 cot
         int random_one = (int) (Math.random() * 100);
         int r2 = 100 - random_one;
         int random_two = (int) (Math.random() * 100 % (r2 + 1));
         int r3 = 100 - (random_one + random_two);
         int random_three = (int) (Math.random() * 100 % (r3 + 1));
         int random_four = 100 - (random_one + random_two + random_three);
-
-        datas.add(new BarEntry(0,random_one));
+        //
+        datas.add(new BarEntry(0, random_one));
         datas.add(new BarEntry(1, random_two));
         datas.add(new BarEntry(2, random_three));
         datas.add(new BarEntry(3, random_four));
@@ -61,11 +63,11 @@ public class Barchart extends AppCompatActivity {
         barDataSet.setValueTextSize(20f);
 
 
-        BarData barData = new BarData( barDataSet);
+        BarData barData = new BarData(barDataSet);
         XAxis xAxis = barChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        final String[] labels=new String[]{"A","B","C","D"};
-        IndexAxisValueFormatter formatter=new IndexAxisValueFormatter(labels);
+        final String[] labels = new String[]{"A", "B", "C", "D"};
+        IndexAxisValueFormatter formatter = new IndexAxisValueFormatter(labels);
         xAxis.setTextSize(18f);
         xAxis.setGranularity(1f);
 
@@ -86,5 +88,9 @@ public class Barchart extends AppCompatActivity {
 
         barChart.animateY(3000);
         barChart.invalidate();
+    }
+
+    public BarchartActivity() {
+
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
@@ -8,39 +9,39 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtTitleDialogCredit"
+        android:id="@+id/txtTitleDialogFiftyPercentSupport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="@string/titleFiftyPercentSupport"
         android:gravity="center"
         android:padding="10dp"
+        android:text="@string/titleFiftyPercentSupport"
         android:textColor="#FF5722"
         android:textSize="20sp"
         android:textStyle="bold">
     </TextView>
 
     <TextView
-        android:id="@+id/txtContentDialogCredit"
+        android:id="@+id/txtContentDialogFiftyPercentSupport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/b"
-        android:padding="15dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/b"
         android:textColor="#4CAF50"
         android:textSize="20sp"
         android:textStyle="bold">
     </TextView>
 
     <LinearLayout
+        android:id="@+id/FormActionDialogFiftyPercentSupport"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
-            android:id="@+id/btnOkDialogCredit"
+            android:id="@+id/btnOkFiftyPercentSupport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -52,9 +53,8 @@
             android:textColor="#FFFFFF"
             tools:ignore="ButtonOrder,ButtonStyle">
         </Button>
-
         <Button
-            android:id="@+id/btnCancelDialogCredit"
+            android:id="@+id/btnCancelFiftyPercentSupport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -69,6 +69,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/formBottomDialogFiftyPercentSupport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView

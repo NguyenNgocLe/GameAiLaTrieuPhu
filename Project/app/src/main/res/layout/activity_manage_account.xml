@@ -16,6 +16,15 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/MidManageAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomManageAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,6 +52,30 @@
     </androidx.constraintlayout.widget.Guideline>
 
     <LinearLayout
+        android:id="@+id/FormManageAccount1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="@id/MidManageAccount"
+        app:layout_constraintEnd_toStartOf="@id/rightManageAccount"
+        app:layout_constraintStart_toStartOf="@id/leftManageAccount"
+        app:layout_constraintTop_toBottomOf="@id/topManageAccount">
+
+        <ImageView
+            android:id="@+id/imgManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="10"
+            android:contentDescription="@string/todo"
+            android:padding="50dp"
+            android:src="@drawable/admin_two"
+            tools:targetApi="o">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/FormManageAccount"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -51,25 +84,14 @@
         app:layout_constraintBottom_toBottomOf="@id/bottomManageAccount"
         app:layout_constraintEnd_toStartOf="@id/rightManageAccount"
         app:layout_constraintStart_toStartOf="@id/leftManageAccount"
-        app:layout_constraintTop_toBottomOf="@id/topManageAccount">
-
-        <ImageView
-            android:id="@+id/imgManageAccount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:layout_marginHorizontal="5dp"
-            android:padding="50dp"
-            android:src="@drawable/ic_user_player"
-            android:contentDescription="@string/todo"
-            tools:targetApi="o">
-        </ImageView>
+        app:layout_constraintTop_toBottomOf="@id/MidManageAccount">
 
         <TextView
             android:id="@+id/txtEditAvatarManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="2"
             android:gravity="center"
             android:text="@string/change_avatar"
             android:textColor="#008EFF"
@@ -82,61 +104,61 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:autofillHints=""
             android:background="@drawable/radius_user_edit_text"
             android:enabled="false"
             android:hint="@string/hint_user_login"
             android:inputType="textCapSentences"
             android:padding="5dp"
-            tools:targetApi="o"
-            android:autofillHints="" />
+            tools:targetApi="o" />
 
         <EditText
             android:id="@+id/edtEmailManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:autofillHints=""
             android:background="@drawable/radius_user_edit_text"
             android:hint="@string/email"
             android:inputType="textCapSentences"
             android:lines="1"
             android:padding="5dp"
             tools:ignore="TextFields"
-            tools:targetApi="o"
-            android:autofillHints="">
+            tools:targetApi="o">
         </EditText>
 
         <EditText
             android:id="@+id/edtPasswordManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:autofillHints=""
             android:background="@drawable/radius_user_edit_text"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:lines="1"
             android:padding="5dp"
-            tools:targetApi="o"
-            android:autofillHints="">
+            tools:targetApi="o">
         </EditText>
 
         <EditText
             android:id="@+id/edtConfirmPasswordManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:autofillHints=""
             android:background="@drawable/radius_user_edit_text"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:lines="1"
             android:padding="5dp"
-            android:autofillHints=""
             tools:targetApi="o">
         </EditText>
 
@@ -144,9 +166,9 @@
             android:id="@+id/btnUpdateManageAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
             android:background="@drawable/animation_button_blue"
             android:inputType="textCapSentences"
             android:text="@string/update"
