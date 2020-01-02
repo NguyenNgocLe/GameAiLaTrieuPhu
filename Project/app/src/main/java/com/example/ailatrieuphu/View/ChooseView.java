@@ -1,5 +1,6 @@
 package com.example.ailatrieuphu.View;
 
+import android.os.Bundle;
 import android.widget.Button;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -81,5 +82,9 @@ public interface ChooseView {
     // button score credit
     void setScoreButtonCredit(String text);
     String getScoreButtonCredit();
-    int convertStringToIntCredit(String text);
+
+    // set ImageButton heart Player
+    void hideImageButtonHeartPlayer(int index);
+    void startActitiesEndPlay(Bundle bundle);
+
 }

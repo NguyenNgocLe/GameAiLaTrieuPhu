@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ailatrieuphu.Controller.EndActivity;
 import com.example.ailatrieuphu.PresenterImp.ChoosePresenter.ChoosePresenterImp;
 import com.example.ailatrieuphu.R;
 import com.example.ailatrieuphu.Utilities.Barchart.BarchartActivity;
@@ -84,12 +85,12 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private Button buttonScoreCredit;
     //TextView username
     private TextView txtUserNamePlayer;
-    private int ScoreCredit = 0;
+    private int ScoreCredit;
 
     // Json Player
     private JSONObject saveJsonPlayer;
 
-    // Image button heart
+    // Image button heart player
     private ArrayList<ImageButton> imageButtonsHeart;
 
     //
@@ -238,11 +239,18 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         this.imbSupportAudience = findViewById(R.id.imbSupportAudience);
         this.imbCallPeople = findViewById(R.id.imbCallPeople);
         this.btnCredit = findViewById(R.id.btnCredit);
+
         // button điểm credit trên header
         this.buttonScoreCredit = findViewById(R.id.btnScoreCredit);
         this.txtUserNamePlayer = findViewById(R.id.txtUserNamePlayer);
-        // Image button mạng của người chơi
 
+        // Image button mạng của người chơi
+        imageButtonsHeart = new ArrayList<>();
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartZero));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartOne));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartTwo));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartThree));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartFour));
         //RingProgress
         mRingProgressBar = findViewById(R.id.ringProgress); // tìm cái ringProgressbar
         timeAnswer = findViewById(R.id.txtTimeAnswer); // tìm cái textview để trừ thời gian khi luồng của ringprogressbar
@@ -253,7 +261,6 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 //        mThreadCountdown.execute(); // thực thi RingProgressBar
         // tạo lớp đối tượng choosePresenter để gọi hàm xử lý gán câu hỏi cho màn hình
         choosePresenterImp = new ChoosePresenterImp(this, this);
-
 //        btnOkDialog.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -274,7 +281,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 //        });
     }
 
-    // settext người chơi và credit
+    // set text người chơi và credit
     public void setTextPlayerAndScore() {
         Intent intent = getIntent();
         if (intent != null) {
@@ -629,8 +636,15 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
-    public int convertStringToIntCredit(String text) {
-        return this.ScoreCredit = Integer.parseInt(text);
+    public void hideImageButtonHeartPlayer(int index) {
+        this.imageButtonsHeart.get(index).setImageResource(R.drawable.ic_heart_not_exists);
+    }
+
+    @Override
+    public void startActitiesEndPlay(Bundle bundle) {
+        Intent intent = new Intent(this, EndActivity.class);
+        intent.putExtra("nguoi_choi", bundle);
+        startActivity(intent);
     }
 
     @Override

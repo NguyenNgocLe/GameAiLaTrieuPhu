@@ -76,6 +76,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
             model.setCurrentScore(model.getCurrentScore() + 1);
         } else {
             title = "Sai rồi!";
+            callBack.hideImageButtonHeartPlayer(model.getCurrentHeart() - 1);
+            model.setCurrentHeart(model.getCurrentHeart() - 1);
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
@@ -91,6 +93,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
             model.setCurrentScore(model.getCurrentScore() + 1);
         } else {
             title = "Sai rồi!";
+            callBack.hideImageButtonHeartPlayer(model.getCurrentHeart() - 1);
+            model.setCurrentHeart(model.getCurrentHeart() - 1);
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
@@ -106,6 +110,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
             model.setCurrentScore(model.getCurrentScore() + 1);
         } else {
             title = "Sai rồi!";
+            callBack.hideImageButtonHeartPlayer(model.getCurrentHeart() - 1);
+            model.setCurrentHeart(model.getCurrentHeart() - 1);
         }
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
@@ -121,6 +127,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
             model.setCurrentScore(model.getCurrentScore() + 1); // tang diem
         } else {
             title = "Sai rồi!";
+            callBack.hideImageButtonHeartPlayer(model.getCurrentHeart() - 1);
+            model.setCurrentHeart(model.getCurrentHeart() - 1);
         }
         model.getQuestions().remove(model.getCurrentQuestion()); //xoa cau hoi da choi
         callBack.setTextTitleDialog(title);
@@ -144,6 +152,10 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.showButtonAnswer(callBack.getListButton(1)); // khi su dung quyen 50/50 bi boi den
         callBack.showButtonAnswer(callBack.getListButton(2));
         callBack.showButtonAnswer(callBack.getListButton(3));
+        if (model.getCurrentHeart() <= 0) {
+            // start man hinh ket thuc
+            callBack.startActitiesEndPlay(null);
+        }
     }
 
     @Override
