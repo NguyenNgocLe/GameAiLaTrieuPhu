@@ -66,4 +66,18 @@ public interface ChooseView {
     void setTitleDialog5050(String text);
     void setContentDialog5050(String text);
 
+    //dialog call people
+    void showDialogCallPeople();
+    void hideDialogCallPeople();
+    void setTitleDialogCallPeople(String text);
+    void setContentDialogCallPeople(String text);
+
+    //dialog Buy credit
+    void showDialogBuyCredit();
+    void hideDialogBuyCredit();
+    void setTitleDialogBuyCredit(String text);
+    void setContentDialogBuyCredit(String text);
+
+    // button score credit
+    void setScoreButtonCredit(String text);
 }

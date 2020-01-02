@@ -31,4 +31,11 @@ public interface ChoosePresenter {
     //dialog 5050
     void onButtonOkDialog5050Click();
     void onButtonCancelDialog5050Click();
+
+    //dialog call people
+    void onButtonOkDialogCallPeopleClick();
+    void onButtonCancelDialogCallPeopleClick();
+    //dialog BuyCredit
+    void onButtonOkDialogBuyCreditClick();
+    void onButtonCancelDialogBuyCreditClick();
 }

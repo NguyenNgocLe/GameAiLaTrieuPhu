@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        android:id="@+id/txtUserNameShowQuestion"
+        android:id="@+id/txtUserNamePlayer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
@@ -76,7 +76,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnScoreShowQuestion"
+        android:id="@+id/btnScoreCredit"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1.5"
@@ -88,7 +88,7 @@
     </Button>
 
     <ImageButton
-        android:id="@+id/btnCreditShowQuestion"
+        android:id="@+id/imbIconCredit"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"

@@ -140,8 +140,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
-        callBack.showButtonAnswer(callBack.getListButton(0)); // set lai text cho button khi su dung quyen 50/50 bi boi den
-        callBack.showButtonAnswer(callBack.getListButton(1));
+        callBack.showButtonAnswer(callBack.getListButton(0)); // set lai text mau xanh cho button
+        callBack.showButtonAnswer(callBack.getListButton(1)); // khi su dung quyen 50/50 bi boi den
         callBack.showButtonAnswer(callBack.getListButton(2));
         callBack.showButtonAnswer(callBack.getListButton(3));
     }
@@ -200,32 +200,27 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void onImageButtonCallPeopleClick() {
-        try {
-            Thread.sleep(100);
-            String title = "Thầy Tuấn bảo đáp án đúng là:";
-            String content = model.getCurrentQuestion().getAnswer_correct();
-            callBack.setTextTitleDialog(title);
-            callBack.setAnswerTitleDialog(content);
-            callBack.showDialogAnswer();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        String title = "Bạn có muốn sử dụng gọi điện thoại cho người thân?";
+        callBack.setTitleDialogCallPeople(title);
+        String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
+        callBack.setContentDialogCallPeople(content);
+        callBack.showDialogCallPeople();
         // đang bị lỗi code ở đây
-        hiddenButtonCallPeople();
     }
 
     @Override
     public void onImageButtonCreditClick() {
-        try {
-            Thread.sleep(100);
-            String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
-            callBack.setTextTitleQuestionSupportDialog(title);
-            String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
-            callBack.setTextContentQuestionSupportDialog(content);
-            callBack.showDialogQuestionSupport();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
+//        callBack.setTextTitleQuestionSupportDialog(title);
+//        String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
+//        callBack.setTextContentQuestionSupportDialog(content);
+//        callBack.showDialogQuestionSupport();
+        // chưa xử lý trừ credit và đổi sang câu hỏi khác cho người chơi
+        String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
+        callBack.setTitleDialogBuyCredit(title);
+        String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
+        callBack.setContentDialogBuyCredit(content);
+        callBack.showDialogBuyCredit();
     }
 
     @Override
@@ -307,4 +302,38 @@ public class ChoosePresenterImp implements ChoosePresenter {
     public void onButtonCancelDialog5050Click() {
         callBack.hideDialog5050();
     }
+
+    @Override
+    public void onButtonOkDialogCallPeopleClick() {
+        String title = "Thầy Tuấn bảo đáp án đúng là:";
+        callBack.setTitleDialogCallPeople(title);
+        String answerContent = model.getCurrentQuestion().getAnswer_correct();
+        callBack.setContentDialogCallPeople(answerContent);
+        callBack.showDialogCallPeople();
+        hiddenButtonCallPeople();
+        // cần xử lý đổi lại dialog thông báo
+    }
+
+    @Override
+    public void onButtonCancelDialogCallPeopleClick() {
+        callBack.hideDialogCallPeople();
+    }
+
+    @Override
+    public void onButtonOkDialogBuyCreditClick() {
+//        String title = "Bạn có muốn sử dụng credit để đổi câu hỏi này?";
+//        callBack.setTitleDialogBuyCredit(title);
+//        String content = "Bạn có thể sử dụng quyền này nhiều lần!";
+//        callBack.setContentDialogBuyCredit(content);
+//        callBack.showDialogBuyCredit();
+
+        // xử lý đổi câu hỏi và bị trừ credit
+        callBack.showToastStringText("asdf");
+    }
+
+    @Override
+    public void onButtonCancelDialogBuyCreditClick() {
+        callBack.hideDialogBuyCredit();
+    }
+
 }
