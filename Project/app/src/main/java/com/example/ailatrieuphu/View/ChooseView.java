@@ -81,10 +81,11 @@ public interface ChooseView {
 
     // button score credit
     void setScoreButtonCredit(String text);
+    void setUserName(String text);
     String getScoreButtonCredit();
 
     // set ImageButton heart Player
     void hideImageButtonHeartPlayer(int index);
-    void startActitiesEndPlay(Bundle bundle);
+    void startActivityEndPlay(Bundle bundle);
 
 }

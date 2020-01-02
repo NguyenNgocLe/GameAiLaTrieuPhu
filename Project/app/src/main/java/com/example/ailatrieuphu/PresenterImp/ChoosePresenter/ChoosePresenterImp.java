@@ -20,6 +20,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
     public ChoosePresenterImp(Context context, ChooseView callBack) {
         model = new ChooseModel(context);
         this.callBack = callBack;
+        callBack.setUserName(model.getCurrentUser().getUsername()+"");
+        callBack.setScoreButtonCredit(model.getCurrentUser().getCredit()+"");
     }
 
     @Override
@@ -154,7 +156,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.showButtonAnswer(callBack.getListButton(3));
         if (model.getCurrentHeart() <= 0) {
             // start man hinh ket thuc
-            callBack.startActitiesEndPlay(null);
+            callBack.startActivityEndPlay(model.getBundleResult());
         }
     }
 
@@ -326,13 +328,9 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void onButtonOkDialogBuyCreditClick() {
-        String scr = callBack.getScoreButtonCredit();
-        int result = 5000;
-        if (result == 0) {
-            callBack.showToastStringText("Bạn đã hết credit!. Vui lòng mua thêm credit rồi tiếp tục sử dụng quyền trợ giúp!");
-        } else {
-            result -= 100;
-            callBack.setScoreButtonCredit(result + "");
+        if(model.getCurrentUser().getCredit()>=100) {
+            model.getCurrentUser().setCredit(model.getCurrentUser().getCredit() - 100);
+            callBack.setScoreButtonCredit(model.getCurrentUser().getCredit() + "");
             model.setCurrentQuestion(model.getRandomQuestion());
             model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
             callBack.setScore("Điểm: " + model.getCurrentScore());
@@ -342,8 +340,10 @@ public class ChoosePresenterImp implements ChoosePresenter {
             callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
             callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
             callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+        }else{
+            callBack.showToastStringText("het tien roi ma oi");
         }
-        // DANG LAM TOI DAY
+        callBack.hideDialogBuyCredit();
     }
 
     @Override

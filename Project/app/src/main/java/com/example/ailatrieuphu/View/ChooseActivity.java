@@ -6,7 +6,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -23,7 +22,6 @@ import com.example.ailatrieuphu.Utilities.Barchart.BarchartActivity;
 import com.example.ailatrieuphu.Utilities.RingProgressbarAsyntask;
 import com.github.mikephil.charting.charts.BarChart;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -101,7 +99,6 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         setContentView(R.layout.activity_choose_answer);
         //
         InitialView();
-        setTextPlayerAndScore();
         // lấy dữ liệu từ màn hình main
         choosePresenterImp.handlingGetQuestionByCategoryField();
     }
@@ -282,20 +279,20 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     // set text người chơi và credit
-    public void setTextPlayerAndScore() {
-        Intent intent = getIntent();
-        if (intent != null) {
-            try {
-                saveJsonPlayer = new JSONObject(intent.getStringExtra("nguoi_dung"));
-                this.buttonScoreCredit.setText(saveJsonPlayer.getString("credit"));
-                this.txtUserNamePlayer.setText(saveJsonPlayer.getString("ten_dang_nhap"));
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        } else {
-            Log.e("aaaa", "null");
-        }
-    }
+//    public void setTextPlayerAndScore() {
+//        Intent intent = getIntent();
+//        if (intent != null) {
+//            try {
+//                saveJsonPlayer = new JSONObject(intent.getStringExtra("nguoi_dung"));
+//                this.buttonScoreCredit.setText(saveJsonPlayer.getString("credit"));
+//                this.txtUserNamePlayer.setText(saveJsonPlayer.getString("ten_dang_nhap"));
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        } else {
+//            Log.e("aaaa", "null");
+//        }
+//    }
 
     @Override
     public void setQuesA(String text) {
@@ -631,6 +628,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
+    public void setUserName(String text) {
+        txtUserNamePlayer.setText(text);
+    }
+
+    @Override
     public String getScoreButtonCredit() {
         return this.buttonScoreCredit.getText().toString();
     }
@@ -641,7 +643,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     }
 
     @Override
-    public void startActitiesEndPlay(Bundle bundle) {
+    public void startActivityEndPlay(Bundle bundle) {
         Intent intent = new Intent(this, EndActivity.class);
         intent.putExtra("nguoi_choi", bundle);
         startActivity(intent);

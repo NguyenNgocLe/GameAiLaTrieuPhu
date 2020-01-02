@@ -1,5 +1,7 @@
 package com.example.ailatrieuphu.Object;
 
+import com.google.gson.Gson;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -30,6 +32,14 @@ public class User {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public static User fromJsonString(String json){
+        return (new Gson().fromJson(json,User.class));
+    }
+
+    public String toStringJson(){
+        return (new Gson().toJson(this));
     }
 
     public boolean isEmpty() {
