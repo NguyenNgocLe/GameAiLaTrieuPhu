@@ -101,7 +101,6 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
         int id = v.getId();
         switch (id) {
             case R.id.btnUpdateManageAccount: {
-
                 nguoi_dung = new User();
                 nguoi_dung.setUsername(edtUserName.getText().toString().trim());
                 nguoi_dung.setEmail(edtEmail.getText().toString().trim());

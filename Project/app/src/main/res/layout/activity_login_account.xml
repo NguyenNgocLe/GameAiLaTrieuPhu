@@ -179,7 +179,8 @@
             android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:text="@string/login_facebook"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+        </TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -189,7 +190,8 @@
             android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:text="@string/login_google"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+        </TextView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

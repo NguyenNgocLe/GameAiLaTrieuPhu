@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AiLaTrieuPhu</string>
     <string name="password_retrieval">Lấy lại mật khẩu</string>
-    <string name="credit_number">2.000</string>
+    <string name="credit_number">5.000</string>
     <string name="buy_credit">Mua Credit</string>
     <string name="number_5000">5.000</string>
     <string name="email">Email</string>

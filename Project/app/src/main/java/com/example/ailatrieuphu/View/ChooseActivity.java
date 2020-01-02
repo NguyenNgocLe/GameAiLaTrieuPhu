@@ -21,6 +21,8 @@ import com.example.ailatrieuphu.Utilities.Barchart.BarchartActivity;
 import com.example.ailatrieuphu.Utilities.RingProgressbarAsyntask;
 import com.github.mikephil.charting.charts.BarChart;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
@@ -78,6 +80,13 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 
     // button number score credit
     private Button buttonScoreCredit;
+    private int ScoreCredit = 0;
+
+    // Json Player
+    private JSONObject saveJsonPlayer;
+
+    // Image button heart
+    private ArrayList<ImageButton> imageButtonsHeart;
 
     //
     @SuppressLint("StaticFieldLeak")
@@ -87,6 +96,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         setContentView(R.layout.activity_choose_answer);
         //
         InitialView();
+        // lấy dữ liệu từ màn hình main
         choosePresenterImp.handlingGetQuestionByCategoryField();
     }
 
@@ -225,6 +235,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         this.btnCredit = findViewById(R.id.btnCredit);
         // button điểm credit trên header
         this.buttonScoreCredit = findViewById(R.id.btnScoreCredit);
+        // Image button mạng của người chơi
 
         //RingProgress
         mRingProgressBar = findViewById(R.id.ringProgress); // tìm cái ringProgressbar
@@ -588,6 +599,16 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     @Override
     public void setScoreButtonCredit(String text) {
         this.buttonScoreCredit.setText(text);
+    }
+
+    @Override
+    public String getScoreButtonCredit() {
+        return this.buttonScoreCredit.getText().toString();
+    }
+
+    @Override
+    public int convertStringToIntCredit(String text) {
+        return this.ScoreCredit = Integer.parseInt(text);
     }
 
     @Override

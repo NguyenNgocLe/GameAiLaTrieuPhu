@@ -205,17 +205,10 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
         callBack.setContentDialogCallPeople(content);
         callBack.showDialogCallPeople();
-        // đang bị lỗi code ở đây
     }
 
     @Override
     public void onImageButtonCreditClick() {
-//        String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
-//        callBack.setTextTitleQuestionSupportDialog(title);
-//        String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
-//        callBack.setTextContentQuestionSupportDialog(content);
-//        callBack.showDialogQuestionSupport();
-        // chưa xử lý trừ credit và đổi sang câu hỏi khác cho người chơi
         String title = "Bạn có muốn sử dụng credit mua câu hỏi?";
         callBack.setTitleDialogBuyCredit(title);
         String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
@@ -268,7 +261,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.hideDialogRandom();
         model.setCurrentQuestion(model.getRandomQuestion());
         model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
-        callBack.setScore("Điểm: " + String.valueOf(model.getCurrentScore()));
+        callBack.setScore("Điểm: " + model.getCurrentScore());
         callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
         callBack.setTextQues(model.getCurrentQuestion().getQuestion());
         callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
@@ -321,19 +314,28 @@ public class ChoosePresenterImp implements ChoosePresenter {
 
     @Override
     public void onButtonOkDialogBuyCreditClick() {
-//        String title = "Bạn có muốn sử dụng credit để đổi câu hỏi này?";
-//        callBack.setTitleDialogBuyCredit(title);
-//        String content = "Bạn có thể sử dụng quyền này nhiều lần!";
-//        callBack.setContentDialogBuyCredit(content);
-//        callBack.showDialogBuyCredit();
-
-        // xử lý đổi câu hỏi và bị trừ credit
-        callBack.showToastStringText("asdf");
+        String scr = callBack.getScoreButtonCredit();
+        int result = 5000;
+        if (result == 0) {
+            callBack.showToastStringText("Bạn đã hết credit!. Vui lòng mua thêm credit rồi tiếp tục sử dụng quyền trợ giúp!");
+        } else {
+            result -= 100;
+            callBack.setScoreButtonCredit(result + "");
+            model.setCurrentQuestion(model.getRandomQuestion());
+            model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
+            callBack.setScore("Điểm: " + model.getCurrentScore());
+            callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
+            callBack.setTextQues(model.getCurrentQuestion().getQuestion());
+            callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
+            callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
+            callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
+            callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+        }
+        // DANG LAM TOI DAY
     }
 
     @Override
     public void onButtonCancelDialogBuyCreditClick() {
         callBack.hideDialogBuyCredit();
     }
-
 }

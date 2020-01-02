@@ -80,4 +80,6 @@ public interface ChooseView {
 
     // button score credit
     void setScoreButtonCredit(String text);
+    String getScoreButtonCredit();
+    int convertStringToIntCredit(String text);
 }

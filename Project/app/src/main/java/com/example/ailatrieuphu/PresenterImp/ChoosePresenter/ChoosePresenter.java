@@ -35,7 +35,9 @@ public interface ChoosePresenter {
     //dialog call people
     void onButtonOkDialogCallPeopleClick();
     void onButtonCancelDialogCallPeopleClick();
+
     //dialog BuyCredit
     void onButtonOkDialogBuyCreditClick();
     void onButtonCancelDialogBuyCreditClick();
+    //
 }
