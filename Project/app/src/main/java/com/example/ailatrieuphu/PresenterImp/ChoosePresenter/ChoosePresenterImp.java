@@ -3,6 +3,7 @@ package com.example.ailatrieuphu.PresenterImp.ChoosePresenter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.CountDownTimer;
 import android.util.Log;
 
 import com.example.ailatrieuphu.Model.ChooseModel;
@@ -16,12 +17,13 @@ import org.json.JSONObject;
 public class ChoosePresenterImp implements ChoosePresenter {
     private ChooseModel model;
     private ChooseView callBack;
+    private CountDownTimer c;
 
-    public ChoosePresenterImp(Context context, ChooseView callBack) {
+    public ChoosePresenterImp(Context context, final ChooseView callBack) {
         model = new ChooseModel(context);
         this.callBack = callBack;
-        callBack.setUserName(model.getCurrentUser().getUsername()+"");
-        callBack.setScoreButtonCredit(model.getCurrentUser().getCredit()+"");
+        callBack.setUserName(model.getCurrentUser().getUsername() + "");
+        callBack.setScoreButtonCredit(model.getCurrentUser().getCredit() + "");
     }
 
     @Override
@@ -84,6 +86,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
         callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
+        c.cancel();
         callBack.showDialogAnswer();
     }
 
@@ -101,6 +104,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
         callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
+        c.cancel();
         callBack.showDialogAnswer();
     }
 
@@ -118,6 +122,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         model.getQuestions().remove(model.getCurrentQuestion());
         callBack.setTextTitleDialog(title);
         callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
+        c.cancel();
         callBack.showDialogAnswer();
     }
 
@@ -135,6 +140,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         model.getQuestions().remove(model.getCurrentQuestion()); //xoa cau hoi da choi
         callBack.setTextTitleDialog(title);
         callBack.setAnswerTitleDialog("Đáp án đúng là: " + model.getCurrentQuestion().getAnswer_correct());
+        c.cancel();
         callBack.showDialogAnswer();
     }
 
@@ -158,6 +164,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
             // start man hinh ket thuc
             callBack.startActivityEndPlay(model.getBundleResult());
         }
+        startCountDown();
     }
 
     @Override
@@ -172,11 +179,13 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+//        startCountDown();
     }
 
     @Override
     public void onButtonCancelSupportClick() {
         callBack.hideDialogSupportAnswer();
+        startCountDown();
     }
 
     @Override
@@ -185,6 +194,8 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.setContentDialogRandom("Bạn chỉ được sử dụng quyền trợ giúp 1 lần!");
         callBack.showDialogRandom();
         hiddenButtonUndoClick();
+        c.cancel();
+//        startCountDown();
     }
 
     @Override
@@ -194,6 +205,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
         callBack.setContentDialog5050(content);
         callBack.showDialog5050();
+        c.cancel();
     }
 
     @Override
@@ -210,6 +222,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        c.cancel();
     }
 
     @Override
@@ -219,6 +232,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String content = "Bạn chỉ được sử dụng quyền trợ giúp 1 lần!";
         callBack.setContentDialogCallPeople(content);
         callBack.showDialogCallPeople();
+        c.cancel();
     }
 
     @Override
@@ -228,6 +242,7 @@ public class ChoosePresenterImp implements ChoosePresenter {
         String content = "Bạn được sử dụng quyền trợ giúp này nhiều lần!";
         callBack.setContentDialogBuyCredit(content);
         callBack.showDialogBuyCredit();
+        c.cancel();
     }
 
     @Override
@@ -282,11 +297,13 @@ public class ChoosePresenterImp implements ChoosePresenter {
         callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
         callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
         callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+        startCountDown();
     }
 
     @Override
     public void onButtonCancelDialogRandomClick() {
         callBack.hideDialogRandom();
+        startCountDown();
     }
 
     @Override
@@ -303,32 +320,35 @@ public class ChoosePresenterImp implements ChoosePresenter {
         }
         callBack.hideDialog5050();
         hiddenButtonFiftyPercentClick();
+        startCountDown();
     }
 
     @Override
     public void onButtonCancelDialog5050Click() {
         callBack.hideDialog5050();
+        startCountDown();
     }
 
     @Override
     public void onButtonOkDialogCallPeopleClick() {
         String title = "Thầy Tuấn bảo đáp án đúng là:";
-        callBack.setTitleDialogCallPeople(title);
         String answerContent = model.getCurrentQuestion().getAnswer_correct();
-        callBack.setContentDialogCallPeople(answerContent);
-        callBack.showDialogCallPeople();
+        callBack.setTitleDialogCallResult(title);
+        callBack.setContentDialogCallResult(answerContent);
+        callBack.hideDialogCallPeople();
+        callBack.showDialogCallResult();
         hiddenButtonCallPeople();
-        // cần xử lý đổi lại dialog thông báo
     }
 
     @Override
     public void onButtonCancelDialogCallPeopleClick() {
         callBack.hideDialogCallPeople();
+        startCountDown();
     }
 
     @Override
     public void onButtonOkDialogBuyCreditClick() {
-        if(model.getCurrentUser().getCredit()>=100) {
+        if (model.getCurrentUser().getCredit() >= 100) {
             model.getCurrentUser().setCredit(model.getCurrentUser().getCredit() - 100);
             callBack.setScoreButtonCredit(model.getCurrentUser().getCredit() + "");
             model.setCurrentQuestion(model.getRandomQuestion());
@@ -340,14 +360,54 @@ public class ChoosePresenterImp implements ChoosePresenter {
             callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
             callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
             callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
-        }else{
+        } else {
             callBack.showToastStringText("het tien roi ma oi");
         }
         callBack.hideDialogBuyCredit();
+        startCountDown();
     }
 
     @Override
     public void onButtonCancelDialogBuyCreditClick() {
         callBack.hideDialogBuyCredit();
+        startCountDown();
+    }
+
+    @Override
+    public void onButtonOkDialogCallResultClick() {
+        callBack.hideDialogCallResult();
+        startCountDown();
+    }
+
+    @Override
+    public void onCountDownFinish() {
+
+    }
+
+    @SuppressLint("StaticFieldLeak")
+    @Override
+    public void startCountDown() {
+        CountDownTimer c = new CountDownTimer(model.getMaxCountDown()*1000, 1000) {
+            public void onTick(long millisUntilFinished) {
+                callBack.setProgressCountDown((int)millisUntilFinished/1000);
+            }
+            public void onFinish() {
+                callBack.showToastStringText("Time out");
+                callBack.hideImageButtonHeartPlayer(model.getCurrentHeart() - 1);
+                model.setCurrentHeart(model.getCurrentHeart() - 1);
+                model.setCurrentQuestion(model.getRandomQuestion());
+                model.setCurrentQuestionNumber(model.getCurrentQuestionNumber() + 1);
+                callBack.setQuestionNumber(String.valueOf(model.getCurrentQuestionNumber()));
+                callBack.setTextQues(model.getCurrentQuestion().getQuestion());
+                callBack.setQuesA(model.getCurrentQuestion().getAnswer_a());
+                callBack.setQuesB(model.getCurrentQuestion().getAnswer_b());
+                callBack.setQuesC(model.getCurrentQuestion().getAnswer_c());
+                callBack.setQuesD(model.getCurrentQuestion().getAnswer_d());
+                callBack.setProgressCountDown(model.getMaxCountDown());
+                startCountDown();
+            }
+        };
+        c.start();
+        this.c = c;
     }
 }

@@ -88,4 +88,12 @@ public interface ChooseView {
     void hideImageButtonHeartPlayer(int index);
     void startActivityEndPlay(Bundle bundle);
 
+    void setProgressCountDown(int progress);
+    void resetCountDown();
+
+    void showDialogCallResult();
+    void hideDialogCallResult();
+    void setTitleDialogCallResult(String text);
+    void setContentDialogCallResult(String text);
+
 }

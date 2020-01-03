@@ -39,5 +39,10 @@ public interface ChoosePresenter {
     //dialog BuyCredit
     void onButtonOkDialogBuyCreditClick();
     void onButtonCancelDialogBuyCreditClick();
+
+    //dialog callResult
+    void onButtonOkDialogCallResultClick();
     //
+    void onCountDownFinish();
+    void startCountDown();
 }

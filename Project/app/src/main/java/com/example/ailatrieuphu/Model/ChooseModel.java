@@ -24,6 +24,7 @@ public class ChooseModel {
     private ArrayList<Question> questions = new ArrayList<>();
     private int currentHeart = 5;
     private User currentUser = null;
+    private final int MAX_COUNTDOWN = 10;
 //    private int
 
     public ChooseModel(Context context) {
@@ -113,4 +114,7 @@ public class ChooseModel {
         return currentUser;
     }
 
+    public int getMaxCountDown() {
+        return MAX_COUNTDOWN;
+    }
 }

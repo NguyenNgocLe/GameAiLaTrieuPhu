@@ -74,6 +74,11 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private Button buttonOkDialogCallPeople, buttonCancelDialogCallPeople;
     private TextView textTitleDialogCallPeople, textContentDialogCallPeople;
 
+    //dialog call people result
+    private Dialog dialogCallResult;
+    private Button buttonOkDialogCallResult, buttonCancelDialogCallResult;
+    private TextView textTitleDialogCallResult, textContentDialogCallResult;
+
     //dialog buy credit
     private Dialog dialogBuyCredit;
     private Button buttonOkDialogBuyCredit, buttonCancelDialogBuyCredit;
@@ -208,6 +213,26 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
             }
         });
 
+        /*
+        //dialog call people result
+    private Dialog dialogCallResult;
+    private Button buttonOkDialogCallResult, buttonCancelDialogCallResult;
+    private TextView textTitleDialogCallResult, textContentDialogCallResult;
+        * */
+        dialogCallResult = new Dialog(this);
+        dialogCallResult.setContentView(R.layout.dialog_answer_notification);
+        buttonOkDialogCallResult = dialogCallResult.findViewById(R.id.btnOk);
+        textContentDialogCallResult = dialogCallResult.findViewById(R.id.txtContentDialog);
+        textTitleDialogCallResult = dialogCallResult.findViewById(R.id.txtTitleDialog);
+        buttonOkDialogCallResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialogCallResultClick();
+            }
+        });
+
+
+
         // dialog buy credit
         dialogBuyCredit = new Dialog(this);
         dialogBuyCredit.setContentView(R.layout.activity_custom_dialog_credit);
@@ -251,9 +276,9 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         //RingProgress
         mRingProgressBar = findViewById(R.id.ringProgress); // tìm cái ringProgressbar
         timeAnswer = findViewById(R.id.txtTimeAnswer); // tìm cái textview để trừ thời gian khi luồng của ringprogressbar
-        mRingProgressBar.setOnProgressListener(this); // xét sự kiện khi cho ringProgressbar
-        mRingProgressBar.setMax(10); // xét thời gian tối đa ringProgressbar sẽ được chạy tính bằng second
-        mMaxProgress = mRingProgressBar.getMax(); // chỉ số của max ring hiện tại max của ring
+//        mRingProgressBar.setOnProgressListener(this); // xét sự kiện khi cho ringProgressbar
+//        mRingProgressBar.setMax(10); // xét thời gian tối đa ringProgressbar sẽ được chạy tính bằng second
+//        mMaxProgress = mRingProgressBar.getMax(); // chỉ số của max ring hiện tại max của ring
 //        mThreadCountdown = new RingProgressbarAsyntask(this, timeAnswer, mRingProgressBar, progress, mMaxProgress); // luồng xử lý việc bất đồng bộ của RingProgressbar countdown
 //        mThreadCountdown.execute(); // thực thi RingProgressBar
         // tạo lớp đối tượng choosePresenter để gọi hàm xử lý gán câu hỏi cho màn hình
@@ -276,6 +301,8 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 //                choosePresenterImp.onButtonCancelSupportClick();
 //            }
 //        });
+//        mRingProgressBar.setProgress(5);
+        choosePresenterImp.startCountDown();
     }
 
     // set text người chơi và credit
@@ -647,6 +674,39 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         Intent intent = new Intent(this, EndActivity.class);
         intent.putExtra("nguoi_choi", bundle);
         startActivity(intent);
+    }
+
+    @Override
+    public void setProgressCountDown(int progress) {
+//        progress
+        mRingProgressBar.setProgress(progress);
+        timeAnswer.setText(progress+"s");
+    }
+
+    @Override
+    public void resetCountDown() {
+        mRingProgressBar.setProgress(10);
+        timeAnswer.setText("10s");
+    }
+
+    @Override
+    public void showDialogCallResult() {
+        dialogCallResult.show();
+    }
+
+    @Override
+    public void hideDialogCallResult() {
+        dialogCallResult.dismiss();
+    }
+
+    @Override
+    public void setTitleDialogCallResult(String text) {
+        textTitleDialogCallResult.setText(text);
+    }
+
+    @Override
+    public void setContentDialogCallResult(String text) {
+        textContentDialogCallResult.setText(text);
     }
 
     @Override
