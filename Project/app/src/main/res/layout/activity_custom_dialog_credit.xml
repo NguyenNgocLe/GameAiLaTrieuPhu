@@ -4,16 +4,15 @@
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:background="@drawable/custom_dialog"
-
     android:gravity="center"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/txtTitleDialogCredit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="@string/title"
+        android:text="@string/titleFiftyPercentSupport"
         android:gravity="center"
         android:padding="10dp"
         android:textColor="#FF5722"
@@ -22,7 +21,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/txtContent"
+        android:id="@+id/txtContentDialogCredit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/b"
@@ -41,7 +40,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnOkSupportAnswer"
+            android:id="@+id/btnOkDialogCredit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -55,7 +54,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btnCancelSupportAnswer"
+            android:id="@+id/btnCancelDialogCredit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -68,6 +67,7 @@
             tools:ignore="ButtonOrder,ButtonStyle">
         </Button>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

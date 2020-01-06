@@ -169,6 +169,7 @@
                 app:ringColor="@color/colorProgressbar"
                 app:ringProgressColor="@color/colorProgressbar"
                 app:style="FILL"
+                app:max="10"
                 app:textIsShow="true"
                 app:textSize="10sp">
             </io.netopen.hotbitmapgg.library.view.RingProgressBar>

@@ -6,7 +6,6 @@ import com.example.ailatrieuphu.Controller.LoginView;
 public class LoginPresenterImp implements LoginPresenter, LoginView {
 
     LoginView loginView;
-
     private LoginModel model;
     private LoginView view;
 
@@ -28,7 +27,6 @@ public class LoginPresenterImp implements LoginPresenter, LoginView {
 
     @Override
     public void onButtonForgotClick() {
-
     }
 
     @Override
@@ -60,27 +58,22 @@ public class LoginPresenterImp implements LoginPresenter, LoginView {
 
     @Override
     public void onTextViewFacebookSignInClick() {
-
     }
 
     @Override
     public void onTextViewGoogleSignInClick() {
-
     }
 
     @Override
     public void showButtonForgot() {
-
     }
 
     @Override
     public void hideButtonForgot() {
-
     }
 
     @Override
     public void showToast(String text) {
-
     }
 
     @Override
@@ -95,21 +88,17 @@ public class LoginPresenterImp implements LoginPresenter, LoginView {
 
     @Override
     public void handlingLogin() {
-
     }
 
     @Override
     public void showAccountFailed() {
-
     }
 
     @Override
     public void loginSuccess() {
-
     }
 
     @Override
     public void loginFailed() {
-
     }
 }

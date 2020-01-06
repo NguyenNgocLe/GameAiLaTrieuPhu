@@ -14,7 +14,6 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnManageAccount, btnNewGame, btnPlayHistory, btnRankPlayer, btnBuyCredit;
-
     JSONObject saveJson;
 
     @Override
@@ -79,7 +78,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void handlingManageAccountLogin() {
         Intent intent = new Intent(this, ManageActivity.class);
-        //Log.e("aaaa","json ok " + getIntent().getStringExtra("nguoi_dung"));
         intent.putExtra("nguoi_dung",getIntent().getStringExtra("nguoi_dung")); // gửi dữ liệu người dùng từ login sang main activity sang manage
         startActivity(intent);
     }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Controller.LoginActivity">
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineTop"
         android:layout_width="match_parent"
@@ -57,18 +58,31 @@
         app:layout_constraintGuide_percent="0.9">
     </androidx.constraintlayout.widget.Guideline>
 
-    <ImageView
-        android:id="@+id/imgLogo"
+    <LinearLayout
+        android:id="@+id/FormAvatarLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="50dp"
-        android:src="@drawable/ic_user_player"
+        android:orientation="vertical"
+        android:weightSum="10"
         app:layout_constraintBottom_toTopOf="@id/lineMid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lineTop"
-        android:contentDescription="@string/todo">
-    </ImageView>
+        app:layout_constraintEnd_toStartOf="@id/lineEnd"
+        app:layout_constraintStart_toEndOf="@id/lineStart"
+        app:layout_constraintTop_toBottomOf="@id/lineTop">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:contentDescription="@string/todo"
+            android:padding="50dp"
+            android:src="@drawable/admin_two"
+            app:layout_constraintBottom_toTopOf="@id/lineMid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineTop">
+        </ImageView>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/FormMainLoginAccount"
@@ -85,25 +99,25 @@
             android:id="@+id/txtUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_user_login"
-            android:text="123123"
-            android:inputType="textCapSentences"
             android:layout_margin="5dp"
+            android:layout_weight="2"
             android:background="@drawable/radius_user_edit_text"
-            android:layout_weight="2">
+            android:hint="@string/hint_user_login"
+            android:inputType="textCapSentences"
+            android:text="123123">
         </EditText>
 
         <EditText
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="123123"
-            android:hint="@string/hint_password"
-            android:lines="1"
             android:layout_margin="5dp"
-            android:inputType="textPassword"
+            android:layout_weight="2"
             android:background="@drawable/radius_user_edit_text"
-            android:layout_weight="2">
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:text="123123">
         </EditText>
 
         <Button
@@ -115,28 +129,33 @@
             android:layout_weight="2"
             android:background="@drawable/animation_button_blue"
             android:text="@string/login"
-            android:textAllCaps="false">
+            android:textAllCaps="false"
+            tools:targetApi="o">
         </Button>
+
         <Button
             android:id="@+id/btnForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/forgot_password"
-            android:background="@drawable/animation_button_green"
             android:layout_marginHorizontal="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animation_button_green"
+            android:text="@string/forgot_password"
             android:textAllCaps="false"
-            android:layout_weight="2">
+            tools:targetApi="o">
         </Button>
+
         <Button
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"
             android:layout_marginHorizontal="5dp"
-            android:background="@drawable/animation_button_red"
             android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/animation_button_red"
+            android:text="@string/sign_up"
             android:textAllCaps="false"
-            android:layout_weight="2">
+            tools:targetApi="o">
         </Button>
     </LinearLayout>
 
@@ -144,33 +163,34 @@
         android:id="@+id/layoutLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp"
         app:layout_constraintBottom_toTopOf="@id/lineBottom"
         app:layout_constraintEnd_toEndOf="@id/lineEnd"
         app:layout_constraintStart_toStartOf="@id/lineStart"
-        app:layout_constraintTop_toBottomOf="@+id/lineMid1"
-        android:padding="40dp">
+        app:layout_constraintTop_toBottomOf="@+id/lineMid1">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_weight="1"
-            android:gravity="center_vertical"
             android:drawableStart="@drawable/ic_facebook"
             android:drawablePadding="10dp"
-            android:text="@string/login_facebook">
+            android:gravity="center_vertical"
+            android:text="@string/login_facebook"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
         </TextView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_weight="1"
-            android:text="@string/login_google"
-            android:gravity="center_vertical"
             android:drawableStart="@drawable/ic_google_plus"
-            android:drawablePadding="10dp">
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/login_google"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
         </TextView>
 
     </LinearLayout>

@@ -106,8 +106,7 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftStatusEndPlay"
         app:layout_constraintTop_toBottomOf="@id/lineTopStatusEndPlay">
 
-        <include
-            layout="@layout/activity_header">
+        <include layout="@layout/activity_header">
         </include>
 
     </LinearLayout>
@@ -122,8 +121,7 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftEndPlay"
         app:layout_constraintTop_toBottomOf="@id/lineTopEndPlay">
 
-        <include
-            layout="@layout/activity_number_question">
+        <include layout="@layout/activity_number_question">
         </include>
 
     </LinearLayout>
@@ -156,9 +154,10 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_weight="1"
                 android:text="@string/title_end_game"
                 android:textColor="#3A103A"
-                android:layout_weight="1"
+                android:textSize="20sp"
                 android:textStyle="bold">
             </TextView>
 
@@ -169,36 +168,39 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_weight="1"
                 android:text="@string/congratulations"
                 android:textColor="#FF0000"
-                android:textStyle="bold"
-                android:layout_weight="1">
+                android:textSize="15sp"
+                android:textStyle="bold">
             </TextView>
+
             <TextView
-                android:id="@+id/txtScore2EndPlay"
+                android:id="@+id/txtNumberScoreEndPlay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_weight="4"
                 android:text="@string/number_score"
                 android:textColor="#9C27B0"
                 android:textSize="50sp"
-                android:textStyle="bold"
-                android:layout_weight="4">
+                android:textStyle="bold">
             </TextView>
+
             <Button
                 android:id="@+id/btnAddPlayEndPlay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="2"
                 android:layout_marginTop="5dp"
+                android:layout_weight="2"
                 android:background="@drawable/animation_purple"
-                android:text="@string/add_one_more_300"
-                android:textColor="#FFFF00"
                 android:drawableEnd="@drawable/ic_diamond"
-                android:textAllCaps="false">
+                android:text="@string/add_one_more_300"
+                android:textAllCaps="false"
+                android:textColor="#FFFF00">
             </Button>
 
             <Button
@@ -206,13 +208,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="2"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_weight="2"
                 android:background="@drawable/animation_button_green"
                 android:text="@string/end_game"
-                android:textColor="#FFFF00"
-                android:textAllCaps="false">
+                android:textAllCaps="false"
+                android:textColor="#FFFF00">
             </Button>
 
         </LinearLayout>
@@ -229,8 +231,7 @@
         app:layout_constraintStart_toStartOf="@id/lineLeftStatusEndPlay"
         app:layout_constraintTop_toBottomOf="@id/lineMid3EndPlay">
 
-        <include
-            layout="@layout/activity_footer">
+        <include layout="@layout/activity_footer">
         </include>
 
     </LinearLayout>

@@ -39,13 +39,13 @@ public class CustomDialog extends Dialog implements android.view.View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.notification);
+        setContentView(R.layout.dialog_answer_notification);
 
         setCancelable(true);
 
 //ánh xạ view
-        TextView mTitle = findViewById(R.id.txtTitle);
-        TextView mContent = findViewById(R.id.txtContent);
+        TextView mTitle = findViewById(R.id.txtTitleDialog);
+        TextView mContent = findViewById(R.id.txtContentDialog);
         Button mButtonOk = findViewById(R.id.btnOk);
 
         mTitle.setText(this.title);

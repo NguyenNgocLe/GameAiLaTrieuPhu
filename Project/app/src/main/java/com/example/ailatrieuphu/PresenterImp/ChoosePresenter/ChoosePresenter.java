@@ -6,11 +6,9 @@ public interface ChoosePresenter {
     void onButtonBClick();
     void onButtonCClick();
     void onButtonDClick();
-    void onButtonOkClick();
-    void onButtonOkSupportClick();
-    void onButtonCancelSupportClick();
+    void onButtonOkDialogAnswerClick();
     void onImageButtonUndoClick();
-    void onImageButtonFiftyPercentClick();
+    void onImageButton5050Click();
     void onImageButtonSupportAudiencesClick();
     void onImageButtonCallPeopleClick();
     void onImageButtonCreditClick();
@@ -23,4 +21,28 @@ public interface ChoosePresenter {
     void showButtonFiftyPercentClick();
     void showButtonSupportAudiences();
     void showButtonCallPeople();
+    void onButtonOkSupportClick();
+    void onButtonCancelSupportClick();
+
+    //dialog random
+    void onButtonOkDialogRandomClick();
+    void onButtonCancelDialogRandomClick();
+
+    //dialog 5050
+    void onButtonOkDialog5050Click();
+    void onButtonCancelDialog5050Click();
+
+    //dialog call people
+    void onButtonOkDialogCallPeopleClick();
+    void onButtonCancelDialogCallPeopleClick();
+
+    //dialog BuyCredit
+    void onButtonOkDialogBuyCreditClick();
+    void onButtonCancelDialogBuyCreditClick();
+
+    //dialog callResult
+    void onButtonOkDialogCallResultClick();
+    //
+    void onCountDownFinish();
+    void startCountDown();
 }

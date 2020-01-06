@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        android:id="@+id/txtUserNameShowQuestion"
+        android:id="@+id/txtUserNamePlayer"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
         <ImageButton
-            android:id="@+id/imgHeartShowQuestion"
+            android:id="@+id/imbHeartZero"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -34,7 +34,7 @@
             android:contentDescription="@string/todo">
         </ImageButton>
         <ImageButton
-            android:id="@+id/imgHeartShowQuestion2"
+            android:id="@+id/imbHeartOne"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -44,7 +44,7 @@
             android:contentDescription="@string/todo">
         </ImageButton>
         <ImageButton
-            android:id="@+id/imgHeartShowQuestion3"
+            android:id="@+id/imbHeartTwo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -54,7 +54,7 @@
             android:contentDescription="@string/todo">
         </ImageButton>
         <ImageButton
-            android:id="@+id/imgHeartShowQuestion4"
+            android:id="@+id/imbHeartThree"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -64,7 +64,7 @@
             android:contentDescription="@string/todo">
         </ImageButton>
         <ImageButton
-            android:id="@+id/imgHeartShowQuestion5"
+            android:id="@+id/imbHeartFour"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -76,7 +76,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnScoreShowQuestion"
+        android:id="@+id/btnScoreCredit"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1.5"
@@ -88,7 +88,7 @@
     </Button>
 
     <ImageButton
-        android:id="@+id/btnCreditShowQuestion"
+        android:id="@+id/imbIconCredit"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"

@@ -3,6 +3,7 @@ package com.example.ailatrieuphu.View;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -14,9 +15,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ailatrieuphu.Controller.EndActivity;
 import com.example.ailatrieuphu.PresenterImp.ChoosePresenter.ChoosePresenterImp;
 import com.example.ailatrieuphu.R;
+import com.example.ailatrieuphu.Utilities.Barchart.BarchartActivity;
 import com.example.ailatrieuphu.Utilities.RingProgressbarAsyntask;
+import com.github.mikephil.charting.charts.BarChart;
+
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
@@ -28,12 +36,8 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private RingProgressbarAsyntask mThreadCountdown;
     private TextView timeAnswer;
     //
-    private Button btnA;
-    private Button btnB;
-    private Button btnC;
-    private Button btnD;
     private ImageButton imbUndo;
-    private ImageButton imbFiftyPercent;
+    private ImageButton button5050;
     private ImageButton imbSupportAudience;
     private ImageButton imbCallPeople;
     private Button btnQuestionNumber;
@@ -43,16 +47,54 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
     private int[] mListIdQuestion;
     private ProgressBar progressBarLoadData;
     private View layoutContent;
-    private Dialog dialogNotify;
-    private Dialog dialogQuestion;
-    private TextView txtTitleDialogNotify, txtAnswerCorrect, txtTitleQuestionSupport, txtContentQuestionSupport;
-    private Button btnOkDialog, btnOKSupportAnswer, btnCancelSupportAnswer;
+
     //
     private ChoosePresenterImp choosePresenterImp;
+    private BarChart barChart;
+    private ArrayList<Button> listButton;
 
-    public ChooseActivity() {
+    //dialog
+    //dialog Answer
+    private Dialog dialogAnswer;
+    private Button buttonOkDialogAnswer;
+    private TextView textTitleDialogAnswer, textCorectDialogAnswer;
 
-    }
+    //dialog random
+    private Dialog dialogRandom;
+    private Button buttonOkDialogRandom, buttonCancelDialogRandom;
+    private TextView textTitleDialogRandom, textContentDialogRandom;
+
+    //dialog 50/50
+    private Dialog dialog5050;
+    private Button buttonOkDialog5050, buttonCancelDialog5050;
+    private TextView textTitleDialog5050, textContentDialog5050;
+
+    //dialog call people
+    private Dialog dialogCallPeople;
+    private Button buttonOkDialogCallPeople, buttonCancelDialogCallPeople;
+    private TextView textTitleDialogCallPeople, textContentDialogCallPeople;
+
+    //dialog call people result
+    private Dialog dialogCallResult;
+    private Button buttonOkDialogCallResult, buttonCancelDialogCallResult;
+    private TextView textTitleDialogCallResult, textContentDialogCallResult;
+
+    //dialog buy credit
+    private Dialog dialogBuyCredit;
+    private Button buttonOkDialogBuyCredit, buttonCancelDialogBuyCredit;
+    private TextView textTitleDialogBuyCredit, textContentDialogBuyCredit;
+
+    // button number score credit
+    private Button buttonScoreCredit;
+    //TextView username
+    private TextView txtUserNamePlayer;
+    private int ScoreCredit;
+
+    // Json Player
+    private JSONObject saveJsonPlayer;
+
+    // Image button heart player
+    private ArrayList<ImageButton> imageButtonsHeart;
 
     //
     @SuppressLint("StaticFieldLeak")
@@ -62,10 +104,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         setContentView(R.layout.activity_choose_answer);
         //
         InitialView();
-//        Intent intent = getIntent();
-//        if (intent != null) {
-//            categoryId = intent.getIntExtra("id", 1);
-//        }
+        // lấy dữ liệu từ màn hình main
         choosePresenterImp.handlingGetQuestionByCategoryField();
     }
 
@@ -79,90 +118,227 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         progressBarLoadData = findViewById(R.id.process_loadData);
         btnQuestionNumber = findViewById(R.id.edtNumberQuestion);
         txtQuestion = findViewById(R.id.txtQuestion);
-        btnA = findViewById(R.id.A);
-        btnB = findViewById(R.id.B);
-        btnC = findViewById(R.id.C);
-        btnD = findViewById(R.id.D);
-        btnA.setOnClickListener(this);
-        btnB.setOnClickListener(this);
-        btnC.setOnClickListener(this);
-        btnD.setOnClickListener(this);
+        listButton = new ArrayList<>();
+        listButton.add((Button) findViewById(R.id.A));
+        listButton.add((Button) findViewById(R.id.B));
+        listButton.add((Button) findViewById(R.id.C));
+        listButton.add((Button) findViewById(R.id.D));
+        listButton.get(0).setOnClickListener(this);
+        listButton.get(1).setOnClickListener(this);
+        listButton.get(2).setOnClickListener(this);
+        listButton.get(3).setOnClickListener(this);
         this.imbUndo = findViewById(R.id.imbUndo);
-        this.imbFiftyPercent = findViewById(R.id.imbFiftyPercent);
+        this.button5050 = findViewById(R.id.imbFiftyPercent);
         this.imbSupportAudience = findViewById(R.id.imbSupportAudience);
         this.imbCallPeople = findViewById(R.id.imbCallPeople);
-        this.btnCredit = findViewById(R.id.btnCredit);
+        this.btnCredit = findViewById(R.id.btnCredit); // tro giup mua cau hoi
         imbUndo.setOnClickListener(this);
-        imbFiftyPercent.setOnClickListener(this);
+        button5050.setOnClickListener(this);
         imbSupportAudience.setOnClickListener(this);
         imbCallPeople.setOnClickListener(this);
         btnCredit.setOnClickListener(this);
-        dialogNotify = new Dialog(this);
-        dialogNotify.setContentView(R.layout.notification);
-        txtTitleDialogNotify = dialogNotify.findViewById(R.id.txtTitle);
-        txtAnswerCorrect = dialogNotify.findViewById(R.id.txtContent);
-        dialogQuestion = new Dialog(this);
-        dialogQuestion.setContentView(R.layout.activity_custom_dialog_credit);
-        txtTitleQuestionSupport = dialogQuestion.findViewById(R.id.txtTitle);
-        txtContentQuestionSupport = dialogQuestion.findViewById(R.id.txtContent);
-        btnOkDialog = dialogNotify.findViewById(R.id.btnOk);
-        btnOKSupportAnswer = dialogQuestion.findViewById(R.id.btnOkSupportAnswer);
-        btnCancelSupportAnswer = dialogQuestion.findViewById(R.id.btnCancelSupportAnswer);
+
+        //dialog Answer
+        dialogAnswer = new Dialog(this);
+        dialogAnswer.setContentView(R.layout.dialog_answer_notification);
+        buttonOkDialogAnswer = dialogAnswer.findViewById(R.id.btnOk);
+        textCorectDialogAnswer = dialogAnswer.findViewById(R.id.txtContentDialog);
+        textTitleDialogAnswer = dialogAnswer.findViewById(R.id.txtTitleDialog);
+        buttonOkDialogAnswer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialogAnswerClick();
+            }
+        });
+
+        //dialog Random
+        dialogRandom = new Dialog(this);
+        dialogRandom.setContentView(R.layout.activity_custom_dialog_credit);
+        buttonOkDialogRandom = dialogRandom.findViewById(R.id.btnOkDialogCredit);
+        buttonCancelDialogRandom = dialogRandom.findViewById(R.id.btnCancelDialogCredit);
+        textContentDialogRandom = dialogRandom.findViewById(R.id.txtContentDialogCredit);
+        textTitleDialogRandom = dialogRandom.findViewById(R.id.txtTitleDialogCredit);
+        buttonOkDialogRandom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialogRandomClick();
+            }
+        });
+
+        buttonCancelDialogRandom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonCancelDialogRandomClick();
+            }
+        });
+
+        //dialog 50/50
+        dialog5050 = new Dialog(this);
+        dialog5050.setContentView(R.layout.activity_custom_dialog_credit);
+        buttonOkDialog5050 = dialog5050.findViewById(R.id.btnOkDialogCredit);
+        buttonCancelDialog5050 = dialog5050.findViewById(R.id.btnCancelDialogCredit);
+        textContentDialog5050 = dialog5050.findViewById(R.id.txtContentDialogCredit);
+        textTitleDialog5050 = dialog5050.findViewById(R.id.txtTitleDialogCredit);
+        buttonOkDialog5050.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialog5050Click();
+            }
+        });
+
+        buttonCancelDialog5050.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonCancelDialog5050Click();
+            }
+        });
+
+        //dialog call people
+        dialogCallPeople = new Dialog(this);
+        dialogCallPeople.setContentView(R.layout.activity_custom_dialog_credit);
+        buttonOkDialogCallPeople = dialogCallPeople.findViewById(R.id.btnOkDialogCredit);
+        buttonCancelDialogCallPeople = dialogCallPeople.findViewById(R.id.btnCancelDialogCredit);
+        textContentDialogCallPeople = dialogCallPeople.findViewById(R.id.txtContentDialogCredit);
+        textTitleDialogCallPeople = dialogCallPeople.findViewById(R.id.txtTitleDialogCredit);
+        buttonOkDialogCallPeople.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialogCallPeopleClick();
+            }
+        });
+        buttonCancelDialogCallPeople.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonCancelDialogCallPeopleClick();
+            }
+        });
+
+        /*
+        //dialog call people result
+    private Dialog dialogCallResult;
+    private Button buttonOkDialogCallResult, buttonCancelDialogCallResult;
+    private TextView textTitleDialogCallResult, textContentDialogCallResult;
+        * */
+        dialogCallResult = new Dialog(this);
+        dialogCallResult.setContentView(R.layout.dialog_answer_notification);
+        buttonOkDialogCallResult = dialogCallResult.findViewById(R.id.btnOk);
+        textContentDialogCallResult = dialogCallResult.findViewById(R.id.txtContentDialog);
+        textTitleDialogCallResult = dialogCallResult.findViewById(R.id.txtTitleDialog);
+        buttonOkDialogCallResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialogCallResultClick();
+            }
+        });
+
+
+
+        // dialog buy credit
+        dialogBuyCredit = new Dialog(this);
+        dialogBuyCredit.setContentView(R.layout.activity_custom_dialog_credit);
+        buttonOkDialogBuyCredit = dialogBuyCredit.findViewById(R.id.btnOkDialogCredit);
+        buttonCancelDialogBuyCredit = dialogBuyCredit.findViewById(R.id.btnCancelDialogCredit);
+        textContentDialogBuyCredit = dialogBuyCredit.findViewById(R.id.txtContentDialogCredit);
+        textTitleDialogBuyCredit = dialogBuyCredit.findViewById(R.id.txtTitleDialogCredit);
+        buttonOkDialogBuyCredit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonOkDialogBuyCreditClick();
+            }
+        });
+
+        buttonCancelDialogBuyCredit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                choosePresenterImp.onButtonCancelDialogBuyCreditClick();
+            }
+        });
+
+        //
         txtScore = findViewById(R.id.txtScoreQuestion);
         this.imbUndo = findViewById(R.id.imbUndo);
-        this.imbFiftyPercent = findViewById(R.id.imbFiftyPercent);
+        this.button5050 = findViewById(R.id.imbFiftyPercent);
         this.imbSupportAudience = findViewById(R.id.imbSupportAudience);
         this.imbCallPeople = findViewById(R.id.imbCallPeople);
         this.btnCredit = findViewById(R.id.btnCredit);
+
+        // button điểm credit trên header
+        this.buttonScoreCredit = findViewById(R.id.btnScoreCredit);
+        this.txtUserNamePlayer = findViewById(R.id.txtUserNamePlayer);
+
+        // Image button mạng của người chơi
+        imageButtonsHeart = new ArrayList<>();
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartZero));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartOne));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartTwo));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartThree));
+        imageButtonsHeart.add((ImageButton) findViewById(R.id.imbHeartFour));
         //RingProgress
         mRingProgressBar = findViewById(R.id.ringProgress); // tìm cái ringProgressbar
         timeAnswer = findViewById(R.id.txtTimeAnswer); // tìm cái textview để trừ thời gian khi luồng của ringprogressbar
-        mRingProgressBar.setOnProgressListener(this); // xét sự kiện khi cho ringProgressbar
-        mRingProgressBar.setMax(10); // xét thời gian tối đa ringProgressbar sẽ được chạy tính bằng second
-        mMaxProgress = mRingProgressBar.getMax(); // chỉ số của max ring hiện tại max của ring
+//        mRingProgressBar.setOnProgressListener(this); // xét sự kiện khi cho ringProgressbar
+//        mRingProgressBar.setMax(10); // xét thời gian tối đa ringProgressbar sẽ được chạy tính bằng second
+//        mMaxProgress = mRingProgressBar.getMax(); // chỉ số của max ring hiện tại max của ring
 //        mThreadCountdown = new RingProgressbarAsyntask(this, timeAnswer, mRingProgressBar, progress, mMaxProgress); // luồng xử lý việc bất đồng bộ của RingProgressbar countdown
 //        mThreadCountdown.execute(); // thực thi RingProgressBar
         // tạo lớp đối tượng choosePresenter để gọi hàm xử lý gán câu hỏi cho màn hình
         choosePresenterImp = new ChoosePresenterImp(this, this);
-
-        btnOkDialog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                choosePresenterImp.onButtonOkClick();
-            }
-        });
-        btnOKSupportAnswer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                choosePresenterImp.onButtonOkSupportClick();
-            }
-        });
-        btnCancelSupportAnswer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                choosePresenterImp.onButtonCancelSupportClick();
-            }
-        });
+//        btnOkDialog.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                choosePresenterImp.onButtonOkDialogAnswerClick();
+//            }
+//        });
+//        btnOKUndoSupport.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                choosePresenterImp.onButtonOkSupportClick();
+//            }
+//        });
+//        btnCancelSupportAnswer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                choosePresenterImp.onButtonCancelSupportClick();
+//            }
+//        });
+//        mRingProgressBar.setProgress(5);
+        choosePresenterImp.startCountDown();
     }
+
+    // set text người chơi và credit
+//    public void setTextPlayerAndScore() {
+//        Intent intent = getIntent();
+//        if (intent != null) {
+//            try {
+//                saveJsonPlayer = new JSONObject(intent.getStringExtra("nguoi_dung"));
+//                this.buttonScoreCredit.setText(saveJsonPlayer.getString("credit"));
+//                this.txtUserNamePlayer.setText(saveJsonPlayer.getString("ten_dang_nhap"));
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        } else {
+//            Log.e("aaaa", "null");
+//        }
+//    }
 
     @Override
     public void setQuesA(String text) {
-        btnA.setText(text);
+        listButton.get(0).setText(text);
     }
 
     @Override
     public void setQuesB(String text) {
-        btnB.setText(text);
+        listButton.get(1).setText(text);
     }
 
     @Override
     public void setQuesC(String text) {
-        btnC.setText(text);
+        listButton.get(2).setText(text);
     }
 
     @Override
     public void setQuesD(String text) {
-        btnD.setText(text);
+        listButton.get(3).setText(text);
     }
 
     @Override
@@ -177,22 +353,22 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 
     @Override
     public String getTextA() {
-        return btnA.getText().toString();
+        return listButton.get(0).getText().toString();
     }
 
     @Override
     public String getTextB() {
-        return btnB.getText().toString();
+        return listButton.get(1).getText().toString();
     }
 
     @Override
     public String getTextC() {
-        return btnC.getText().toString();
+        return listButton.get(2).getText().toString();
     }
 
     @Override
     public String getTextD() {
-        return btnD.getText().toString();
+        return listButton.get(3).getText().toString();
     }
 
     @Override
@@ -232,42 +408,42 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
 
     @Override
     public void setTextTitleDialog(String text) {
-        txtTitleDialogNotify.setText(text);
+        textTitleDialogAnswer.setText(text);
     }
 
     @Override
     public void setTextTitleQuestionSupportDialog(String text) {
-        txtTitleQuestionSupport.setText(text);
+//        txtTitleQuestionSupport.setText(text);
     }
 
     @Override
     public void setTextContentQuestionSupportDialog(String text) {
-        txtContentQuestionSupport.setText(text);
+//        txtContentQuestionSupport.setText(text);
+    }
+
+    @Override
+    public void setTextTitleFiftyPercentSupportDialog(String text) {
+//        txtTitleFiftyPercentSupport.setText(text);
+    }
+
+    @Override
+    public void setTextContentFiftyPercentSupportDialog(String text) {
+//        txtContentFiftyPercentSupport.setText(text);
     }
 
     @Override
     public void setAnswerTitleDialog(String text) {
-        txtAnswerCorrect.setText(text);
-    }
-
-    @Override
-    public void showDialogAnswer() {
-        dialogNotify.show();
-    }
-
-    @Override
-    public void hideDialogAnswer() {
-        dialogNotify.dismiss();
+//        txtAnswerCorrect.setText(text);
     }
 
     @Override
     public void hideDialogSupportAnswer() {
-        dialogQuestion.dismiss();
+//        dialogFiftyPercentSupport.dismiss();
     }
 
     @Override
     public void showDialogQuestionSupport() {
-        dialogQuestion.show();
+//        dialogQuestion.show();
     }
 
     @Override
@@ -285,6 +461,252 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
         imbUndo.setEnabled(false);
         imbUndo.setBackgroundColor(Color.parseColor("#3f3c3c"));
 //        imbUndo.setImageResource(R.drawable.animation_button_gray);
+    }
+
+    @Override
+    public void hiddenImageButtonFiftyPercentQuestion() {
+        button5050.setEnabled(false);
+        button5050.setBackgroundColor(Color.parseColor("#3f3c3c"));
+    }
+
+    @Override
+    public void hiddenImageButtonSupportSupportAudiencesQuestion() {
+        imbSupportAudience.setEnabled(false);
+        imbSupportAudience.setBackgroundColor(Color.parseColor("#3f3c3c"));
+    }
+
+    @Override
+    public void hiddenImageButtonSupportCallPeopleQuestion() {
+        imbCallPeople.setEnabled(false);
+        imbCallPeople.setBackgroundColor(Color.parseColor("#3f3c3c"));
+    }
+
+    @Override
+    public void hiddenImageButtonSupportBuyQuestionByCredit() {
+        btnCredit.setEnabled(false);
+        btnCredit.setBackgroundColor(Color.parseColor("#3f3c3c"));
+    }
+
+    @Override
+    public void startActivityBarChart() {
+        Intent intent = new Intent(this, BarchartActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void setBarChart(BarChart barchart) {
+        this.barChart = barchart;
+    }
+
+    @Override
+    public BarChart getBarChart() {
+        return barChart;
+    }
+
+    @Override
+    public void setListButton(ArrayList<Button> button) {
+        this.listButton = button;
+    }
+
+    @Override
+    public Button getListButton(int index) {
+        return this.listButton.get(index);
+    }
+
+    @Override
+    public int getIdButton(String string) {
+        switch (string) {
+            case "A": {
+                return 0;
+            }
+            case "B": {
+                return 1;
+            }
+            case "C": {
+                return 2;
+            }
+            default: {
+                return 3;
+            }
+        }
+    }
+
+    @Override
+    public void hiddenButtonAnswer(Button button) {
+        button.setEnabled(false);
+        button.setBackgroundColor(Color.parseColor("#3f3c3c"));
+    }
+
+    @Override
+    public void showButtonAnswer(Button button) {
+        listButton.get(0).setEnabled(true);
+        listButton.get(1).setEnabled(true);
+        listButton.get(2).setEnabled(true);
+        listButton.get(3).setEnabled(true);
+        listButton.get(0).setBackgroundColor(Color.parseColor("#0090FF"));
+        listButton.get(1).setBackgroundColor(Color.parseColor("#0090FF"));
+        listButton.get(2).setBackgroundColor(Color.parseColor("#0090FF"));
+        listButton.get(3).setBackgroundColor(Color.parseColor("#0090FF"));
+    }
+
+    @Override
+    public void showDialogAnswer() {
+        dialogAnswer.show();
+    }
+
+    @Override
+    public void hideDialogAnswer() {
+        dialogAnswer.dismiss();
+    }
+
+    @Override
+    public void setTitleDialogAnswer(String text) {
+        textTitleDialogAnswer.setText(text);
+    }
+
+    @Override
+    public void setCorrectDialogAnswer(String text) {
+        textCorectDialogAnswer.setText(text);
+    }
+
+    @Override
+    public void showDialogRandom() {
+        dialogRandom.show();
+    }
+
+    @Override
+    public void hideDialogRandom() {
+        dialogRandom.dismiss();
+    }
+
+    @Override
+    public void setTitleDialogRandom(String text) {
+        textTitleDialogRandom.setText(text);
+    }
+
+    @Override
+    public void setContentDialogRandom(String text) {
+        textContentDialogRandom.setText(text);
+    }
+
+    @Override
+    public void showDialog5050() {
+        dialog5050.show();
+    }
+
+    @Override
+    public void hideDialog5050() {
+        dialog5050.dismiss();
+    }
+
+    @Override
+    public void setTitleDialog5050(String text) {
+        textTitleDialog5050.setText(text);
+    }
+
+    @Override
+    public void setContentDialog5050(String text) {
+        textContentDialog5050.setText(text);
+    }
+
+    @Override
+    public void showDialogCallPeople() {
+        dialogCallPeople.show();
+    }
+
+    @Override
+    public void hideDialogCallPeople() {
+        dialogCallPeople.dismiss();
+    }
+
+    @Override
+    public void setTitleDialogCallPeople(String text) {
+        textTitleDialogCallPeople.setText(text);
+    }
+
+    @Override
+    public void setContentDialogCallPeople(String text) {
+        textContentDialogCallPeople.setText(text);
+    }
+
+    @Override
+    public void showDialogBuyCredit() {
+        dialogBuyCredit.show();
+    }
+
+    @Override
+    public void hideDialogBuyCredit() {
+        dialogBuyCredit.dismiss();
+    }
+
+    @Override
+    public void setTitleDialogBuyCredit(String text) {
+        textTitleDialogBuyCredit.setText(text);
+    }
+
+    @Override
+    public void setContentDialogBuyCredit(String text) {
+        textContentDialogBuyCredit.setText(text);
+    }
+
+    @Override
+    public void setScoreButtonCredit(String text) {
+        this.buttonScoreCredit.setText(text);
+    }
+
+    @Override
+    public void setUserName(String text) {
+        txtUserNamePlayer.setText(text);
+    }
+
+    @Override
+    public String getScoreButtonCredit() {
+        return this.buttonScoreCredit.getText().toString();
+    }
+
+    @Override
+    public void hideImageButtonHeartPlayer(int index) {
+        this.imageButtonsHeart.get(index).setImageResource(R.drawable.ic_heart_not_exists);
+    }
+
+    @Override
+    public void startActivityEndPlay(Bundle bundle) {
+        Intent intent = new Intent(this, EndActivity.class);
+        intent.putExtra("nguoi_choi", bundle);
+        startActivity(intent);
+    }
+
+    @Override
+    public void setProgressCountDown(int progress) {
+//        progress
+        mRingProgressBar.setProgress(progress);
+        timeAnswer.setText(progress+"s");
+    }
+
+    @Override
+    public void resetCountDown() {
+        mRingProgressBar.setProgress(10);
+        timeAnswer.setText("10s");
+    }
+
+    @Override
+    public void showDialogCallResult() {
+        dialogCallResult.show();
+    }
+
+    @Override
+    public void hideDialogCallResult() {
+        dialogCallResult.dismiss();
+    }
+
+    @Override
+    public void setTitleDialogCallResult(String text) {
+        textTitleDialogCallResult.setText(text);
+    }
+
+    @Override
+    public void setContentDialogCallResult(String text) {
+        textContentDialogCallResult.setText(text);
     }
 
     @Override
@@ -312,7 +734,7 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
                 break;
             }
             case R.id.imbFiftyPercent: {
-                choosePresenterImp.onImageButtonFiftyPercentClick();
+                choosePresenterImp.onImageButton5050Click();
                 break;
             }
             case R.id.imbSupportAudience: {
@@ -321,9 +743,9 @@ public class ChooseActivity extends AppCompatActivity implements RingProgressBar
             }
             case R.id.imbCallPeople: {
                 choosePresenterImp.onImageButtonCallPeopleClick();
-                //Toast.makeText(this, "Button call people", Toast.LENGTH_SHORT).show();
+                break;
             }
-            default: {
+            case R.id.btnCredit: {
                 choosePresenterImp.onImageButtonCreditClick();
                 break;
             }

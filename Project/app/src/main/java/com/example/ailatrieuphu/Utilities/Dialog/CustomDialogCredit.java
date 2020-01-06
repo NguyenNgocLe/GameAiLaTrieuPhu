@@ -64,10 +64,10 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
         //
         setCancelable(true);
         // ánh xạ view
-        TextView mTitle = findViewById(R.id.txtTitle);
-        TextView mContent = findViewById(R.id.txtContent);
-        Button mButtonOk = findViewById(R.id.btnOkSupportAnswer);
-        Button mButtonCancel = findViewById(R.id.btnCancelSupportAnswer);
+        TextView mTitle = findViewById(R.id.txtTitleDialogCredit);
+        TextView mContent = findViewById(R.id.txtContentDialogCredit);
+        Button mButtonOk = findViewById(R.id.btnOkDialogCredit);
+        Button mButtonCancel = findViewById(R.id.btnCancelDialogCredit);
         mTitle.setText(this.title);
         mContent.setText(this.content);
         mButtonOk.setText(this.textButton);
@@ -89,7 +89,8 @@ public class CustomDialogCredit extends Dialog implements View.OnClickListener {
                 Toast.makeText(context, "5.000", Toast.LENGTH_SHORT).show();
                 break;
             }
-            case R.id.btnCancelSupportAnswer: {
+            // cho nay dang sai
+            case R.id.btnCancelFiftyPercentSupport: {
                 int numberCredit = 3000;
                 Toast.makeText(context, "Cancel", Toast.LENGTH_SHORT).show();
                 break;
